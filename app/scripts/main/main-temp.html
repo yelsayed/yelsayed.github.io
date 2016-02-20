@@ -1,0 +1,161 @@
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <img class="header-logo animated fadeInDown"/>
+            <h1 id="header-name" class="animated fadeIn">Yasser El-Sayed</h1>
+            <div class="sub-header animated fadeIn"> Developer + Designer + Innovator</div>
+        </div>
+    </div>
+    <h5 class="about-me animated fadeIn"> About me <span class="arrow-down"></span></h5>
+</header>
+
+<section id="about-me" class="bg-secondary">
+    <div class="container">
+        <div class="row center-block photo-container">
+            <img ng-src="img/Yasser.jpg" class="col-lg-12 img-responsive img-circle personal-photo"/>
+        </div>
+        <div class="row center-block">
+            <div class="col-lg-12 bg-dark-secondary about-me-description">
+                <div class="about-me-header"> About me</div>
+                <p> Hi my name is Yasser El-Sayed, I'm 20 years old. In short, I am Computer Science student at CMU
+                    that is extremely passionate about most fields in Computer Science.
+                    <span class="highlight"> I am a hardcore, Full Stack Developer </span>.
+                    Put me in pretty much <span class="highlight"> any field </span> and I'll blossom.
+                    My main passion, however, is <span class="highlight"> Front End Web development and Archeticture Design </span>.
+                    You'll find that I am familiar with a lot of Front End tools. <span class="highlight"> I can build animations,
+                    components, and a structurally sound Front End code base </span>. I am also passionate about core
+                    Systems Programming and have a very good
+                    understanding about <span class="highlight"> Network and Distributed System </span> design
+                    principles.
+                    On top of that, I've delved very deeply into <span class="highlight"> Network Programming and have made concrete networking
+                    systems </span> that required significant design and engineering.
+                    For my free time I like write. I've written many short stories that reside in this website's
+                    articles
+                    section. Also I like to read about world issues and blog from unique people to enrich my view on
+                    this earth.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="bg-black">
+    <h1 class="services-header"> Skills </h1>
+    <h4 class="services-subheader">
+        This is the skills that I can offer anyone that gets in touch with me.
+        These are the skills that I'm most comfortable with and I am passionate about.
+    </h4>
+    <div class="container">
+        <div class="skill-box" ng-repeat="entry in mc.skillData">
+            <div class="skill-box-header text-center">
+                {{entry.header}}
+            </div>
+            <div class="skill-box-subheader-row row" ng-repeat="subentry in entry.sub">
+                <div class="skill-box-subheader text-center col-xs-2">
+                    {{subentry.subheader}}
+                </div>
+                <div class="skill-box-subtitle text-center col-xs-2">
+                    {{subentry.subtitle}}
+                </div>
+                <div class="progress col-xs-7">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                         aria-valuenow="40"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 0" scroll perc="{{subentry.level}}"
+                         sing="false">
+                        {{subentry.level}}%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="bg-primary">
+    <h1 class="resume-header"> Resumé/CV </h1>
+    <h4 class="resume-subheader">
+        Here's my Official Resumé. If you're into that sort of thing.
+        You can switch between a CV and Resume.
+        <div class="view-pdf">
+            <a href="img/Yasser,%20Resume.pdf" target="_blank">
+                <span class="fa-stack bot">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-file-pdf-o fa-stack-1x shrink">R</i>
+                </span>
+            </a>
+            <a href="img/Yasser,%20CV.pdf" target="_blank">
+                <span class="fa-stack bot">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-file-pdf-o fa-stack-1x shrink">CV</i>
+                </span>
+            </a>
+        </div>
+    </h4>
+    <div class="container">
+        <div class="resume-entry row">
+            <div class="resume-entry-header col-xs-2">
+                Education
+            </div>
+            <div class="col-xs-9">
+                <div class="resume-subentry">
+                    <div class="resume-subentry-header">
+                        Carnegie Mellon University
+                    </div>
+                    <div class="resume-subentry-body">
+                        Bachelor of Science in Computer Science
+                        <br>
+                        Minor in Historical studies
+                        <br>
+                        Expected Graduation: May, 2017
+                    </div>
+                    <div class="resume-subentry-date">
+                        May 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-entry row" ng-repeat="e in mc.resumeData track by $index">
+            <div class="resume-entry-header col-xs-2">
+                {{e.entry}}
+            </div>
+            <div class="col-xs-9">
+                <div class="resume-subentry" ng-repeat="subE in e.sub">
+                    <div class="resume-subentry-header">
+                        {{subE.sub_header}}
+                    </div>
+                    <div class="resume-subentry-body">
+                        <ul>
+                            <li ng-repeat="p in subE.sub_points">
+                                {{p}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-subentry-date">
+                        {{subE.date}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-entry row">
+            <div class="resume-entry-header col-xs-2">
+                Skills
+            </div>
+            <div class="col-xs-9">
+                <div class="resume-subentry">
+                    <div class="resume-subentry-header">
+                        Programming Languages and Skills
+                    </div>
+                    <div class="resume-subentry-body">
+                        Python, JavaScript, SML, C, Java, CSS, C0, C++, UML Modeling
+                    </div>
+                    <div class="resume-subentry-header">
+                        Languages
+                    </div>
+                    <div class="resume-subentry-body">
+                        Fluent: English, Arabic. Basic: French
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

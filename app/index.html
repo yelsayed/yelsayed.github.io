@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Yasser El-Sayed </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheets -->
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
+    <!-- CSS plugins -->
+    <link rel="stylesheet" href="styles/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/creative.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="styles/app.css">
+
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body id="page-top">
+<nav ng-controller="mainC" id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/main">
+                <div id="myCard" class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="img/Personal%20Logo.png"/>
+                        </div>
+                        <div class="back">
+                            <img src="img/Personal%20Logo.png"/>
+                        </div>
+                    </div>
+                    <div id="nav-name"> El-Sayed </div>
+                </div>
+                </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#/articles">Articles</a>
+                </li>
+                <li>
+                    <a href="#/projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<ng-view></ng-view>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4><strong>Yasser El-Sayed</strong>
+                </h4>
+                <p>Al Intisar St, Andalus Gardens, Villa 79<br>Al Dafna, Doha, Qatar</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> +974 6693-0377</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:yelsayed@cmu.edu">yelsayed@cmu.edu</a>
+                    </li>
+                </ul>
+                <br>
+                <!--<ul class="list-inline">-->
+                    <!--<li>-->
+                        <!--<a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; Yasser El-Sayed 2016</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="scripts/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="scripts/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="scripts/js/jquery.easing.min.js"></script>
+<script src="scripts/js/jquery.fittext.js"></script>
+<script src="scripts/js/wow.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+<script src="scripts/js/creative.js"></script>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="scripts/main/main-view.js"></script>
+<script src="scripts/articles/article-view.js"></script>
+<script src="scripts/contact/contact-view.js"></script>
+<script src="scripts/projects/projects-view.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
