@@ -10,7 +10,7 @@ angular.module('myApp.main', ['ngRoute'])
         });
     }])
 
-    .controller("mainController", function ($scope) {
+    .controller("mainController", function ($scope, $location, $anchorScroll) {
 
         this.skillData =
             [
@@ -199,6 +199,11 @@ angular.module('myApp.main', ['ngRoute'])
             }
         };
 
+        this.scrollTo = function (id) {
+            $location.hash(id);
+            $anchorScroll();
+        };
+
     })
 
     .directive('scroll', function ($window) {
@@ -208,7 +213,8 @@ angular.module('myApp.main', ['ngRoute'])
                 angular.element($window).bind("scroll", function () {
                     //console.log("Hello man");
                     var topOfWindow = $window.scrollY;
-                    if (element.offset().top < topOfWindow + 800) {
+                    console.log($window);
+                    if (element.offset().top < topOfWindow + ($window.innerHeight / 2)) {
                         scope.animateBar(element, attr.perc, attr.sing);
                         attr.sing = true;
                     }
