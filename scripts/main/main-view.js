@@ -211,9 +211,7 @@ angular.module('myApp.main', ['ngRoute'])
             restrict: "A",
             link: function (scope, element, attr) {
                 angular.element($window).bind("scroll", function () {
-                    //console.log("Hello man");
                     var topOfWindow = $window.scrollY;
-                    console.log($window);
                     if (element.offset().top < topOfWindow + ($window.innerHeight / 2)) {
                         scope.animateBar(element, attr.perc, attr.sing);
                         attr.sing = true;
