@@ -147,7 +147,7 @@ angular.module('myApp.main', ['ngRoute'])
                             sub_header: "Metis Full-Time Front-End Developer",
                             sub_points: [
                                 "Metis is an application that aids students in their course planning, scheduling and discovery through their 4-6 years of University.",
-                                "Responsible for developing core front-end features such as the side bar.",
+                                "Responsible for developing core front-end features.",
                                 "Responsible for creating and maintaining code that provides information about courses and is the most used feature of the application."
                             ],
                             date: "Summer 2015"
@@ -173,7 +173,7 @@ angular.module('myApp.main', ['ngRoute'])
                             sub_points: [
                                 "Implemented a real, concrete, and secure Web Server used for hosting content using C Programming Language.",
                                 "Web server can be launched to host dynamic/static web content.",
-                                "Can handle 1000+ clients at one time and serves them all without issues.",
+                                "Strengthened the reliability to handle 10,000+ clients simultaneously.",
                                 "Encrypts connections between the server and client using SSL enabling secure communication between the client and server."
                             ],
                             date: "Jan-Feb 2016"
