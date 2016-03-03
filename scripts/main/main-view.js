@@ -53,66 +53,79 @@ angular.module('myApp.main', ['ngRoute'])
                             level: "100"
                         }
                     ]
-                },
-                //{
-                //    header: "System Development Tools",
-                //    sub: [
-                //        {
-                //            subheader: "AngularJS",
-                //            subtitle: "I am highly proficient with Angular",
-                //            level: "90"
-                //        }
-                //    ]
-                //},
+                }
+            //    {
+            //    header: "Programming Languages",
+            //    sub: [
+            //        {
+            //            subheader: "JavaScript",
+            //            subtitle: "Functional Web Development",
+            //            level: "90"
+            //        },
+            //        {
+            //            subheader: "SML",
+            //            subtitle: "Functional and Logic Programming",
+            //            level: "80"
+            //        },
+            //        {
+            //            subheader: "C",
+            //            subtitle: "Core Systems Programming",
+            //            level: "75"
+            //        },
+            //        {
+            //            subheader: "Java",
+            //            subtitle: "Object Oriented Software Construction",
+            //            level: "70"
+            //        },
+            //        {
+            //            subheader: "Python",
+            //            subtitle: "Back End Web Development",
+            //            level: "65"
+            //        }
+            //    ]
+            //},
+            //    {
+            //        header: "Actual Languages",
+            //        sub: [
+            //            {
+            //                subheader: "Arabic",
+            //                subtitle: "الحمد لله على اللغة العربية",
+            //                level: "100"
+            //            },
+            //            {
+            //                subheader: "English",
+            //                subtitle: "This is my second language but I probably more familiar with this than Arabic",
+            //                level: "100"
+            //            },
+            //            {
+            //                subheader: "French",
+            //                subtitle: "Je parle un petit peu de Français",
+            //                level: "15"
+            //            }
+            //        ]
+            //    }
+            ];
+
+        this.projectData =
+            [
                 {
-                    header: "Programming Languages",
-                    sub: [
-                        {
-                            subheader: "JavaScript",
-                            subtitle: "Functional Web Development",
-                            level: "90"
-                        },
-                        {
-                            subheader: "SML",
-                            subtitle: "Functional and Logic Programming",
-                            level: "80"
-                        },
-                        {
-                            subheader: "C",
-                            subtitle: "Core Systems Programming",
-                            level: "75"
-                        },
-                        {
-                            subheader: "Java",
-                            subtitle: "Object Oriented Software Construction",
-                            level: "70"
-                        },
-                        {
-                            subheader: "Python",
-                            subtitle: "Back End Web Development",
-                            level: "65"
-                        }
-                    ]
-                },
-                {
-                    header: "Actual Languages",
-                    sub: [
-                        {
-                            subheader: "Arabic",
-                            subtitle: "الحمد لله على اللغة العربية",
-                            level: "100"
-                        },
-                        {
-                            subheader: "English",
-                            subtitle: "This is my second language but I probably more familiar with this than Arabic",
-                            level: "100"
-                        },
-                        {
-                            subheader: "French",
-                            subtitle: "Je parle un petit peu de Français",
-                            level: "15"
-                        }
-                    ]
+                    header: "This",
+                    subheader: "My Personal site, you're browsing it right now.",
+                    tools:
+                        [
+                            {
+                                name: "Angular",
+                                logo: "angular.png"
+                            },
+                            {
+                                name: "HTML5",
+                                logo: "HTML5.png"
+                            },
+                            {
+                                name: "CSS3",
+                                logo: "css3.png"
+                            }
+                        ]
                 }
             ];
 
@@ -170,8 +183,7 @@ angular.module('myApp.main', ['ngRoute'])
                             sub_points: [
                                 "Founded and developed a service for students to avoid the hassles of online shopping in Qatar.",
                                 "Conducted 50+ customer development interviews for feature ideation.",
-                                "Launched a web service on Jeebly.me for people to place their orders on.",
-                                "Facilitated 20+ transactions from students across EC online and offline."
+                                "Launched a web service on Jeebly.me for people to place their orders on."
                             ],
                             date: "Sept – Dec 2015"
                         },
@@ -212,7 +224,7 @@ angular.module('myApp.main', ['ngRoute'])
             link: function (scope, element, attr) {
                 angular.element($window).bind("scroll", function () {
                     var topOfWindow = $window.scrollY;
-                    if (element.offset().top < topOfWindow + (($window.innerHeight*3) / 4)) {
+                    if (element.offset().top < topOfWindow + (($window.innerHeight * 3) / 4)) {
                         scope.animateBar(element, attr.perc, attr.sing);
                         attr.sing = true;
                     }

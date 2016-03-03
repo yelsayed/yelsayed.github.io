@@ -240,7 +240,7 @@ p
   margin-right: 30px
   font-size: $font-size-small
   font-weight: 700
-  //margin-left: auto
+//margin-left: auto
 
 .resume-subentry
   position: relative
@@ -270,14 +270,49 @@ p
   font-size: $font-size-large
   color: $primary-dark-red
 
+.strong
+  font-weight: 700
+
 .shrink
-  font-size: 32px
-  color: $primary-black
+  font-size: $font-size-small
 
 .clickable
   cursor: pointer
 
+.btn
+  border: 0
+  border-radius: 10px
+  text-transform: uppercase
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+  font-weight: 700
+
+.btn-icon
+  border: solid 1px
+  color: #fff
+  width: 100%
+  margin-top: 75px
+  background-color: $secondary-dark-red
+  -webkit-transition: all .35s
+  -moz-transition: all .35s
+  transition: all .35s
+
+.btn-icon:hover,
+.btn-icon:focus,
+.btn-icon.focus,
+.btn-icon:active,
+.btn-icon.active,
+.open > .dropdown-toggle.btn-icon
+  border: solid 1px $primary-black
+  color: $primary-black
+  background-color: white
+
+.btn-icon:active,
+.btn-icon.active,
+.open > .dropdown-toggle.btn-icon
+  background-image: none
+
 a:hover
   text-decoration: none
+
 a:focus
   text-decoration: none
