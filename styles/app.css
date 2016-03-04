@@ -255,6 +255,7 @@ p {
   right: -65px; }
 
 .view-pdf {
+  position: relative;
   margin-top: 20px;
   font-size: 64px;
   color: #800000; }
@@ -305,5 +306,48 @@ a:hover {
 
 a:focus {
   text-decoration: none; }
+
+.shrink-arrow {
+  font-size: 32px; }
+
+.animate-left {
+  animation: bot_float_left 2s infinite alternate; }
+
+.spinner_left {
+  transform-origin: -65px 60px;
+  position: absolute;
+  right: 210px;
+  top: 20px;
+  animation: bot_spin_counter_clock 3s infinite ease; }
+
+.spinner_right {
+  transform-origin: 85px 35px;
+  position: absolute;
+  left: 210px;
+  top: 20px;
+  animation: bot_spin_counter_clock 3s infinite ease; }
+
+.animate-right {
+  animation: bot_float_right 2s infinite alternate; }
+
+@keyframes bot_float_left {
+  from {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  to {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); } }
+@keyframes bot_float_right {
+  from {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  to {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); } }
+@keyframes bot_spin_counter_clock {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=app.css.map */

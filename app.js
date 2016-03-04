@@ -10,7 +10,7 @@ angular.module('myApp', [
         'myApp.version'
     ])
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/main'});
+        $routeProvider.otherwise({redirectTo: '/main/1'});
     }])
     .controller('mainC', function () {
         setInterval(function () {
