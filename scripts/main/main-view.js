@@ -230,7 +230,7 @@ angular.module('myApp.main', ['ngRoute'])
         this.resumeData2 =
             [
                 {
-                    entry: "experience",
+                    entry: "experience2",
                     sub: [
                         {
                             sub_header: "15-199 CMU Teaching Assistant",
