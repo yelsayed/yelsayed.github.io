@@ -17,10 +17,12 @@
     <!-- Stylesheets -->
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <!-- CSS plugins -->
-    <link rel="stylesheet" href="styles/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="styles/creative.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+	<link rel="stylesheet" href="styles/css/layout.css">
+    <link rel="stylesheet" href="styles/css/creative.css" type="text/css">
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" type="text/css">
 
     <link rel="stylesheet" href="styles/app.css">
@@ -61,9 +63,6 @@
                     <a href="#/articles">Articles</a>
                 </li>
                 <li>
-                    <a href="#/projects">Projects</a>
-                </li>
-                <li>
                     <a href="#/contact">Contact</a>
                 </li>
             </ul>
@@ -81,26 +80,24 @@
 <ng-view></ng-view>
 
 <!-- jQuery -->
-<script src="scripts/js/jquery.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="scripts/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="scripts/js/jquery.easing.min.js"></script>
-<script src="scripts/js/jquery.fittext.js"></script>
-<script src="scripts/js/wow.min.js"></script>
+<script src="scripts/misc/jquery.easing.min.js"></script>
+<script src="scripts/misc/jquery.fittext.js"></script>
+<script src="bower_components/wow/dist/wow.min.js"></script>
+<script src="bower_components/mixitup/build/jquery.mixitup.min.js"></script>
 
 
 <!-- Custom Theme JavaScript -->
-<script src="scripts/js/creative.js"></script>
+<script src="scripts/misc/creative.js"></script>
 
-<!-- In production use:
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
--->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
-<script src="app.js"></script>
+<script src="scripts/app.js"></script>
 <script src="scripts/main/main-view.js"></script>
 <script src="scripts/articles/article-view.js"></script>
 <script src="scripts/contact/contact-view.js"></script>
