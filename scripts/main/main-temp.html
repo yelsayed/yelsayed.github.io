@@ -41,362 +41,66 @@
     </div>
 </section>
 
-<!--<section id="skills" class="bg-black">-->
-<!--<h1 class="services-header"> Skills </h1>-->
-<!--<h4 class="services-subheader">-->
-<!--This is the skills that I can offer anyone that gets in touch with me.-->
-<!--These are the skills that I'm most comfortable with and I am passionate about.-->
-<!--</h4>-->
-<!--<div class="container">-->
-<!--<div class="skill-box" ng-repeat="entry in mc.skillData">-->
-<!--<div class="skill-box-header text-center">-->
-<!--{{entry.header}}-->
-<!--</div>-->
-<!--<div class="skill-box-subheader-row row" ng-repeat="subentry in entry.sub">-->
-<!--<div class="skill-box-subheader text-center col-xs-2">-->
-<!--{{subentry.subheader}}-->
-<!--</div>-->
-<!--<div class="skill-box-subtitle text-center col-xs-2">-->
-<!--{{subentry.subtitle}}-->
-<!--</div>-->
-<!--<div class="progress col-xs-7">-->
-<!--<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"-->
-<!--aria-valuenow="40"-->
-<!--aria-valuemin="0" aria-valuemax="100" style="width: 0" scroll perc="{{subentry.level}}"-->
-<!--sing="false">-->
-<!--{{subentry.level}}%-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-
-<section>
-    <ul id="filters" class="clearfix">
-        <li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
-        <li><span class="filter" data-filter=".app">App</span></li>
-        <li><span class="filter" data-filter=".card">Card</span></li>
-        <li><span class="filter" data-filter=".icon">Icon</span></li>
-        <li><span class="filter" data-filter=".logo">Logo</span></li>
-        <li><span class="filter" data-filter=".web">Web</span></li>
-    </ul>
-
-    <div id="portfoliolist">
-
-        <div class="portfolio logo" data-cat="logo">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/logo/5.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Bird Document</a>
-                        <span class="text-category">Logo</span>
+<section id="skills" class="bg-black">
+    <h1 class="services-header"> Skills </h1>
+    <h4 class="services-subheader">
+        This is the skills that I can offer anyone that gets in touch with me.
+        These are the skills that I'm most comfortable with and I am passionate about.
+    </h4>
+    <div class="container">
+        <div class="skill-box" ng-repeat="entry in mc.skillData">
+            <div class="skill-box-header text-center">
+                {{entry.header}}
+            </div>
+            <div class="skill-box-subheader-row row" ng-repeat="subentry in entry.sub">
+                <div class="skill-box-subheader text-center col-xs-2">
+                    {{subentry.subheader}}
+                </div>
+                <div class="skill-box-subtitle text-center col-xs-2">
+                    {{subentry.subtitle}}
+                </div>
+                <div class="progress col-xs-7">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                         aria-valuenow="40"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 0" scroll perc="{{subentry.level}}"
+                         sing="false">
+                        {{subentry.level}}%
                     </div>
-                    <div class="label-bg"></div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="portfolio app" data-cat="app">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/app/1.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Visual Infography</a>
-                        <span class="text-category">APP</span>
+<section id="portfolio">
+    <h1 class="port-header"> Portfolio </h1>
+    <h4 class="port-subheader">
+        You'll find the work I'm most proud of here! Click on them to checkout relevant links
+    </h4>
+    <div class="container">
+        <ul id="filters" class="clearfix">
+            <li><span class="filter active" data-filter=".app, .project, .web, .article">All</span></li>
+            <li><span class="filter" data-filter=".app">Apps</span></li>
+            <li><span class="filter" data-filter=".project">Projects</span></li>
+            <li><span class="filter" data-filter=".web">Webs</span></li>
+            <li><span class="filter" data-filter=".article">Articles</span></li>
+        </ul>
+
+        <div id="portfoliolist">
+            <div ng-repeat="d in mc.portfolio" class="portfolio {{d.filter}}" data-cat="{{d.filter}}">
+                <div class="portfolio-wrapper">
+                    <img ng-src="{{d.src}}" alt=""/>
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">{{d.title}}</a>
+                            <span class="text-category">{{d.description}}</span>
+                        </div>
+                        <div class="label-bg"></div>
                     </div>
-                    <div class="label-bg"></div>
                 </div>
             </div>
+
         </div>
-
-        <div class="portfolio web" data-cat="web">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/web/4.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Sonor's Design</a>
-                        <span class="text-category">Web design</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio card" data-cat="card">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/card/1.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Typography Company</a>
-                        <span class="text-category">Business card</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio app" data-cat="app">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/app/3.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Weatherette</a>
-                        <span class="text-category">APP</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio card" data-cat="card">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/card/4.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">BMF</a>
-                        <span class="text-category">Business card</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio card" data-cat="card">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/card/5.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Techlion</a>
-                        <span class="text-category">Business card</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio logo" data-cat="logo">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/logo/1.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">KittyPic</a>
-                        <span class="text-category">Logo</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio app" data-cat="app">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/app/2.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Graph Plotting</a>
-                        <span class="text-category">APP</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio card" data-cat="card">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/card/2.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">QR Quick Response</a>
-                        <span class="text-category">Business card</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio logo" data-cat="logo">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/logo/6.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Mobi Sock</a>
-                        <span class="text-category">Logo</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio logo" data-cat="logo">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/logo/7.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Village Community Church</a>
-                        <span class="text-category">Logo</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio icon" data-cat="icon">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/icon/4.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Domino's Pizza</a>
-                        <span class="text-category">Icon</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio web" data-cat="web">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/web/3.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Backend Admin</a>
-                        <span class="text-category">Web design</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio icon" data-cat="icon">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/icon/1.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Instagram</a>
-                        <span class="text-category">Icon</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio web" data-cat="web">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/web/2.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Student Guide</a>
-                        <span class="text-category">Web design</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio icon" data-cat="icon">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/icon/2.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Scoccer</a>
-                        <span class="text-category">Icon</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio icon" data-cat="icon">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/icon/5.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">3D Map</a>
-                        <span class="text-category">Icon</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio web" data-cat="web">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/web/1.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Note</a>
-                        <span class="text-category">Web design</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio logo" data-cat="logo">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/logo/3.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Native Designers</a>
-                        <span class="text-category">Logo</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio logo" data-cat="logo">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/logo/4.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Bookworm</a>
-                        <span class="text-category">Logo</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio icon" data-cat="icon">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/icon/3.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Sandwich</a>
-                        <span class="text-category">Icon</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio card" data-cat="card">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/card/3.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Reality</a>
-                        <span class="text-category">Business card</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio logo" data-cat="logo">
-            <div class="portfolio-wrapper">
-                <img src="img/portfolios/logo/2.jpg" alt=""/>
-                <div class="label">
-                    <div class="label-text">
-                        <a class="text-title">Speciallisterne</a>
-                        <span class="text-category">Logo</span>
-                    </div>
-                    <div class="label-bg"></div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
 </section>
 
@@ -404,7 +108,6 @@
     <h1 class="resume-header"> Resumé/CV </h1>
     <h4 class="resume-subheader">
         Here's my Official Resumé. If you're into that sort of thing.
-        You can switch between a CV and Resume.
         <div class="view-pdf">
             <a href="img/Yasser,%20Resume.pdf" target="_blank">
                 <i class="shrink-arrow animate-right fa fa-arrow-right"></i>
@@ -416,70 +119,70 @@
             <br>
         </div>
     </h4>
-    <div class="container">
-        <div class="resume-entry row">
-            <div class="resume-entry-header col-xs-2">
-                Education
-            </div>
-            <div class="col-xs-9">
-                <div class="resume-subentry">
-                    <div class="resume-subentry-header">
-                        Carnegie Mellon University
-                    </div>
-                    <div class="resume-subentry-body">
-                        Bachelor of Science in Computer Science
-                        <br>
-                        Minor in Historical studies
-                    </div>
-                    <div class="resume-subentry-date">
-                        Expected May 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="resume-entry row" ng-repeat="e in mc.resumeData track by $index">
-            <div class="resume-entry-header col-xs-2">
-                {{e.entry}}
-            </div>
-            <div class="col-xs-9">
-                <div class="resume-subentry" ng-repeat="subE in e.sub">
-                    <div class="resume-subentry-header">
-                        {{subE.sub_header}}
-                    </div>
-                    <div class="resume-subentry-body">
-                        <ul>
-                            <li ng-repeat="p in subE.sub_points">
-                                {{p}}
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="resume-subentry-date">
-                        {{subE.date}}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="resume-entry row">
-            <div class="resume-entry-header col-xs-2">
-                Skills
-            </div>
-            <div class="col-xs-9">
-                <div class="resume-subentry">
-                    <div class="resume-subentry-header">
-                        Programming Languages and Skills
-                    </div>
-                    <div class="resume-subentry-body">
-                        Python, JavaScript, SML, C, Java, CSS, C0, C++, UML Modeling
-                    </div>
-                    <div class="resume-subentry-header">
-                        Languages
-                    </div>
-                    <div class="resume-subentry-body">
-                        Fluent: English, Arabic. Basic: French
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!--<div class="container">-->
+        <!--<div class="resume-entry row">-->
+            <!--<div class="resume-entry-header col-xs-2">-->
+                <!--Education-->
+            <!--</div>-->
+            <!--<div class="col-xs-9">-->
+                <!--<div class="resume-subentry">-->
+                    <!--<div class="resume-subentry-header">-->
+                        <!--Carnegie Mellon University-->
+                    <!--</div>-->
+                    <!--<div class="resume-subentry-body">-->
+                        <!--Bachelor of Science in Computer Science-->
+                        <!--<br>-->
+                        <!--Minor in Historical studies-->
+                    <!--</div>-->
+                    <!--<div class="resume-subentry-date">-->
+                        <!--Expected May 2017-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="resume-entry row" ng-repeat="e in mc.resumeData track by $index">-->
+            <!--<div class="resume-entry-header col-xs-2">-->
+                <!--{{e.entry}}-->
+            <!--</div>-->
+            <!--<div class="col-xs-9">-->
+                <!--<div class="resume-subentry" ng-repeat="subE in e.sub">-->
+                    <!--<div class="resume-subentry-header">-->
+                        <!--{{subE.sub_header}}-->
+                    <!--</div>-->
+                    <!--<div class="resume-subentry-body">-->
+                        <!--<ul>-->
+                            <!--<li ng-repeat="p in subE.sub_points">-->
+                                <!--{{p}}-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="resume-subentry-date">-->
+                        <!--{{subE.date}}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="resume-entry row">-->
+            <!--<div class="resume-entry-header col-xs-2">-->
+                <!--Skills-->
+            <!--</div>-->
+            <!--<div class="col-xs-9">-->
+                <!--<div class="resume-subentry">-->
+                    <!--<div class="resume-subentry-header">-->
+                        <!--Programming Languages and Skills-->
+                    <!--</div>-->
+                    <!--<div class="resume-subentry-body">-->
+                        <!--Python, JavaScript, SML, C, Java, CSS, C0, C++, UML Modeling-->
+                    <!--</div>-->
+                    <!--<div class="resume-subentry-header">-->
+                        <!--Languages-->
+                    <!--</div>-->
+                    <!--<div class="resume-subentry-body">-->
+                        <!--Fluent: English, Arabic. Basic: French-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 </section>
 

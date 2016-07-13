@@ -87,7 +87,7 @@
   margin-bottom: 0;
   font-weight: 200; }
 
-.services-header, .resume-header {
+.services-header, .resume-header, .port-header {
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -97,7 +97,7 @@
 #services {
   padding-top: 50px; }
 
-.services-subheader, .resume-subheader {
+.services-subheader, .resume-subheader, .port-subheader {
   margin-bottom: 40px;
   text-align: center;
   font-weight: 200;
@@ -349,5 +349,10 @@ a:focus {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+.port-header {
+  color: black; }
+
+.port-subheader {
+  color: black; }
 
 /*# sourceMappingURL=app.css.map */
