@@ -92,7 +92,7 @@ angular.module('myApp.main', ['ngRoute'])
                     },
                     {
                         name: "Bootstrap",
-                        logo: "img/tools/Bootstrap.png"
+                        logo: "img/tools/bootstrap.png"
                     },
                     {
                         name: "CSS3",
