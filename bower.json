@@ -9,7 +9,7 @@
     "angular": "~1.4.0",
     "angular-route": "~1.4.0",
     "html5-boilerplate": "~5.2.0",
-    "fontawesome": "~4.1.0",
+    "fontawesome": "^4.3.0",
     "bootstrap": "^3.3.6",
     "animate.css": "^3.5.2",
     "wow": "wowjs#^1.1.2",

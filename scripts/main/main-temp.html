@@ -3,7 +3,7 @@
         <div class="header-content-inner">
             <img class="header-logo animated fadeInDown"/>
             <h1 id="header-name" class="animated fadeIn">Yasser El-Sayed</h1>
-            <div class="sub-header animated fadeIn"> Developer + Designer + Innovator</div>
+            <div class="sub-header animated fadeIn"> Developer + Experience Designer </div>
         </div>
     </div>
     <h5 ng-click="mc.scrollTo('about-me')" class="clickable about-me animated fadeIn"> About me <span
@@ -13,27 +13,15 @@
 <section id="about-me" class="bg-secondary">
     <div class="container">
         <div class="row center-block photo-container">
-            <img ng-src="img/Yasser.jpg" class="col-lg-12 img-responsive img-circle personal-photo"/>
+            <img ng-src="img/personal/pp.jpeg" class="col-lg-12 img-responsive img-circle personal-photo"/>
         </div>
         <div class="row center-block">
             <div class="col-lg-12 bg-dark-secondary about-me-description">
                 <div class="about-me-header"> About me</div>
-                <p> Hi my name is Yasser El-Sayed, I'm 20 years old. In short, I am Computer Science student at CMU
-                    that is extremely passionate about most fields in Computer Science.
-                    <span class="highlight"> I am a hardcore, Full Stack Developer </span>.
-                    Put me in pretty much <span class="highlight"> any field </span> and I'll blossom.
-                    My main passion, however, is <span class="highlight"> Front End Web development and Architecture Design </span>.
-                    You'll find that I am familiar with a lot of Front End tools. <span class="highlight"> I can build animations,
-                    components, and a structurally sound Front End code base </span>. I am also passionate about core
-                    Systems Programming and have a very good
-                    understanding about <span class="highlight"> Network and Distributed System </span> design
-                    principles.
-                    On top of that, I've delved very deeply into <span class="highlight"> Network Programming and have made concrete networking
-                    systems </span> that required significant design and engineering.
-                    For my free time I like writing. I've written many short stories that reside in this website's
-                    articles
-                    section. Also I like to read about world issues and blog from unique people to enrich my view on
-                    this earth.
+                <p>
+                    Hi my name is Yasser El-Sayed. I'm Computer Science Student at CMU extremely passionate about
+                    software development. I focus on Full-Stack Web Development. If you have any interest in contacting
+                    about anything please use this site to do so!
                 </p>
 
             </div>
@@ -82,20 +70,26 @@
             <li><span class="filter active" data-filter=".app, .project, .web, .article">All</span></li>
             <li><span class="filter" data-filter=".app">Apps</span></li>
             <li><span class="filter" data-filter=".project">Projects</span></li>
-            <li><span class="filter" data-filter=".web">Webs</span></li>
-            <li><span class="filter" data-filter=".article">Articles</span></li>
+            <li><span class="filter" data-filter=".web">Web</span></li>
+            <!--<li><span class="filter" data-filter=".article">Articles</span></li>-->
         </ul>
 
         <div id="portfoliolist">
-            <div ng-repeat="d in mc.portfolio" class="portfolio {{d.filter}}" data-cat="{{d.filter}}">
+            <div ng-repeat="d in mc.portfolio" class="portfolio {{d.filter}}" data-cat="{{d.filter}}" ng-click="mc.changeLocation(d.hlink)">
                 <div class="portfolio-wrapper">
-                    <img ng-src="{{d.src}}" alt=""/>
+                    <img class="main-image" ng-src="{{d.src}}" alt=""/>
                     <div class="label">
                         <div class="label-text">
                             <a class="text-title">{{d.title}}</a>
                             <span class="text-category">{{d.description}}</span>
                         </div>
-                        <div class="label-bg"></div>
+                        <div class="label-bg">
+                            <div class="label-tools">
+                                <div class="label-tool" ng-repeat="t in d.tools">
+                                    <img ng-src="{{t.logo}}" data-toggle="tooltip" data-placement="right" title="{{t.name}}"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,81 +102,16 @@
     <h1 class="resume-header"> Resumé/CV </h1>
     <h4 class="resume-subheader">
         Here's my Official Resumé. If you're into that sort of thing.
-        <div class="view-pdf">
-            <a href="img/Yasser,%20Resume.pdf" target="_blank">
-                <i class="shrink-arrow animate-right fa fa-arrow-right"></i>
+    </h4>
+    <div class="view-pdf">
+        <a href="img/personal/Yasser,%20Resume.pdf" target="_blank">
+            <i class="shrink-arrow animate-right fa fa-arrow-right"></i>
                 <span class="fa-stack">
                     <i class="fa fa-file-pdf-o"></i>
                 </span>
-                <i class="shrink-arrow animate-left fa fa-arrow-left"></i>
-            </a>
-            <br>
-        </div>
-    </h4>
-    <!--<div class="container">-->
-        <!--<div class="resume-entry row">-->
-            <!--<div class="resume-entry-header col-xs-2">-->
-                <!--Education-->
-            <!--</div>-->
-            <!--<div class="col-xs-9">-->
-                <!--<div class="resume-subentry">-->
-                    <!--<div class="resume-subentry-header">-->
-                        <!--Carnegie Mellon University-->
-                    <!--</div>-->
-                    <!--<div class="resume-subentry-body">-->
-                        <!--Bachelor of Science in Computer Science-->
-                        <!--<br>-->
-                        <!--Minor in Historical studies-->
-                    <!--</div>-->
-                    <!--<div class="resume-subentry-date">-->
-                        <!--Expected May 2017-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="resume-entry row" ng-repeat="e in mc.resumeData track by $index">-->
-            <!--<div class="resume-entry-header col-xs-2">-->
-                <!--{{e.entry}}-->
-            <!--</div>-->
-            <!--<div class="col-xs-9">-->
-                <!--<div class="resume-subentry" ng-repeat="subE in e.sub">-->
-                    <!--<div class="resume-subentry-header">-->
-                        <!--{{subE.sub_header}}-->
-                    <!--</div>-->
-                    <!--<div class="resume-subentry-body">-->
-                        <!--<ul>-->
-                            <!--<li ng-repeat="p in subE.sub_points">-->
-                                <!--{{p}}-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                    <!--</div>-->
-                    <!--<div class="resume-subentry-date">-->
-                        <!--{{subE.date}}-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="resume-entry row">-->
-            <!--<div class="resume-entry-header col-xs-2">-->
-                <!--Skills-->
-            <!--</div>-->
-            <!--<div class="col-xs-9">-->
-                <!--<div class="resume-subentry">-->
-                    <!--<div class="resume-subentry-header">-->
-                        <!--Programming Languages and Skills-->
-                    <!--</div>-->
-                    <!--<div class="resume-subentry-body">-->
-                        <!--Python, JavaScript, SML, C, Java, CSS, C0, C++, UML Modeling-->
-                    <!--</div>-->
-                    <!--<div class="resume-subentry-header">-->
-                        <!--Languages-->
-                    <!--</div>-->
-                    <!--<div class="resume-subentry-body">-->
-                        <!--Fluent: English, Arabic. Basic: French-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+            <i class="shrink-arrow animate-left fa fa-arrow-left"></i>
+        </a>
+        <br>
     </div>
 </section>
 
@@ -192,24 +121,25 @@
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h4><strong>Yasser El-Sayed</strong>
                 </h4>
-                <p>Carnegie Mellon University<br>School of Computer Science</p>
+                <p>Carnegie Mellon University, Class 2017 <br>School of Computer Science</p>
                 <ul class="list-unstyled">
                     <li><i class="fa fa-phone fa-fw"></i> +974 6693-0377</li>
                     <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:yelsayed@cmu.edu">yelsayed@cmu.edu</a>
                     </li>
                 </ul>
                 <br>
-                <!--<ul class="list-inline">-->
-                <!--<li>-->
-                <!--<a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                <!--<a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                <!--<a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>-->
-                <!--</li>-->
-                <!--</ul>-->
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://qa.linkedin.com/in/yasser-el-sayed-689614127?trk=prof-samename-name"><i
+                                class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ysrsayed"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@ysr.sayed"><i class="fa fa-medium fa-fw fa-3x"></i></a>
+                    </li>
+                </ul>
                 <hr class="small">
                 <p class="text-muted">Copyright &copy; Yasser El-Sayed 2016</p>
             </div>

@@ -1,7 +1,7 @@
 @import "scss/variables"
 
 .header-logo
-  content: url(../img/Personal%20Logo%20-%20Medium.png)
+  content: url(../img/personal/Personal%20Logo%20-%20Medium.png)
   width: 150px
   height: 150px
 
@@ -270,6 +270,7 @@ p
   margin-top: 20px
   font-size: $font-size-large
   color: $primary-dark-red
+  text-align: center
 
 .strong
   font-weight: 700
@@ -315,6 +316,12 @@ p
 a:hover
   text-decoration: none
 
+.text-title
+  color: white
+
+.text-title:hover
+  color: white
+
 a:focus
   text-decoration: none
 
@@ -330,7 +337,6 @@ a:focus
   right: 210px
   top: 20px
   animation: bot_spin_counter_clock 3s infinite ease
-
 
 .spinner_right
   transform-origin: 85px 35px
@@ -364,7 +370,6 @@ a:focus
   to
     transform: rotate(360deg)
 
-
 .port-header
   @extend .services-header
   color: black
@@ -372,3 +377,35 @@ a:focus
 .port-subheader
   @extend .services-subheader
   color: black
+
+.fa-medium
+  color: #02b875
+  transition: all 0.25s ease
+
+.fa-medium:hover
+  opacity: 0.7
+
+.fa-linkedin
+  color: #0077b5
+  transition: all 0.25s ease
+
+.fa-linkedin:hover
+  opacity: 0.7
+
+.fa-twitter
+  color: #2B7BB9
+  transition: all 0.25s ease
+
+.fa-twitter:hover
+  opacity: 0.7
+
+.label-tool
+  width: 25px
+
+.tooltip > .tooltip-inner
+  background: white
+  color: #b00000
+  border: 1px #2e3831 solid
+
+.tooltip > .tooltip-arrow
+  display: none

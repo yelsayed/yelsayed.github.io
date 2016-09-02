@@ -3,7 +3,7 @@
 angular.module('myApp.main', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/main/:resume', {
+        $routeProvider.when('/main/', {
             templateUrl: 'scripts/main/main-temp.html',
             controller: 'mainController',
             controllerAs: 'mc'
@@ -11,34 +11,8 @@ angular.module('myApp.main', ['ngRoute'])
     }])
 
     .controller("mainController", function ($scope, $location, $anchorScroll, $routeParams, $timeout) {
-        this.maxResumes = 4;
 
         var ctrl = this;
-
-        ctrl.resumeData = [];
-
-        this.initResume = function () {
-            if ($routeParams.resume === null
-                || $routeParams.resume === undefined
-                || $routeParams.resume < 1
-                || $routeParams.resume > this.maxResumes) {
-                ctrl.resumeData = ctrl.resumeData1;
-                $route.updateParams({"resume": 1});
-                console.log("hellooooo");
-
-            } else {
-                console.log($routeParams.resume);
-                if ($routeParams.resume === '1') {
-                    ctrl.resumeData = ctrl.resumeData1;
-                } else if ($routeParams.resume === '2') {
-                    ctrl.resumeData = ctrl.resumeData2;
-                } else if ($routeParams.resume === '3') {
-                    ctrl.resumeData = ctrl.resumeData3;
-                } else if ($routeParams.resume === '4') {
-                    ctrl.resumeData = ctrl.resumeData3;
-                }
-            }
-        };
 
         this.skillData =
             [
@@ -53,12 +27,12 @@ angular.module('myApp.main', ['ngRoute'])
                         {
                             subheader: "Bootstrap",
                             subtitle: "I use Bootstrap heavily",
-                            level: "80"
+                            level: "85"
                         },
                         {
                             subheader: "CSS3",
                             subtitle: "I build components and animations using CSS3",
-                            level: "75"
+                            level: "80"
                         },
                         {
                             subheader: "Sketch",
@@ -68,39 +42,17 @@ angular.module('myApp.main', ['ngRoute'])
                         {
                             subheader: "Django",
                             subtitle: "I am an Intermediate with Django",
+                            level: "75"
+                        },
+                        {
+                            subheader: "jQuery",
+                            subtitle: "I am an avid user of jQuery",
                             level: "65"
                         },
                         {
-                            subheader: "JQuery",
-                            subtitle: "I am an avid user Jquery",
-                            level: "55"
-                        },
-                        {
                             subheader: "Passion",
-                            subtitle: "Daddy I love him! var him = 'Web Dev'",
+                            subtitle: "Check out my portfolio, you'll see my passion.",
                             level: "100"
-                        }
-                    ]
-                }
-            ];
-
-        this.projectData =
-            [
-                {
-                    header: "This",
-                    subheader: "My Personal site, you're browsing it right now.",
-                    tools: [
-                        {
-                            name: "Angular",
-                            logo: "angular.png"
-                        },
-                        {
-                            name: "HTML5",
-                            logo: "HTML5.png"
-                        },
-                        {
-                            name: "CSS3",
-                            logo: "css3.png"
                         }
                     ]
                 }
@@ -111,48 +63,134 @@ angular.module('myApp.main', ['ngRoute'])
                 title: "This",
                 filter: "web",
                 description: "This website you see now",
-                src: "img/portfolios/logo/1.jpg",
-                hlink: ""
+                src: "img/portfolios/web/ysrsayed.png",
+                hlink: "#",
+                tools: [
+                    {
+                        name: "Angular",
+                        logo: "img/tools/angular.png"
+                    },
+                    {
+                        name: "Bootstrap",
+                        logo: "img/tools/bootstrap.png"
+                    },
+                    {
+                        name: "CSS3",
+                        logo: "img/tools/css3.png"
+                    }
+                ]
             }, {
                 title: "Buzzcast",
                 filter: "app",
                 description: "Aggregate social media to show events",
-                src: "img/portfolios/app/2.jpg",
-                hlink: ""
+                src: "img/portfolios/app/buzzcast.png",
+                hlink: "https://medium.com/@ysr.sayed/buzzcast-how-far-can-you-take-an-idea-56f123c92ee7#.wmk03on71",
+                tools: [
+                    {
+                        name: "jQuery",
+                        logo: "img/tools/angular.png"
+                    },
+                    {
+                        name: "Bootstrap",
+                        logo: "img/tools/Bootstrap.png"
+                    },
+                    {
+                        name: "CSS3",
+                        logo: "img/tools/css3.png"
+                    },
+                    {
+                        name: "Django",
+                        logo: "img/tools/django.png"
+                    }
+                ]
             }, {
                 title: "Kesa",
                 filter: "app",
                 description: "Write stories with multiple storylines",
-                src: "img/portfolios/app/3.jpg",
-                hlink: ""
+                src: "img/portfolios/app/kesa.png",
+                hlink: "http://www.kesa.io",
+                tools: [
+                    {
+                        name: "Angular",
+                        logo: "img/tools/angular.png"
+                    },
+                    {
+                        name: "Bootstrap",
+                        logo: "img/tools/bootstrap.png"
+                    },
+                    {
+                        name: "D3",
+                        logo: "img/tools/d3.png"
+                    },
+                    {
+                        name: "Django",
+                        logo: "img/tools/django.png"
+                    }
+
+                ]
             }, {
                 title: "Smart Syllabus",
                 filter: "web",
                 description: "Allows non-tech people to make create syllabi",
-                src: "img/portfolios/logo/2.jpg",
-                hlink: ""
+                src: "img/portfolios/web/syllabus.png",
+                hlink: "http://www.qatar.cmu.edu/~breilly2/world/",
+                tools: [
+                    {
+                        name: "Angular",
+                        logo: "img/tools/angular.png"
+                    },
+                    {
+                        name: "Bootstrap",
+                        logo: "img/tools/bootstrap.png"
+                    },
+                    {
+                        name: "CSS3",
+                        logo: "img/tools/css3.png"
+                    }
+
+                ]
             }, {
                 title: "HTTPS Server",
                 filter: "project",
                 description: "Basic implementation of a secure webserver",
                 src: "img/portfolios/card/1.jpg",
-                hlink: ""
+                hlink: "",
+                tools: [
+                    {
+                        name: "C",
+                        logo: "img/tools/c.png"
+                    },
+                    {
+                        name: "SSL",
+                        logo: "img/tools/secure.png"
+                    }
+                ]
             }, {
                 title: "Distributed FileSystem",
                 filter: "project",
                 description: "Basic implementation of distributed filesystem",
                 src: "img/portfolios/card/2.jpg",
-                hlink: ""
+                hlink: "",
+                tools: [
+                    {
+                        name: "Java",
+                        logo: "img/tools/Java_avatar.png"
+                    }
+                ]
             }, {
                 title: "BitTorrent File transfer",
                 filter: "project",
                 description: "BitTorrent-like File transfer over multiple peers",
                 src: "img/portfolios/card/3.jpg",
-                hlink: ""
+                hlink: "",
+                tools: [
+                    {
+                        name: "C",
+                        logo: "img/tools/c.png"
+                    }
+                ]
             }
         ];
-
-        this.initResume();
 
         $scope.animateBar = function (elem, perc, sing) {
             if (sing == true) {
@@ -170,6 +208,7 @@ angular.module('myApp.main', ['ngRoute'])
         };
 
         $timeout(function () {
+            $('[data-toggle="tooltip"]').tooltip().show();
             $(function () {
 
                 var filterList = {
@@ -198,6 +237,11 @@ angular.module('myApp.main', ['ngRoute'])
 
             });
         }, 0);
+
+        this.changeLocation = function (x) {
+            var win = window.open(x, '_blank');
+            win.focus();
+        };
 
     })
 

@@ -16,7 +16,7 @@ angular.module('myApp', [
         setInterval(function () {
             // method to be executed;
             document.querySelector("#myCard").classList.toggle("flip");
-        }, 5000);
+        }, 2500);
 
     })
     .run(function () {
@@ -51,7 +51,7 @@ angular.module('myApp', [
                 offset: {
                     top: 100
                 }
-            })
+            });
 
             // Initialize WOW.js Scrolling Animations
             new WOW().init();
