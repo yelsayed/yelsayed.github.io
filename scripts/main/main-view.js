@@ -154,7 +154,7 @@ angular.module('myApp.main', ['ngRoute'])
                 filter: "project",
                 description: "Basic implementation of a secure webserver",
                 src: "img/portfolios/card/1.jpg",
-                hlink: "",
+                hlink: "https://github.com/yelsayed/Lisod-Webserver",
                 tools: [
                     {
                         name: "C",
@@ -170,7 +170,7 @@ angular.module('myApp.main', ['ngRoute'])
                 filter: "project",
                 description: "Basic implementation of distributed filesystem",
                 src: "img/portfolios/card/2.jpg",
-                hlink: "",
+                hlink: "https://github.com/yelsayed/Distributed-Filesystem",
                 tools: [
                     {
                         name: "Java",
@@ -182,7 +182,7 @@ angular.module('myApp.main', ['ngRoute'])
                 filter: "project",
                 description: "BitTorrent-like File transfer over multiple peers",
                 src: "img/portfolios/card/3.jpg",
-                hlink: "",
+                hlink: "https://github.com/mfituri/15-441-Project-2",
                 tools: [
                     {
                         name: "C",
