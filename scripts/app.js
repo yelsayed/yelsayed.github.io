@@ -12,14 +12,20 @@ angular.module('myApp', [
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/main/'});
     }])
-    .controller('mainC', function () {
-        setInterval(function () {
+    .controller('mainC', function ($scope, $timeout) {
+        $timeout(function () {
             // method to be executed;
             document.querySelector("#myCard").classList.toggle("flip");
         }, 2500);
 
+        $scope.viewLoaded = false;
+        $scope.$on('$viewContentLoaded', function () {
+            $scope.viewLoaded = true;
+        });
+
     })
     .run(function () {
+        // JQuery external libraries
         (function ($) {
             "use strict"; // Start of use strict
 

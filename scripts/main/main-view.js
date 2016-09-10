@@ -223,7 +223,7 @@ angular.module('myApp.main', ['ngRoute'])
                                 filter: '.filter'
                             },
                             load: {
-                                filter: '.app'
+                                filter: '.all, .app, .project, .web, .article'
                             }
                         });
 
