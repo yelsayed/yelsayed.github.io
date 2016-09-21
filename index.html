@@ -1,109 +1,112 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Yasser El-Sayed </title>
-    <meta name="description" content="">
+    <title> Yasser El-Sayed Personal Site </title>
+    <meta name="description" content="Yasser El-Sayed is a software developer and this is where he shows off.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/css/normalize.css">
-	<link rel="stylesheet" href="styles/css/layout.css">
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
-    <!-- CSS plugins -->
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="styles/css/creative.css" type="text/css">
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" type="text/css">
-
-    <link rel="stylesheet" href="styles/app.css">
-
-    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="style-cheat.css">
 </head>
-<body ng-controller="mainC" id="page-top">
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#/main">
-                <div id="myCard" class="flip-container">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="img/personal/Personal%20Logo.png"/>
+<style id="style-tag"></style>
+<body>
+<!--[if lt IE 7]>
+<p>You are using an <strong>outdated</strong> browser. Please just download Chrome or something</p>
+<![endif]-->
+<div id="content">
+    <pre id="style-text"></pre>
+    <div class="card-container" onclick="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <div id="hexagon"></div>
+                <div class="lastname"></div>
+            </div>
+            <div class="back">
+                <div class="back-content">
+                    <div class="back-content-header">
+                        Web<span class="bold">Developer</span>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-point">
+                            <span class="skill-head">Javascript</span>
+                            <span class="skill-level">
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                            </span>
                         </div>
-                        <div class="back">
-                            <img src="img/personal/Personal%20Logo.png"/>
+                        <div class="skill-point">
+                            <span class="skill-head">Python</span>
+                            <span class="skill-level">
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="grey">&#x2605;</span>
+                            </span>
+                        </div>
+                        <div class="skill-point">
+                            <span class="skill-head">CSS3</span>
+                            <span class="skill-level">
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                            </span>
+                        </div>
+                        <div class="skill-point">
+                            <span class="skill-head">AngularJS</span>
+                            <span class="skill-level">
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                            </span>
+                        </div>
+                        <div class="skill-point">
+                            <span class="skill-head">Django</span>
+                            <span class="skill-level">
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="grey">&#x2605;</span>
+                            </span>
+                        </div>
+                        <div class="skill-point">
+                            <span class="skill-head">MySQL</span>
+                            <span class="skill-level">
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="grey">&#x2605;</span>
+                                <span class="grey">&#x2605;</span>
+                            </span>
+                        </div>
+                        <div class="skill-point">
+                            <span class="skill-head">Sketch</span>
+                            <span class="skill-level">
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                                <span class="golden">&#x2605;</span>
+                            </span>
                         </div>
                     </div>
-                    <div id="nav-name"> El-Sayed </div>
+                    <a href="Yasser,%20CV.pdf" target="_blank" class="resume-link">Click here for my resume ;)</a>
                 </div>
-                </a>
+            </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="https://medium.com/@ysr.sayed" target='_blank'>Blog</a>
-                </li>
-                <li>
-                    <a href="#/contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
-</nav>
-
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<ng-view></ng-view>
-
-<!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="scripts/misc/jquery.easing.min.js"></script>
-<script src="scripts/misc/jquery.fittext.js"></script>
-<script src="bower_components/wow/dist/wow.min.js"></script>
-<script src="bower_components/mixitup/build/jquery.mixitup.min.js"></script>
-
-
-<!-- Custom Theme JavaScript -->
-<script src="scripts/misc/creative.js"></script>
-
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="scripts/app.js"></script>
-<script src="scripts/main/main-view.js"></script>
-<script src="scripts/articles/article-view.js"></script>
-<script src="scripts/contact/contact-view.js"></script>
-<script src="scripts/projects/projects-view.js"></script>
-<script src="components/version/version.js"></script>
-<script src="components/version/version-directive.js"></script>
-<script src="components/version/interpolate-filter.js"></script>
+</div>
+<a id="pause-play">Pause/Play Animation</a>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

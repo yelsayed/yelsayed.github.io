@@ -1,0 +1,144 @@
+/*
+ * Alright, I gotta focus! What do people want to see?
+ * How about we start with a business card, that's what people like to see.
+ */
+
+/*
+ * Let's set the container of the card.
+ */
+.card-container {
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+/* This isn't right, what's missing... Oh, duh! Set some width. */
+.card-container, .front, .back {
+    width: 353px;
+    height: 206px;
+    transform: translate(50%,50%);
+}
+
+/* Let's create some rotation mechanism. */
+.card-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+/* We need a flipper to hold the two faces of the card. */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* Hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: solid #979797 2px;
+}
+
+.card-container, .front, .back {
+    transform: translate(50%,50%);
+}
+
+/* Front pane of the card. */
+.front {
+    background: transparent;
+    border: solid #979797 2px;
+    z-index: 2;
+    /* for firefox 31, cuz I love you so Firefox */
+    transform: rotateY(0deg);
+}
+
+/* Back pane. Bored yet? */
+.back {
+    background: transparent;
+    transform: rotateY(180deg);
+    border: solid #979797 2px;
+}
+
+.front:after {
+    content: 'Yasser El-Sayed';
+    color: black;
+    position: absolute;
+    font-family: "Kozuka Gothic Pro";
+    top: 110px;
+    left: 100px;
+    font-size: 20px;
+}
+
+/*
+ * A card is nothing without a logo! So let's make one...
+ * With code! I'm thinking of a hexagon
+ */
+#hexagon {
+    width: 50px;
+    height: 25px;
+    background: black;
+    position: absolute;
+    top: 53px;
+    left: 136px;
+}
+
+#hexagon:before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 16px solid black;
+}
+
+#hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 16px solid black;
+}
+
+/*
+ * That's my logo... But a logo is boring
+ * without a centerpiece. So let's add one!
+ */
+.front:before {
+    content: 'Y';
+    color: white;
+    font-family: "Kozuka Gothic Pro", Arial, serif;
+    z-index: 10;
+    position: absolute;
+    top: 45px;
+    left: 155px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*
+ * Alright I'm sorry to say this... but I lied to you!
+ * I've already coded a piece of this website you just
+ * can't see it yet...
+ */
+
+.back-content {
+    display: block;
+}
+
+/*
+ * Let's just cut to the chase. Click on the card.
+ * Don't be afraid... And contact me for
+ * any web development work!
+ */
+
+/*
+ * What're you waiting for? Click on the card... CLICK!
+ */

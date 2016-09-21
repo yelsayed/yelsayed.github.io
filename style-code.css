@@ -1,0 +1,91 @@
+/**
+ * Hey there! My name is Yasser El-Sayed.
+ * Welcome to my website! You're here because you want to see my work.
+ * I'm pretty good at developing websites, I know that a blank screen
+ * doesn't show that... So let's change it!
+ */
+
+
+* {
+    -webkit-transition: all 0.5s;
+}
+
+html, body {
+    margin-top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*
+ * That didn't do much, but just bear with me.
+ */
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+
+/***
+ * Hold on.
+ */
+
+pre {
+    color: white;
+}
+
+pre:not(:empty) {
+    overflow: auto;
+    background: rgb(48, 48, 48);
+    border: 1px solid #ccc;
+    max-height: 44.6%;
+    width: 49%;
+    font-family: monospace;
+    padding: 10px 10px 20px;
+    box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
+    white-space: pre-wrap;
+    outline: 0;
+    font-size: 1.1vw;
+}
+
+/**
+ * Okay. We're going to start filling up the screen... with code!
+ * Let's get ready to do some work.
+ */
+
+#style-text {
+    -webkit-transform: translateX(95%);
+    position: absolute;
+}
+
+/**
+ * This is good, but all the text is white! Yaaaawn!
+ * Let's make it even more readable.
+ */
+
+.comment       { color: #857F6B; font-style: italic; }
+.selector      { color: #E69F0F; }
+.selector .key { color: #64D5EA; }
+.key           { color: #64D5EA; }
+.value         { color: #BE84F2; }
+.value.px      { color: #F92772; }
+
+
+/**
+ * Now we're getting somewhere.
+ * Time to get a little perspective.
+ */
+
+body {
+    -webkit-perspective: 1000px;
+}
+
+#style-text {
+  -webkit-transform: translateX(98.5%) rotateY(-10deg);
+  -webkit-transform-origin: right;
+  max-height: 94.5%;
+}
+

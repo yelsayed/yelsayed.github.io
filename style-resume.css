@@ -1,0 +1,83 @@
+/*#resume-text {*/
+    /*position: relative;*/
+    /*z-index: 1;*/
+    /*overflow: auto;*/
+    /*border: 1px solid #ccc;*/
+    /*max-height: 96.6%;*/
+    /*width: 49%;*/
+    /*font-size: 14px;*/
+    /*padding: 10px 10px 20px;*/
+    /*box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);*/
+    /*outline: 0;*/
+    /*background: white;*/
+    /*color: black;*/
+    /*-webkit-transform: rotateY(10deg);*/
+    /*-webkit-transform-origin: left;*/
+    /*font-family: "Kozuka Gothic Pro";*/
+/*}*/
+
+/*!***/
+ /** My resume looks super ugly, how about we style it up!*/
+ /**!*/
+
+/*#resume-text .col {*/
+    /*position: relative;*/
+    /*width: 35.4%;*/
+    /*float: left;*/
+/*}*/
+
+/*#resume-text .col-left {  left: 0; }*/
+/*#resume-text .col-right {  left: 0; width: 64.5%; }*/
+
+/*.block {*/
+    /*width: 100%;*/
+    /*float: left;*/
+    /*margin-bottom: 11px;*/
+/*}*/
+
+/*.name-header {*/
+    /*font-size: 2vw;*/
+/*}*/
+
+/*.block-header {*/
+    /*font-family: KozGoPro-Medium;*/
+    /*font-size: 1.2vw;*/
+    /*color: #000000;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*.sub-block {*/
+    /*margin-bottom: 14px;*/
+/*}*/
+
+/*.sub-block .sub-block-header {*/
+    /*font-family: KozGoPro-Regular;*/
+    /*font-size: 1.1vw;*/
+    /*color: #171717;*/
+    /*line-height: 15px;*/
+/*}*/
+
+/*.sub-block .sub-block-subheader {*/
+    /*font-family: KozGoPro-Light;*/
+    /*font-size: 0.9vw;*/
+    /*color: #9B9B9B;*/
+/*}*/
+
+/*.sub-block .sub-block-body .body {*/
+    /*!* BSc Computer Science: *!*/
+    /*font-family: KozGoPro-Light;*/
+    /*margin-bottom: 5px;*/
+    /*font-size: 0.8vw;*/
+    /*color: #000000;*/
+    /*line-height: 10px;*/
+/*}*/
+
+/*.sub-block .sub-block-body .bullet {*/
+    /*font-family: KozGoPro-Light;*/
+    /*font-size: 0.7vw;*/
+    /*color: rgba(0,0,0,0.68);*/
+    /*letter-spacing: 0px;*/
+    /*line-height: 14px;*/
+/*}*/
+
+/* entire container, keeps perspective */
