@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Yasser Codes`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Yasser El-Sayed`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Personal page of Yasser El-Sayed.`,
+    siteUrl: `https://yasser.codes`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ysr.sayed`,
+      instagram: `yeyeyesser`,
+      medium: `theyasser`,
+      email: `ysr.sayed@gmail.com`
     },
   },
   plugins: [
@@ -33,7 +35,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 680,
+              showCaptions: true
             },
           },
           {
@@ -45,6 +48,8 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-code-titles`
         ],
       },
     },
@@ -67,6 +72,79 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-local-search',
+      options: {
+        // A unique name for the search index. This should be descriptive of
+        // what the index contains. This is required.
+        name: 'pages',
+
+        // Set the search engine to create the index. This is required.
+        // The following engines are supported: flexsearch, lunr
+        engine: 'flexsearch',
+
+        // Provide options to the engine. This is optional and only recommended
+        // for advanced users.
+        //
+        // Note: Only the flexsearch engine supports options.
+        engineOptions: {
+          encode: "icase",
+          tokenize: "forward",
+          async: false,
+        },
+
+        // GraphQL query used to fetch all data for the search index. This is
+        // required.
+        query: `
+          {
+            allMarkdownRemark {
+              nodes {
+                id
+                frontmatter {
+                  description
+                  title
+                  date(formatString: "MMMM DD, YYYY")
+                }
+                fields {
+                    slug
+                }
+                rawMarkdownBody
+              }
+            }
+          }
+        `,
+
+        // Field used as the reference value for each document.
+        // Default: 'id'.
+        ref: 'id',
+
+        // List of keys to index. The values of the keys are taken from the
+        // normalizer function below.
+        // Default: all fields
+        index: ['title', 'body'],
+
+        // List of keys to store and make available in your UI. The values of
+        // the keys are taken from the normalizer function below.
+        // Default: all fields
+        store: ['id', 'description', 'title', 'date', 'slug'],
+
+        // Function used to map the result from the GraphQL query. This should
+        // return an array of items to index in the form of flat objects
+        // containing properties to index. The objects must contain the `ref`
+        // field above (default: 'id'). This is required.
+        normalizer: ({ data }) =>
+          data.allMarkdownRemark.nodes.map(node => {
+            return {
+                id: node.id,
+                description: node.frontmatter.description,
+                title: node.frontmatter.title,
+                body: node.rawMarkdownBody,
+                date: node.frontmatter.date,
+                slug: node.fields.slug
+            }
+          }),
       },
     },
     `gatsby-plugin-react-helmet`,

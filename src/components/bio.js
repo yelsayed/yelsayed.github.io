@@ -14,7 +14,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50, quality: 95) {
+          fixed(width: 200, height: 200, quality: 95) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -26,7 +26,9 @@ const Bio = () => {
             summary
           }
           social {
+            instagram
             twitter
+            medium
           }
         }
       }
@@ -35,7 +37,6 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
 
@@ -51,15 +52,10 @@ const Bio = () => {
           }}
         />
       )}
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
-      )}
+      <h1>👋🏼 Hello there!</h1>
+      <p>
+        My name is <strong>Yasser El-Sayed</strong>. I'm the Ex-CTO of Meddy. I love to build and write about technology.
+      </p>
     </div>
   )
 }

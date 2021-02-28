@@ -8,10 +8,13 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "formik": "^2.2.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-feed": "^2.7.0",
     "gatsby-plugin-google-analytics": "^2.5.0",
+    "gatsby-plugin-local-search": "^2.0.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.4.0",
@@ -24,14 +27,22 @@
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-remark": "^2.10.0",
     "gatsby-transformer-sharp": "^2.6.0",
+    "iframe-resizer": "^4.3.1",
+    "image-downloader": "^4.0.2",
+    "image-type": "^4.1.0",
     "prismjs": "^1.22.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-use-flexsearch": "^0.1.1",
+    "request": "^2.88.2",
+    "turndown": "^7.0.0",
+    "turndown-plugin-gfm": "^1.0.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "gatsby-remark-code-titles": "^1.1.0",
     "prettier": "2.2.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
