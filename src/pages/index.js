@@ -10,9 +10,10 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
   const localSearchPages = data.localSearchPages
+  const socialData = data.site.siteMetadata?.social
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} social={socialData} title={siteTitle}>
       <SEO title="Homepage" />
       <Bio />
       <Search localSearchPages={localSearchPages} allPosts={posts} />
@@ -26,7 +27,13 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title
+        title,
+        social {
+          twitter,
+          instagram,
+          medium,
+          email
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

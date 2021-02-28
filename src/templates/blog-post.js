@@ -1,12 +1,17 @@
 import React, {useEffect} from "react"
 import { Link, graphql } from "gatsby"
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faForward, faBackward} from "@fortawesome/free-solid-svg-icons";
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const socialData = data.site.siteMetadata?.social
   const { previous, next } = data
 
   useEffect(() => {
@@ -14,7 +19,7 @@ const BlogPostTemplate = ({ data, location }) => {
   });
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} social={socialData} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -44,17 +49,17 @@ const BlogPostTemplate = ({ data, location }) => {
             padding: 0,
           }}
         >
-          <li>
+          <li className="more-articles">
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                <FontAwesomeIcon icon={faBackward}/> {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li className="more-articles">
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                {next.frontmatter.title} <FontAwesomeIcon icon={faForward}/>
               </Link>
             )}
           </li>
@@ -74,7 +79,13 @@ export const pageQuery = graphql`
   ) {
     site {
       siteMetadata {
-        title
+        title,
+        social {
+          twitter,
+          instagram,
+          medium,
+          email
+        }
       }
     }
     markdownRemark(id: { eq: $id }) {
