@@ -3,9 +3,20 @@ import React, {useCallback, useEffect, useMemo, useState} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMoon, faSun} from '@fortawesome/free-solid-svg-icons'
 
+let LocalStorage;
+
+if (typeof window !== 'undefined') {
+    LocalStorage = localStorage;
+} else {
+  LocalStorage = {
+    getItem: () => {},
+    setItem: () => {}
+  }
+}
+
 const Nav = ({ title }) => {
   const [initial, setInitial] = useState(true)
-  const [pageColor, setPageColor] = useState(localStorage.getItem('color'));
+  const [pageColor, setPageColor] = useState(LocalStorage.getItem('color'));
 
   useEffect(() => {
     if (initial) {
@@ -21,7 +32,7 @@ const Nav = ({ title }) => {
     else {
       const newColor = pageColor  === 'dark' ? 'light' : 'dark';
       html.dataset.color = newColor;
-      localStorage.setItem('color', newColor);
+      LocalStorage.setItem('color', newColor);
       setPageColor(newColor);
     }
   }, [pageColor])
@@ -33,7 +44,7 @@ const Nav = ({ title }) => {
   return (
     <nav
       style={{
-        padding: "20px 40px",
+        padding: "20px 30px",
         display: "flex",
         justifyContent: "space-between"
       }}

@@ -27,7 +27,7 @@ const Search = ({localSearchPages, allPosts}) => {
         gridAutoFlow: "dense",
         gridColumnGap: "20px",
         gridTemplateColumns: "repeat(auto-fill,minmax(320px,1fr))",
-        gridRowGap: "30px",
+        gridRowGap: "20px",
         marginTop: "30px",
         maxWidth: "inherit"
       }}

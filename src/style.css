@@ -75,7 +75,7 @@ html {
 
 html[data-color='dark'] {
   --color-background: #1b262c;
-  --color-primary: #3eb0ef;
+  --color-primary: #8fd7ff;
   --color-secondary: #bcb7ae;
   --color-text: #c6c1b9;
   --color-text-light: #aea79c;
@@ -142,7 +142,6 @@ footer {
 }
 .more-articles > a {
   text-decoration: none !important;
-  background: var(--color-accent);
   color: var(--color-primary);
   padding: 10px 20px;
   border-radius: 50px;
@@ -374,10 +373,11 @@ a:focus {
 }
 
 .header-link-home {
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-black);
   font-family: var(--font-heading);
   text-decoration: none;
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-5);
+  color: var(--color-heading-black);
 }
 
 .bio {
@@ -482,6 +482,10 @@ a:focus {
   color: var(--color-fading);
   margin-top: 20px;
   text-align: center;
+}
+
+.gatsby-resp-image-figure {
+  margin: 0
 }
 
 .header-image {
