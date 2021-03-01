@@ -123,60 +123,17 @@ Now this is where we meet in present time. Will we work more on BuzzCast? The an
 
 Until then, here’s more links that will support our credibility, BuzzCast is not a hack. I’ll see you next time!
 
-[
+Some Links to our Accomplishments
+---------------------------------
 
-QU and CMU-Q teams win Imagine Cup 2016 contest
------------------------------------------------
+[QU and CMU-Q teams win Imagine Cup 2016 contest](http://thepeninsulaqatar.com/news/qatar/379890/qu-and-cmu-q-teams-win-imagine-cup-2016-contest)
 
-### DOHA: Student teams representing Qatar University and Carnegie Mellon University in Qatar (CMU-Q) have won Microsoft's…
+[2016 World Semifinalists: Innovation | Microsoft Imagine Cup](https://www.imaginecup.com/content/details/19558)
 
-#### thepeninsulaqatar.com
+[Microsoft declares Imagine Cup victors](http://www.gulf-times.com/Story/490230)
 
-](http://thepeninsulaqatar.com/news/qatar/379890/qu-and-cmu-q-teams-win-imagine-cup-2016-contest)[
+[#ImagineCup #Qatar - Twitter Search](https://twitter.com/search?q=%20%23ImagineCup%20%23Qatar%20&src=typd)
 
-2016 World Semifinalists: Innovation | Microsoft Imagine Cup
-------------------------------------------------------------
+[Contestants gear up for Imagine Cup finals](http://www.gulf-times.com/story/489369/Contestants-gear-up-for-Imagine-Cup-finals)
 
-### Microsoft Imagine Cup
-
-#### Microsoft Imagine Cupwww.imaginecup.com
-
-](https://www.imaginecup.com/content/details/19558)[
-
-Microsoft declares Imagine Cup victors
---------------------------------------
-
-### By Joseph Varghese/Staff Reporter Two teams from Qatar University and one from Carnegie Mellon University in Qatar have…
-
-#### www.gulf-times.com
-
-](http://www.gulf-times.com/Story/490230)[
-
-#ImagineCup #Qatar - Twitter Search
------------------------------------
-
-### The latest Tweets on #ImagineCup #Qatar . Read what people are saying and join the conversation.
-
-#### twitter.com
-
-](https://twitter.com/search?q=%20%23ImagineCup%20%23Qatar%20&src=typd)
-
-[
-
-Contestants gear up for Imagine Cup finals
-------------------------------------------
-
-### Microsoft Qatar will host the Imagine Cup 2016 Qatar national finals under the patronage of HE the Minister of…
-
-#### www.gulf-times.com
-
-](http://www.gulf-times.com/story/489369/Contestants-gear-up-for-Imagine-Cup-finals)[
-
-20 teams compete in CarnegieApps Hackathon competition
-------------------------------------------------------
-
-### DOHA: The CarnegieApps Hackathon this year saw record participation, with 20 teams competing in the 24-hour regional…
-
-#### www.thepeninsulaqatar.com
-
-](http://www.thepeninsulaqatar.com/news/qatar/370323/20-teams-compete-in-carnegieapps-hackathon-competition)
+[20 teams compete in CarnegieApps Hackathon competition](http://www.thepeninsulaqatar.com/news/qatar/370323/20-teams-compete-in-carnegieapps-hackathon-competition)

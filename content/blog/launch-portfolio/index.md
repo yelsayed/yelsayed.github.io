@@ -71,14 +71,39 @@ We won’t code everything from scratch, there are amazing people out there that
 
 My recommendation though is to go to [https://shapebootstrap.net/free-templates](https://shapebootstrap.net/free-templates) or [https://startbootstrap.com](https://startbootstrap.com). My personal favorite is [blackrockdigital’s template](https://blackrockdigital.github.io/startbootstrap-freelancer/).
 
-![Credit goes to Blackrockdigital, show him some love at <a href="http://github.com/blackrockdigital" class="dn ix" rel="noopener nofollow">github.com/blackrockdigital</a>](./1*oahwp404Drla6kzFxFfOAQ.png)
+![Credit goes to Blackrockdigital, show him some love at http://github.com/blackrockdigital](./1*oahwp404Drla6kzFxFfOAQ.png)
 
 If you choose to download the blackrockdigital template, go to [https://startbootstrap.com/template-overviews/freelancer/](https://startbootstrap.com/template-overviews/freelancer/) and click on “Download”.
 
 Now once we have downloaded the code for the site, you should have the following files. I’ve highlighted in bold the folders we care about
 
 ```
-├── LICENSE├── README.md**├── css <-- We'll be using this to change the colors or our site**│   ├── freelancer.css│   └── freelancer.min.css├── gulpfile.js**├── img** **<-- We'll be using this folder to store our images**│   ├── portfolio│   └── profile.png**├── index.html <-- This is what we care about the most!**├── js <-- Don't worry about this, unless you're courageous│   ├── contact\_me.js│   ├── freelancer.js│   ├── freelancer.min.js│   └── jqBootstrapValidation.js├── less│   ├── freelancer.less│   ├── mixins.less│   └── variables.less├── mail│   └── contact\_me.php├── package.json└── vendor├── bootstrap├── font-awesome└── jquery
+├── LICENSE
+├── README.md**
+├── css <-- We'll be using this to change the colors or our site**
+│   ├── freelancer.css
+│   └── freelancer.min.css
+├── gulpfile.js**
+├── img** **<-- We'll be using this folder to store our images**
+│   ├── portfolio
+│   └── profile.png**
+├── index.html <-- This is what we care about the most!**
+├── js <-- Don't worry about this, unless you're courageous
+│   ├── contact\_me.js
+│   ├── freelancer.js
+│   ├── freelancer.min.js
+│   └── jqBootstrapValidation.js
+├── less
+│   ├── freelancer.less
+│   ├── mixins.less
+│   └── variables.less
+├── mail
+│   └── contact\_me.php
+├── package.json
+└── vendor
+├── bootstrap
+├── font-awesome
+└── jquery
 ```
 
 > IMPORTANT!! Make sure it works by double clicking on the **index.html** file in your filesystem. If it doesn’t work then drag and drop the index.html file in your favorite browser.
@@ -88,9 +113,71 @@ Edit the Content
 
 To be able to edit the HTML, we need an editor, I recommend [Sublime Text 3](https://www.sublimetext.com/3) because it is a very light pleasant looking editor. Just download it and open “index.html” using it and you should see something similar to the following:
 
+```html{numberLines: true}
+<html>
+<!-- Basic HTML structure -->
+<head>
+  <!-- Start of tags that you don't need to know -->
+  ...
+  ... <!-- Just ignore everything in the <head> tag -->
+  ...
+  <!-- End of tags that you don't need to know -->
+</head>
+  <body>
+    <!-- The content we want to edit will be here, like the <header> tag below -->
+    <!-- Header -->
+    <header>
+        <!-- NOTE! don't change the tags, just the content inside the tags! -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <!-- Idea! Change the following from "Start Bootstrap"
+                              to your first and last name -->
+                        <span class="name">Start Bootstrap</span>
+                        <hr class="star-light">
+                        <!-- Similarly you would change this to whatever
+                              you want people to know you for -->
+                        <span class="skills">Web Developer - Graphic Artist
+                                              - User Experience Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  </body>
+
+</html>
+```
+
 In the body tag above will be where we will edit the content of the site. If you look at the main page that is in your browser right now, you’ll see that there is a big _“Start Bootstrap”_ in the middle of the website. We would like to change that to our name.
 
 Simply, search through your HTML for _“Start Bootstrap”_, if you’re using Sublime Text 3 then you can just press cmd+f (ctrl+f for windows). Then just change the text inside the tag. It should look like the following:
+
+```html{numberLines: true}
+<body>
+  <!-- Header -->
+  <header>
+      <!-- NOTE! don't change the tags, just the content inside the tags! -->
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <img class="img-responsive" src="img/profile.png" alt="">
+                  <div class="intro-text">
+                      <!-- "Start Bootstrap" changed to my name -->
+                      <span class="name">Yasser El-Sayed</span>
+                      <hr class="star-light">
+                      <!-- I put in my skills up there -->
+                      <span class="skills">Web Developer - UI Designer</span>
+                      <!-- And Viola! -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+</body>
+```
 
 **Make sure to save** (cmd+s/ctrl+s) and then double click on the “index.html” file (or drag and drop) and you should see that the website’s text changed. Now you notice that there are a lot of text we need to change.
 
@@ -103,6 +190,12 @@ Editing the pictures is a very simple process. Every image in the website that w
 
 We’ll use the same code-snippet (editing-html-2.html) and we’ll modify it to incorporate our own image, whatever that may be. First store the image that you want in the _img_ folder, then we’ll replace the url of the image in the _index.html_ file with our own image.
 
+```html
+<!-- Change the following src to whatever -->
+<img class="img-responsive" src="img/profile.png" alt="">
+<!-- And Viola! -->
+```
+
 Edit the src above
 
 The _src=…_ is to indicate where the image lies in your computer. For instance, this specific case says that “img/profile.png” lies in a folder called img and is called profile.png. Simple right?! If not, no worries, just checkout this [tutorial about image sources.](http://www.w3schools.com/html/html_images.asp)
@@ -112,7 +205,7 @@ Edit the Colors
 
 Now let’s say that we want to change the colors in our site, just to make sure that we remain unique and not have someone say:
 
-> “OH I KNOW THIS TEMPLATE!” — Major Asshole
+> “OH I KNOW THIS TEMPLATE!” — Major A**hole
 
 We do this by going to the CSS file “freelance.css” as mentioned above. CSS code is composed to three things, **selectors, attributes and values.**
 
@@ -120,13 +213,23 @@ Generic piece of CSS code
 
 You use the **selectors** to select an HTML tag and **attributes** choose what it is about this tag you want to change. Consequently the **value** of the attribute tells us what the change is. You can select any type of HTML tag, some selectors start with the “.” and other selectors start with the “#”. This depends on the HTML code.
 
+```css
+.class-selector {
+  attribute1: value1;
+}
+
+#id-selector {
+  attribute2: value2;
+}
 ```
+
+```html
 <div id="yasser"></div>
 ```
 
 In the above HTML code we can see that the tag has an “id” called “yasser”.
 
-```
+```html
 <div class="developer"></div>
 ```
 
@@ -134,7 +237,36 @@ In the above HTML code the tag has a “class” called “developer”.
 
 Let’s say we want to give all tags with id=yasser a black background and give all tags with class=developer a white background. We do the following:
 
+```css
+#yasser {
+  background-color: black;
+}
+
+.developer {
+  background-color: white;
+}
+```
+
 Simple, right? Now that we understand this, we are going to go through all the selectors in the “freelance.css” file and change all the colors we want to change. Again, _this is a tedious but rewarding process._
+
+```css
+/* Search for the following two tags and change the colors */
+header {
+  text-align: center;
+  /* Change the following to #a94442 */
+  background: #18BC9C;
+  color: white;
+}
+
+.navbar-custom {
+  /* Change the following to #4a2458 */
+  background: #2C3E50;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+```
 
 Some CSS code in “freelance.css” that needs to be changed.
 

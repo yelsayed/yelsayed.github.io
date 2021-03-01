@@ -4,21 +4,9 @@ date: "2019-03-31T11:26:12.007Z"
 description: "Earlier I wrote about why you should set up your own VPN server. It comes down to three reasons: speed, security and price. If you’re convinced that you should set up your own VPN, here’s how. Follow…"
 ---
 This is part 2 of 2 on setting up your own VPN Server. [Part 1](https://medium.com/@ysr.sayed/set-up-your-own-vpn-its-cheaper-faster-and-more-secure-ab41716724a5) is the why and part 2 is the how.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[](https://medium.com/?source=post_page-----1a78d73999f3--------------------------------)[
 
-#### Yasser El-Sayed
-
-](https://medium.com/?source=post_page-----1a78d73999f3--------------------------------)[
-
-#### Mar 31, 2019·10 min read
-
-](https://medium.com/set-up-your-own-vpn-its-cheaper-faster-and-more-secure-1a78d73999f3?source=post_page-----1a78d73999f3--------------------------------)
-
-[](https://medium.com/m/signin?actionUrl=%2F_%2Fbookmark%2Fp%2F1a78d73999f3&operation=register&redirect=https%3A%2F%2Ftheyasser.medium.com%2Fset-up-your-own-vpn-its-cheaper-faster-and-more-secure-1a78d73999f3&source=post_actions_header--------------------------bookmark_preview-----------)
-
-![Credit goes to <a href="https://unsplash.com/photos/bBavss4ZQcA" class="dn hd" rel="noopener nofollow">https://unsplash.com/photos/bBavss4ZQcA</a>](./1*UbLkWe-WNJ2kOLhkoFWwSg.jpeg)
+![Credit goes to https://unsplash.com/photos/bBavss4ZQcA](./1*UbLkWe-WNJ2kOLhkoFWwSg.jpeg)
 
 [Earlier I wrote about why you should set up your own VPN server](https://medium.com/@ysr.sayed/set-up-your-own-vpn-its-cheaper-faster-and-more-secure-ab41716724a5). It comes down to three reasons: **speed**, **security** and **price**.
 
@@ -295,22 +283,8 @@ Thanks for reading this article. I know it was a lot but you soldiered through! 
 Sources
 -------
 
-[
-
-How to Deploy Your Own Algo VPN Server in the DigitalOcean Cloud
+[How to Deploy Your Own Algo VPN Server in the DigitalOcean Cloud](https://zeltser.com/deploy-algo-vpn-digital-ocean/)
 ----------------------------------------------------------------
 
-### As you use your Algo VPN server, adversaries might begin tracking the server’s IP address and eventually blacklist it…
-
-#### zeltser.com
-
-](https://zeltser.com/deploy-algo-vpn-digital-ocean/)[
-
-Meet Algo, the VPN that works
+[Meet Algo, the VPN that works](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/)
 -----------------------------
-
-### I think you’ll agree when I say: there’s no VPN option on the market designed with equal emphasis on security and ease…
-
-#### blog.trailofbits.com
-
-](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/)

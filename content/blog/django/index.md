@@ -3,7 +3,7 @@ title: "Software Entomology: Django Primary Key IntegrityError on Object Creatio
 date: "2019-02-10T08:18:21.175Z"
 description: "Software Entomology is a series of posts dedicated to dissecting several nasty bugs encountered by yours truly. This is parallel to a real entomologist dissecting real life bugs with the exception of…"
 ---
-![Image inspired by <a href="https://www.metaltoad.com/blog/django-20-your-project-ready" class="dn id" rel="noopener nofollow">this</a>](./1*BQdPLOXQTTYiFjROhRDrTw.png)
+![Image inspired by https://www.metaltoad.com/blog/django-20-your-project-ready](./1*BQdPLOXQTTYiFjROhRDrTw.png)
 
 About this Post
 ===============
@@ -22,8 +22,8 @@ Context
 
 I updated Django from 1.11 to 2.1 and my database was returning this error for most of the tests that have been running. If you have the same problem then this post is for you.
 
-```
-psycopg2.IntegrityError: duplicate key value violates unique constraint "doctors\_doctor\_pkey"  
+```python
+psycopg2.IntegrityError: duplicate key value violates unique constraint "doctors_doctor_pkey"
 DETAIL:  Key (id)=(7) already exists.
 ```
 
@@ -41,6 +41,20 @@ Solution
 --------
 
 The solution was to stop using the object manager when save is called. This can be done by having a simple `with` block, in which inside it the `get_queryset` method will not be called. Here’s the full solution.
+
+<div class="iframe-wrapper">
+    <iframe
+        width="100%"
+        height="1470px"
+        frameborder="0"
+        scrolling="no"
+        id="sizetracker"
+        src='data:text/html;charset=utf-8,
+        <head><base target="_blank" /></head>
+        <body><script src="https://gist.github.com/yelsayed/316d90dcfc9a71e0bd4a45407a752268.js"></script>
+        </body>'></iframe>
+</div>
+
 
 If you want to know more about specifics, check out the rest of this post.
 
@@ -89,9 +103,9 @@ Thankfully the first three steps aren’t as painful as moving from 1.6 to say 1
 
 After a very heavy analysis of all the errors that the tests were returning it all boiled down to one major thing: when creating a second doctor object there was an IntegrityError telling me I cannot create two doctor objects with the same ID/PK.
 
-```
-psycopg2.IntegrityError: duplicate key value violates unique constraint "doctors\_doctor\_pkey"  
-DETAIL:  Key (id)=(7) already exists.
+```python
+psycopg2.IntegrityError: duplicate key value violates unique constraint "doctors_doctor_pkey"
+DETAIL:  Key (id)=(7) already exists.__
 ```
 
 Why this is Insane!
@@ -118,6 +132,19 @@ Eureka!
 
 This narrowed it down to my `LocalizationManager` that returned a subset of the data based on the locale which the user selects on the site. Here’s how it works:
 
+<div class="iframe-wrapper">
+    <iframe
+        width="100%"
+        height="800px"
+        frameborder="0"
+        scrolling="no"
+        id="sizetracker"
+        src='data:text/html;charset=utf-8,
+        <head><base target="_blank" /></head>
+        <body><script src="https://gist.github.com/yelsayed/512c26501b5883242fb9eb96466aa356.js"></script>
+        </body>'></iframe>
+</div>
+
 I’m assigning the objects attribute to the `LocalizationManager` that way I only get the subset of doctors that belong to the current chosen locale, otherwise it returns all the objects that have been asked for.
 
 Also note that the only thing I’m doing in this object manager is altering the behavior of `get_queryset`. So I tried removing that function and voilà, everything worked perfectly — except of course for the unit tests that were meant to test the `get_queryset` functionality.
@@ -129,26 +156,61 @@ The Solution
 
 Finally we arrive at the solution. I knew that the only time when `get_queryset` was an issue is when we saved the objects. So all I had to do is call the default behavior when `get_queryset` is in a `save` method. My idea is to assign a variable in the current executing thread that will be checked when `get_queryset` is called. Once it’s called then we can turn off any special alterations that we’ve made. In pseudocode here’s what I’m trying to achieve:
 
-```
-use\_custom\_manager = Truedef get\_queryset():  
-    if use\_custom\_manager:  
-        do\_my\_own\_magix()  
-    if not use\_custom\_manager:  
-        do\_django\_magix()\# Django save for Doctor object  
-def super\_doctor\_save():  
+```python
+use_custom_manager = True
+def get_queryset():
+    if use_custom_manager:
+        do_my_own_magix()
+    if not use_custom_manager:
+        do_django_magix()  # Django save for Doctor object
+def super_doctor_save():
     # does some magic...  
-    get\_queryset()\# Our own save with our own alterations  
-def doctor\_save():  
-    use\_custom\_manager = False  
-    super\_doctor\_save()  
-    use\_custom\_manager = True
+    get_queryset()  # Our own save with our own alterations
+def doctor_save():
+    use_custom_manager = False
+    super_doctor_save()
+    use_custom_manager = True
 ```
 
 Whenever you assign to a global variable and then reassign it after an execution is done, a `with` block is what you need. A `with` block allows you to add context to the code being ran within a defined scope.
 
-Example of with block, straightforward.
+<figure class="gatsby-resp-image-figure" style="">
+    <div class="iframe-wrapper">
+        <iframe
+            width="100%"
+            height="620px"
+            frameborder="0"
+            scrolling="no"
+            id="sizetracker"
+            src='data:text/html;charset=utf-8,
+            <head><base target="_blank" /></head>
+            <body><script src="https://gist.github.com/yelsayed/87299795d6595566c695e2d5fda4608c.js"></script>
+            </body>'></iframe>
+    </div>
+    <figcaption class="gatsby-resp-image-figcaption">
+        Example of with block, straightforward.
+    </figcaption>
+</figure>
 
 Given the idea that we have and the magic of `with` blocks, here’s the final solution.
+
+<figure class="gatsby-resp-image-figure" style="">
+    <div class="iframe-wrapper">
+        <iframe
+            width="100%"
+            height="1450px"
+            frameborder="0"
+            scrolling="no"
+            id="sizetracker"
+            src='data:text/html;charset=utf-8,
+            <head><base target="_blank" /></head>
+            <body><script src="https://gist.github.com/yelsayed/316d90dcfc9a71e0bd4a45407a752268.js"></script>
+            </body>'></iframe>
+    </div>
+    <figcaption class="gatsby-resp-image-figcaption">
+        Final Solution
+    </figcaption>
+</figure>
 
 That’s it?!
 ===========

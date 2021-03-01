@@ -5,12 +5,7 @@ description: "I wrote a post previously about using SCSS to help you manage code
 ---
 ![Not everything goes as planned when redoing your CSS for Arabic.](./1*hyU1RXbyI7CM3WM8iGJV9Q.png)
 
-You cannot use CSS code you built for an English web page for an Arabic web page.
----------------------------------------------------------------------------------
-
-[](https://theyasser.medium.com/?source=post_page-----ad4db2870165--------------------------------)[Yasser El-Sayed](https://theyasser.medium.com/?source=post_page-----ad4db2870165--------------------------------)Follow[Sep 30, 2018](https://medium.com/meddy-blog/better-way-to-write-css-in-arabic-ad4db2870165?source=post_page-----ad4db2870165--------------------------------) · 5 min read
-
-[](https://medium.com/m/signin?actionUrl=%2F_%2Fbookmark%2Fp%2Fad4db2870165&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fmeddy-blog%2Fbetter-way-to-write-css-in-arabic-ad4db2870165&source=post_actions_header--------------------------bookmark_preview-----------)
+> You cannot use CSS code you built for an English web page for an Arabic web page.
 
 I wrote a [post](https://medium.com/meddy-blog/translating-your-front-end-to-arabic-3308a511b560) previously about using SCSS to help you manage code for Arabic web pages. I’ve ran into a couple problems that I was able to solve with absolute elegance. **If anyone reading this post has a better solution to this problem please let me know.**
 
@@ -32,11 +27,42 @@ The Problem with Two Files
 
 Let’s say we have classes `.seperate-children` and `.highlight-element` defined below.
 
-Sample code we use as an example to show bad approach
+<figure class="gatsby-resp-image-figure" style="">
+    <div class="iframe-wrapper">
+        <iframe
+            width="100%"
+            height="600px"
+            frameborder="0"
+            scrolling="no"
+            id="sizetracker"
+            src='data:text/html;charset=utf-8,
+            <head><base target="_blank" /></head>
+            <body><script src="https://gist.github.com/yelsayed/2ea870e1076f3ab981a2fa6ed3e9c29a.js"></script>
+            </body>'></iframe>
+    </div>
+    <figcaption class="gatsby-resp-image-figcaption">
+Sample code we use as an example to show bad approach.</figcaption>
+  </figure>
 
 Here’s some HTML to use the above.
 
-Some HTML to accompany the above CSS
+
+<figure class="gatsby-resp-image-figure" style="">
+    <div class="iframe-wrapper">
+        <iframe
+            width="100%"
+            height="180px"
+            frameborder="0"
+            scrolling="no"
+            id="sizetracker"
+            src='data:text/html;charset=utf-8,
+            <head><base target="_blank" /></head>
+            <body><script src="https://gist.github.com/yelsayed/eecef682ec8920c46036095822b7eb6f.js"></script>
+            </body>'></iframe>
+    </div>
+    <figcaption class="gatsby-resp-image-figcaption">
+Some HTML to accompany the above CSS.</figcaption>
+  </figure>
 
 This should look like this:
 
@@ -48,7 +74,7 @@ Pretty simple, but remember in Arabic it’s from right to left by adding `direc
 
 Which is not the desired effect. An easy way to fix this is make another CSS file for Arabic modifications and add this line to it.
 
-```
+```css
 .highlight-element {  
     margin-left: 40px;  
     margin-right: unset;  
@@ -61,7 +87,7 @@ Which is not the desired effect. An easy way to fix this is make another CSS fil
 
 Simply because if you’re dealing with a lot of CSS code then it’s impossible to keep track of the entire sequence of inheritance especially if you’re using [SCSS](https://sass-lang.com/) (and if you’re not, then you should), and even if you do it manually you’ll just have a file of weird and impossible to read code. **Just look at this mess!**
 
-```
+```css
 .dashboard-navbar, .procedure-master-list-container, .row-actions, .add-element,  
 .back-wrapper, .dashboards-nav-wrapper, footer, .invoice-footer, .no-content, .select-icon.meddy-light-chevron {  
     display: none;  
@@ -106,7 +132,22 @@ Instead of overwriting and find the right sequence, it would be better to simply
 
 To do this we need to use some SCSS, specifically their [mixin feature](https://sass-lang.com/guide). Here’s the code for that:
 
-Implementation and usage of the mixin
+<figure class="gatsby-resp-image-figure" style="">
+    <div class="iframe-wrapper">
+        <iframe
+            width="100%"
+            height="470px"
+            frameborder="0"
+            scrolling="no"
+            id="sizetracker"
+            src='data:text/html;charset=utf-8,
+            <head><base target="_blank" /></head>
+            <body><script src="https://gist.github.com/yelsayed/55dae56b3a6cc80daf63db66e507bbb3.js"></script>
+            </body>'></iframe>
+    </div>
+    <figcaption class="gatsby-resp-image-figcaption">
+Implementation and usage of the mixin.</figcaption>
+  </figure>
 
 **Explanation**
 ---------------

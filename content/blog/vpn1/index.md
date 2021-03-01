@@ -4,21 +4,8 @@ date: "2019-03-31T11:22:03.876Z"
 description: "Hello there 👋! I usually write more technically detailed blog posts, but I wanted to write one that can be read by just about anyone. I decided to make my own VPN and I think you should too. I’ve…"
 ---
 This is part 1 of 2 on setting up your own VPN Server. Part 1 is the why and [part 2](https://medium.com/@ysr.sayed/set-up-your-own-vpn-its-cheaper-faster-and-more-secure-1a78d73999f3) is the how.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[](https://medium.com/?source=post_page-----ab41716724a5--------------------------------)[
-
-#### Yasser El-Sayed
-
-](https://medium.com/?source=post_page-----ab41716724a5--------------------------------)[
-
-#### Mar 31, 2019·6 min read
-
-](https://medium.com/set-up-your-own-vpn-its-cheaper-faster-and-more-secure-ab41716724a5?source=post_page-----ab41716724a5--------------------------------)
-
-[](https://medium.com/m/signin?actionUrl=%2F_%2Fbookmark%2Fp%2Fab41716724a5&operation=register&redirect=https%3A%2F%2Ftheyasser.medium.com%2Fset-up-your-own-vpn-its-cheaper-faster-and-more-secure-ab41716724a5&source=post_actions_header--------------------------bookmark_preview-----------)
-
-![Credit goes to <a href="https://unsplash.com/photos/bBavss4ZQcA" class="dn hd" rel="noopener nofollow">https://unsplash.com/photos/bBavss4ZQcA</a>](./1*UbLkWe-WNJ2kOLhkoFWwSg.jpeg)
+![Credit goes to https://unsplash.com/photos/bBavss4ZQcA](./1*UbLkWe-WNJ2kOLhkoFWwSg.jpeg)
 
 Hello there 👋! I usually write more technically detailed blog posts, but I wanted to write one that can be read by just about anyone. I decided to make my own VPN and **I think you should too**.
 
@@ -42,7 +29,7 @@ To understand why to put up your own server is parallel to understanding why hav
 
 There is a fair amount of understandable [pushback](https://gist.github.com/kennwhite/1f3bc4d889b02b35d8aa) towards commercial VPNs. This is a short version of a very complicated argument, if you don’t trust your Internet Service Provider (ISP) as they can track your digital footprint, then you use a VPN. The way VPNs work is by encrypting your connection with them and then forwarding your requests to the servers that you’re requesting. The VPN pretends that it’s you when making requests to the internet. You can think of it like a tunnel that goes under your ISP.
 
-![Credit goes to <a href="https://thebestvpn.com/what-is-vpn-beginners-guide/" class="dn hd" rel="noopener nofollow">https://thebestvpn.com/what-is-vpn-beginners-guide/</a>](./1*XxqbpM5pCTBh0kD6I6mrEQ.jpeg)
+![Credit goes to https://thebestvpn.com/what-is-vpn-beginners-guide/](./1*XxqbpM5pCTBh0kD6I6mrEQ.jpeg)
 
 If you think about it, at some point you have to TRUST that VPN isn’t keeping track of your valuable information. Fortunately, there has been an intrepid journalistic effort to uncover any questionable behavior by these Commercial VPN providers. Unfortunately, [some dirt](https://www.digitaltrends.com/computing/commercial-vpn-huge-security-flaws/) has been uncovered by various university led studies; you can argue that these investigations are in their early stages and may be incomplete. Having said that, this does strike some fear into the hearts of us who care about our privacy. Also, however unlikely, if one of the services you’re using is compromised by a security vulnerability then your data is also compromised.
 
