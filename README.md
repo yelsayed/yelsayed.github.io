@@ -1,4 +1,4 @@
-### 👋🏼 Hey there
+### 👋🏼 Hey there!
 
 For the past four years I've been building Meddy.com where you can find and book online doctors in Qatar and UAE. 
 
