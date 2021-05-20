@@ -155,6 +155,7 @@ footer {
   color: var(--color-mode);
   font-size: 40px;
   cursor: pointer;
+  padding: 0;
 }
 
 hr {
@@ -372,11 +373,18 @@ a:focus {
   display: block;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
 .header-link-home {
   font-weight: var(--fontWeight-black);
   font-family: var(--font-heading);
   text-decoration: none;
-  font-size: var(--fontSize-5);
+  font-size: var(--fontSize-4);
   color: var(--color-heading-black);
 }
 

@@ -29,8 +29,9 @@ const Nav = ({ title }) => {
     const html = document.getElementsByTagName('html')[0];
     if (color)
       html.dataset.color = color;
+
     else {
-      const newColor = pageColor  === 'dark' ? 'light' : 'dark';
+      const newColor = pageColor  === 'light' ? 'dark' : 'light';
       html.dataset.color = newColor;
       LocalStorage.setItem('color', newColor);
       setPageColor(newColor);
