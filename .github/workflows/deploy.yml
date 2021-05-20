@@ -1,11 +1,12 @@
 name: Deploy Site
 
 on:
+  workflow_dispatch:
   push:
     paths-ignore:
     - '.github/**' # Ignore changes towards the .github directory
     branches:
-    - development # Only trigger on the development branch
+    - master # Only trigger on the development branch
 
 jobs:
   build:
@@ -18,5 +19,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-        publish_branch: master
+        publish_branch: public
         cname: yasser.codes
