@@ -1,0 +1,896 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.f4b697f82fab86251be3.css" id="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap);@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-5xl:75rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Lato,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:charter,Georgia,Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:32px;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:21px;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--blog-width:680px}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html[data-color=dark]{--color-background:#1b262c;--color-primary:#8fd7ff;--color-secondary:#bcb7ae;--color-text:#c6c1b9;--color-text-light:#aea79c;--color-heading:#d2cec8;--color-heading-black:#e8e6e3;--color-accent:#d1dce5;--color-mode:#d1dce5;--color-fading:#9e9689;--color-post-snippet-background:#162125;--color-selection:#3e7080}html[data-color=light]{--color-background:#fff;--color-primary:#3eb0ef;--color-secondary:#3c484e;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-mode:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5;--color-fading:#757575;--color-post-snippet-background:#f9f9ff;--color-selection:#ffd3d3}body{font-family:var(--font-body);font-size:var(--fontSize-3);color:var(--color-text);background:var(--color-background);transition:all .35s ease}::selection{background:var(--color-selection)}::-moz-selection{background:var(--color-selection)}footer{padding:var(--spacing-5) var(--spacing-5);display:flex;justify-content:space-between;max-width:var(--maxWidth-5xl);margin:auto}.footer-copyright{font-size:14px;font-family:var(--fontFamily-sans)}.footer-social>*{margin:0 10px;font-size:20px}.more-articles{margin:calc(var(--spacing-8)/2) 0}.more-articles>a{text-decoration:none!important;color:var(--color-primary);padding:10px 20px;border-radius:50px}.toggle-dark-light{appearance:none;-webkit-appearance:none;border:none;background:none;color:var(--color-mode);font-size:40px;cursor:pointer;padding:0}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2,h3,h4,h5,h6{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-6);color:var(--color-heading-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;padding:var(--spacing-5) var(--spacing-5);max-width:var(--maxWidth-5xl)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-wrapper{padding:20px;border:1px solid #e7e7e7;border-radius:5px;margin-bottom:0;background:var(--color-post-snippet-background)}.post-list-item p{margin-bottom:var(--spacing-0);font-size:var(--fontSize-2)}.post-list-item h2{font-size:var(--fontSize-4);color:var(--color-primary);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item small{font-size:var(--fontSize-1);color:#8a8a8a}.post-list-item header{margin-bottom:var(--spacing-4)}.no-posts-found{font-size:var(--fontSize-2);font-family:var(--fontFamily-sans);color:var(--color-fading);display:block;text-align:center;padding:130px 20px}.no-posts-found>span{font-size:80px;display:block}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none}.header-link-home{font-weight:var(--fontWeight-black);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-4);color:var(--color-heading-black)}.bio{text-align:center;margin-bottom:var(--spacing-10)}.bio h1{margin-top:20px}.bio p{font-family:var(--fontFamily-sans)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:200px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) auto var(--spacing-4) auto;max-width:var(--blog-width)}.blog-post section h1,.blog-post section h2,.blog-post ul,ol{margin-left:auto;margin-right:auto;max-width:var(--blog-width)}.blog-post .iframe-wrapper{width:var(--blog-width);margin:auto}.blog-post header p,.date-header{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.blog-post blockquote,.blog-post p{max-width:var(--blog-width);margin-right:auto;margin-left:auto}.blog-post a:hover{color:var(--color-primary);text-decoration:none}.blog-post a{color:var(--color-secondary);box-shadow:inset 0 -1px 0 var(--color-primary);text-decoration:none}.blog-post code[class*=language-],.gatsby-highlight{font-size:var(--fontSize-1)}.gatsby-highlight{max-width:var(--blog-width);margin-bottom:var(--spacing-8);margin-right:auto;margin-left:auto}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}.gatsby-resp-image-figcaption{font-size:14px;font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;color:var(--color-fading);margin-top:20px;text-align:center}.gatsby-resp-image-figure{margin:0}.header-image{max-width:inherit!important}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.32.11"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=58d69f589aada9820ecd68f822139fcf" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#3eb0ef"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=58d69f589aada9820ecd68f822139fcf"/><title data-react-helmet="true">How to Launch a Portfolio as a Student | Yasser Codes</title><meta data-react-helmet="true" name="description" content="I study in a university full of brilliant people that have the ability to create a plethora of incredibly astonishing things. I was at liberty to work in many small companies that had very inspiring…"/><meta data-react-helmet="true" property="og:title" content="How to Launch a Portfolio as a Student"/><meta data-react-helmet="true" property="og:description" content="I study in a university full of brilliant people that have the ability to create a plethora of incredibly astonishing things. I was at liberty to work in many small companies that had very inspiring…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="ysr.sayed"/><meta data-react-helmet="true" name="twitter:title" content="How to Launch a Portfolio as a Student"/><meta data-react-helmet="true" name="twitter:description" content="I study in a university full of brilliant people that have the ability to create a plethora of incredibly astonishing things. I was at liberty to work in many small companies that had very inspiring…"/><link as="script" rel="preload" href="/webpack-runtime-33d44321a0a81df8b949.js"/><link as="script" rel="preload" href="/framework-741ade27086b2708e961.js"/><link as="script" rel="preload" href="/styles-55e82d6ff5158c00b714.js"/><link as="script" rel="preload" href="/app-801afe0d10777c06f0c2.js"/><link as="script" rel="preload" href="/cb1608f2-58530106a92d01a3ac1b.js"/><link as="script" rel="preload" href="/a9a7754c-3e74a2f80416cf348e88.js"/><link as="script" rel="preload" href="/commons-9f816676065765e4e536.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-d84d3c98a032bf8c6c37.js"/><link as="fetch" rel="preload" href="/page-data/launch-portfolio/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><nav style="padding:20px 30px;display:flex;justify-content:space-between"><a class="header-link-home" href="/">Yasser Codes</a><button class="toggle-dark-light"> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg> </button></nav><div class="global-wrapper"><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">How to Launch a Portfolio as a Student</h1><p>November 25, 2016</p></header><section itemProp="articleBody"><p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 597px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/14c9863db19b0a71f62d0eceb943f683/17602/1*PcJSNFUu0YMdy3tA9Hbrmw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.05882352941177%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBklEQVQoz11Sa0ySYRT+NjNN025efrmWmIgSeatVP/yRSVSWtdacOq+pLWe2lJy2NU2dZmVZNktNnVk5nbc2S7NN/UDUsdxAVEREBRQQUHKCCHLpfIBj692zb997znnO5TkvMno02I5jwTTXQHS//+iR0wzPUIslhO5GRB1w6D4/OxxwdHciuBA70yOE5kKYjs3m55bBFUvhEUp3C2ISL/MyC+dSqHOpjzGkUHkZBcwgMvDtZIZHKOqEVw6gZrNZw1vk55XRD5FGHHC8e0/AYtrdNVuOyWiELzcpF3U8uUe2tPcnLForkmjmF8EtKHwBueiHSczAKG5S3mxczmz8QwxxOdzEXCYhku5+ykZmeIUPI8dFVQ3yroHxExFLxdUwPNaLo99MbPbuxl/tknhHJMGwvKJXqqZv30ed/BFrWdrBoAnfCEXf0LhvBM05gHYgwKoZ6oxnkxPX+0fknT8V3QMYOvvXfwyxIuNBIBsZglbr26AIug/H8AqDmjYJXQmT526JXtYLS2qEZe8xlNaIKusmz8ZAPQQapjnjZ+JyJM0doDDDOxyYVox5n4HFgLYWwQz/CUZzwiNQHbof8zk/6hkGCsGo0DMGF4LVBVmYJAqTSIad2UCiYHI44xHOtbSpq6kwGJuSzLmeziYncW6kc25mghFD9N2pKylTlGTwsi4lsC7GsyIT2FGJnJgMsCO7m1tGnc6wpTFqd/SKdWhpZ0WqnuXDFaCTyvWKDa1ABGobNrdMer1RrdHLlWoOz6TTI8LnH+Q9v+Ttfcrvv+E96NdVC/kV4qpPspauBWq5tLlT2Ts4fSdL0TvIf1S68rZ57UsvPAFBQeXqx6/IXFo+/0GRuLpRkF8BzYhfN67WtkJ9yDXuc2GtvU81NMZNztNw+cul7yzBxcLyWs2cgE8tRaQtXdu8RWFFraTum7SpQ/a5W/yqYanoDSwW+JKGNgjg5zyTtXbLWntUwxPLJTXi6qb5rKewfMRswo4Zg3UXZhjVoNbsXYzgMu7oDJpt896BbZl0Ovj5B5lRGNcIRffbAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Logo designed by me… don’t judge too harshly"
+        title="Logo designed by me… don’t judge too harshly"
+        src="/static/14c9863db19b0a71f62d0eceb943f683/17602/1*PcJSNFUu0YMdy3tA9Hbrmw.png"
+        srcset="/static/14c9863db19b0a71f62d0eceb943f683/04472/1*PcJSNFUu0YMdy3tA9Hbrmw.png 170w,
+/static/14c9863db19b0a71f62d0eceb943f683/9f933/1*PcJSNFUu0YMdy3tA9Hbrmw.png 340w,
+/static/14c9863db19b0a71f62d0eceb943f683/17602/1*PcJSNFUu0YMdy3tA9Hbrmw.png 597w"
+        sizes="(max-width: 597px) 100vw, 597px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Logo designed by me… don’t judge too harshly</figcaption>
+  </figure></p>
+<p>I study in a university full of brilliant people that have the ability to create a plethora of incredibly astonishing things. I was at liberty to work in many small companies that had very inspiring mentors that taught me a lot about my passion: <strong>Software Engineering.</strong> One thing any engineer needs is a portfolio (check out mine at <a href="http://yres.me">yres.me</a> #shamelessplug).</p>
+<blockquote>
+<p>In this post I’ll teach you (yes you!) how to create, launch, maintain and track a portfolio.</p>
+</blockquote>
+<p>This is what we’ll be doing. Firstly, we’re going to buy (for free!) a domain of our choosing. Next we’ll create a website, and lastly we’ll connect the domain to the website.</p>
+<h1>Step 1: Buying and Registering a Domain!</h1>
+<p><em>You buy a domain from</em> <strong><em>domain name registrar</em></strong> <em>which are just entities that reserves domain names for your use!</em></p>
+<p>One of my favorite registrars is <a href="http://namecheap.com"><strong>namecheap</strong></a> because it provides students with free domains. Just as long as you have an email that ends in <em>.edu</em> you should be good.</p>
+<h2>Go to <a href="https://www.nc.me/">https://www.nc.me/</a> and Choose a Domain</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fedf5e980c7163f5d3c9e637f306162a/95e59/1*j6SGSoOLJZAN52OmWACEEQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 65.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACt0lEQVQozy2SW08TQRiGm3hposHu7kwbDj1AKKBCu3TbstvzgXalrQuVikEUWkr8DSZ4IuFHeGWMN/4ANeqFgvFCDe3OzHapxlovvFagQoIanC3svJnM6fm+d75Z0/vUyItFZTM11og49XS/PjWgp53YB6s8V42ALRmgDCQRQEIABwE5lgRI2JBpM3H+5c3L72T+y/SF7Tl3o8g3FB554ZaX24qDTxmApiwkAUkQkhA8gUOdaRSaMM+Qi2eRYK5GGDXFqqIZB1h6oi5C3Q/qMUiyFpzukDS5CPDEcX6IU9CkejhVgDUJqmGIohBJEIcgZTQRah6gRSgMsUydQ+rTgAPGFWgsnLaYVDeHxjtLItBoPAmioBGoKsINL/vKb34dZqsZWI0C1eAtJGRRo9AYZ6AJ8RziAfZRJ1Y8wSCRQRMMFlk8bsajDPZbcIIlSQYnAIqzJMZoURbHGRRjSZrCHg55WJwa0q5JaF7SShK56tYUt16UiDxaXxC1sqTNe7QFr74SrS/RsVevhLQrLpLiTIjaHmORv6cWd1blITU3QHKDJOsiygia7kfTdjw7jGddqOAkhWGcdeFLg3iGbjmIDAyY1oy+jcpzqtSLwjYtZtcm7TjXhwsOQzN2olDZSLYXp20o2Y2iZpzhiGzp2Kb82LkalZtRBQsO9qGkA0/ZUd6BcjaaBCm0t6sFO1Z66vluPW/Vs9YOTAsWsBLFQxRvPctv58a3Z3x60afPC/UbPn3OqxcF/brQKAmfy4Ha7NCbmHkjwb1NcrWUUbCuen70YOdne/9gb3e3vdfe+bXzu93+d/L9Ndrhn8OD/aOjo2ePHk52nSp7R2R4+rlgNtH/SYvbmrcXm2vLX++Vvq2Wm3dLzfVya73Sul9p3VlurVZaa8vfHyz9WL/1cSXxePzMUxE+Ecwf4uA/wnhWWglMJf4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Type in the box that says “Find your free domain”"
+        title="Type in the box that says “Find your free domain”"
+        src="/static/fedf5e980c7163f5d3c9e637f306162a/c5bb3/1*j6SGSoOLJZAN52OmWACEEQ.png"
+        srcset="/static/fedf5e980c7163f5d3c9e637f306162a/04472/1*j6SGSoOLJZAN52OmWACEEQ.png 170w,
+/static/fedf5e980c7163f5d3c9e637f306162a/9f933/1*j6SGSoOLJZAN52OmWACEEQ.png 340w,
+/static/fedf5e980c7163f5d3c9e637f306162a/c5bb3/1*j6SGSoOLJZAN52OmWACEEQ.png 680w,
+/static/fedf5e980c7163f5d3c9e637f306162a/b12f7/1*j6SGSoOLJZAN52OmWACEEQ.png 1020w,
+/static/fedf5e980c7163f5d3c9e637f306162a/b5a09/1*j6SGSoOLJZAN52OmWACEEQ.png 1360w,
+/static/fedf5e980c7163f5d3c9e637f306162a/95e59/1*j6SGSoOLJZAN52OmWACEEQ.png 1460w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Type in the box that says “Find your free domain”</figcaption>
+  </figure></p>
+<p>In the box that you see on the left enter your name. It is preferred that you just type out your full name without special characters or abbreviateions.</p>
+<p>For example my name is Yasser El-Sayed and I own the domain <a href="http://yasserelsayed.me">yasserelsayed.me</a>. Akshata Shanbhag <a href="http://www.makeuseof.com/tag/five-tips-choose-personal-domain-name-can-proud/">wrote a very good post on how to pick out a domain name</a>.</p>
+<h2>Type in your Desired Domain Name</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e3cb996a9c2ab49acedb57edb0050879/769f8/1*KTc-HDOw82NAKOD5Ppt3lQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.176470588235293%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABHElEQVQY03XKTU/CQBAG4P5cf4c3TxpNvJkYlQsQtSnFUvpJpd0W7RdYApFqOMDBCrS7W1tSqYvEg4nuPHkzszOU+mDrjn/veLrrG27/F+/b9t/v2h4tdy4bHKNoRK0l1HmRYlTtVlJoWd3lPxRyNp1Ok+htHkWLVRynKIpX1LUgVjm+zgska3ybNCQJMlYaTeKKbV4wjRovzGezNUxWGKdZluTpEkMqhhBiBBEqiqL8eRtSZfmeLj43a3Zs7bHHIAyWy3i3Qwh/JDjLc2owfh5OXv4UTMJR+AqCAWebdjB8DEenPe7MFs4d6dBgtPCJks2eDHoiMEVjq60DCViCDtpdsE0dyMACjm+6fS3wD8TqkXJz0qH3W5W7vvUFyt8ip+BEruAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Then you click add next to the domain that you want (someone should really claim that domain)"
+        title="Then you click add next to the domain that you want (someone should really claim that domain)"
+        src="/static/e3cb996a9c2ab49acedb57edb0050879/c5bb3/1*KTc-HDOw82NAKOD5Ppt3lQ.png"
+        srcset="/static/e3cb996a9c2ab49acedb57edb0050879/04472/1*KTc-HDOw82NAKOD5Ppt3lQ.png 170w,
+/static/e3cb996a9c2ab49acedb57edb0050879/9f933/1*KTc-HDOw82NAKOD5Ppt3lQ.png 340w,
+/static/e3cb996a9c2ab49acedb57edb0050879/c5bb3/1*KTc-HDOw82NAKOD5Ppt3lQ.png 680w,
+/static/e3cb996a9c2ab49acedb57edb0050879/b12f7/1*KTc-HDOw82NAKOD5Ppt3lQ.png 1020w,
+/static/e3cb996a9c2ab49acedb57edb0050879/b5a09/1*KTc-HDOw82NAKOD5Ppt3lQ.png 1360w,
+/static/e3cb996a9c2ab49acedb57edb0050879/769f8/1*KTc-HDOw82NAKOD5Ppt3lQ.png 1924w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Then you click add next to the domain that you want (someone should really claim that domain)</figcaption>
+  </figure></p>
+<p>After typing in your domain name click on <strong>“add” and “Complete Order”</strong> so that you can be on your way to purchasing it.</p>
+<h2>Type in your Student Email Address</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/564f6961c0ebd8ab467cbb24023886ee/93582/1*maeu91gAVvlBHPiE_W0YKA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.11764705882353%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUklEQVQoz42PWU/CQBDH94MZ3/0Kfg599N03n0qi8YhHghKjkGhiooKICFIoh4lcUVHaUlBapN3dHtviFFSIR+Lkl5n/zM6RRVwwtLS1sxGOrB9G1g7C3G4o8A+44N5yaB+dptJnqXRCyCdywmVOiGb4GM/7fhL+Q1zw2Rgw1NGbDLJs2yBExxhTigkF3TcgmgahOiGQQl038JuBoQJex8MKJrbjIAiPkvzcUhqS/CS3RKV93xRFpfMgSpA2pFZTab+oGtDt9Tqq+qr1AK2vw1X/ssNcxlwQI2AlONOCyBzm4w1+McYYoqbVha1dVVU1CokFYxYAAtKfM97Acz0PPGxGpmkRQuHHmBDTH7LH2Db0+a0TNt7iuihfrpSq9eKISu0bhXL1C+i8rdS3r8+5+NHK1UkgfoyS+WJSKPwJvH6SEArZ0t3s5uJUYG5mdWGam38HKSfSFlY+CaEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Pretty straightforward…"
+        title="Pretty straightforward…"
+        src="/static/564f6961c0ebd8ab467cbb24023886ee/c5bb3/1*maeu91gAVvlBHPiE_W0YKA.png"
+        srcset="/static/564f6961c0ebd8ab467cbb24023886ee/04472/1*maeu91gAVvlBHPiE_W0YKA.png 170w,
+/static/564f6961c0ebd8ab467cbb24023886ee/9f933/1*maeu91gAVvlBHPiE_W0YKA.png 340w,
+/static/564f6961c0ebd8ab467cbb24023886ee/c5bb3/1*maeu91gAVvlBHPiE_W0YKA.png 680w,
+/static/564f6961c0ebd8ab467cbb24023886ee/b12f7/1*maeu91gAVvlBHPiE_W0YKA.png 1020w,
+/static/564f6961c0ebd8ab467cbb24023886ee/b5a09/1*maeu91gAVvlBHPiE_W0YKA.png 1360w,
+/static/564f6961c0ebd8ab467cbb24023886ee/93582/1*maeu91gAVvlBHPiE_W0YKA.png 1524w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Pretty straightforward…</figcaption>
+  </figure></p>
+<p>After typing in your <strong>Student Email Address</strong> (remember that it must in <em>.edu</em>) and checking your inbox for the verification email.</p>
+<h2><strong>Make an account with namecheap</strong></h2>
+<p>Go to <a href="http://namecheap.com">namecheap.com</a> and create an account using the same email you used to get your domain.</p>
+<p>Then go to your verification email and click on it and then sign in with your new account. <strong>Say no as we’ll set it up together manually.</strong></p>
+<h2>Check if you Got your Domain Under your Account</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/155d6a86c85938cf11bdb30e006bd139/a2b91/1*vUIR6pVGeQYxTwB6_LuxFg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 30%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABX0lEQVQY02P4DwS/f/z/+PIPkP6PDv6hIojIt58/f/8BKv/P0NKzcFLntJXNtUcmdTya3/t4Sc+LZR1PlvU8Wdb1ekXnkyXteybUrGmv3NRZvqG7dsqkyRPmtLW1AEFfW88CBmXDcGMD3wAzpwj3iIXxAVcL3fbnhdwosHtUbHJyetW5pX3nC6xXRupXeFnFeAV7h+X5B2f2zJmfUdikpB3EYGqfZGyfZOWW4RdTG5bS2NgybeqiI3uXL1vS21LRNr2qfWZ/e+/8GavmzNve2LkkKbujtKyrraU1PrHIyCaBwdg23tAmAWiEs1eWnXtmaGL1zPmbFq89PH/VoSUrt69cu2PJmoObt1/cVtE+t2l+bdfWuOTWpJQ8O7dkoC4GI5t4U4ek8JjC8NjK0KiKoIgyv9AS/7CSxJz+3rl75609Nn3Z4Tlrj89YfnTGsqPTF59om3ispmmVZ2CJgVUsAITb0EzoPc/eAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Hover over the “Account” dropdown and click on “Domain List”"
+        title="Hover over the “Account” dropdown and click on “Domain List”"
+        src="/static/155d6a86c85938cf11bdb30e006bd139/c5bb3/1*vUIR6pVGeQYxTwB6_LuxFg.png"
+        srcset="/static/155d6a86c85938cf11bdb30e006bd139/04472/1*vUIR6pVGeQYxTwB6_LuxFg.png 170w,
+/static/155d6a86c85938cf11bdb30e006bd139/9f933/1*vUIR6pVGeQYxTwB6_LuxFg.png 340w,
+/static/155d6a86c85938cf11bdb30e006bd139/c5bb3/1*vUIR6pVGeQYxTwB6_LuxFg.png 680w,
+/static/155d6a86c85938cf11bdb30e006bd139/b12f7/1*vUIR6pVGeQYxTwB6_LuxFg.png 1020w,
+/static/155d6a86c85938cf11bdb30e006bd139/b5a09/1*vUIR6pVGeQYxTwB6_LuxFg.png 1360w,
+/static/155d6a86c85938cf11bdb30e006bd139/a2b91/1*vUIR6pVGeQYxTwB6_LuxFg.png 3360w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Hover over the “Account” dropdown and click on “Domain List”</figcaption>
+  </figure></p>
+<p>Go to <a href="http://namecheap.com">namecheap.com</a> and sign in with your previously created account. Then hover over the “Account” dropdown menu in the homepage of the site and click on “Domain List”. You should now see the domain that you bought (for free!) earlier.</p>
+<h1>Step 2: Create your Website</h1>
+<p>Now that we have our domain, it’s time for us to make the website then find a place to host it. We’ll do this the proper way so we don’t have to depend on any external tools… <strong>We’re going to code HTML!</strong> I understand that many might be discouraged from coding anything at all, but HTML is the least intimidating code you could ever write.</p>
+<blockquote>
+<p>“If you’re a Software Engineer or Computer Scientist, then you should NEVER put HTML on your resume, simply because HTML is not code” — Wise Computer Science professor in Carnegie Mellon University, 2015</p>
+</blockquote>
+<p>Besides, bravery in picking up a new skill is in itself a GREAT SKILL to have. I would never hire anyone that is afraid of learning a skill outside their comfort zone. So be brave! Take the plunge, I’ll go slow ;)</p>
+<h2>Download a template</h2>
+<p>We won’t code everything from scratch, there are amazing people out there that have done impressive and professional work that we can reuse. If you go online and search for <em>“free html templates”</em> you’ll find a large amount of templates out there that you can simply download and edit.</p>
+<p>My recommendation though is to go to <a href="https://shapebootstrap.net/free-templates">https://shapebootstrap.net/free-templates</a> or <a href="https://startbootstrap.com">https://startbootstrap.com</a>. My personal favorite is <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/">blackrockdigital’s template</a>.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/02b0342c9176f732ecf7e53960777038/a2b91/1*oahwp404Drla6kzFxFfOAQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.294117647058826%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVQoz2PQdQiAIPuAeJfQFLfwVAuvKG07P6CInr0/EAEZOg7+Ju5hpu7hJm5hQAZcC4Pmwh4I0lnSr7cUiCZoL+7TWNCjtbhXZckEIAIyNBf0AAV1FvdBSLgWBo0D8yFIff88CNLYP0/z0ALl7XPcJ5a6TywBMoBcmBRQ2Xy4FgaNXXPQ0Y7ZmkcXKVaVp0QEpEYGABlALlAQUyWDxu45aEhlx0yVQ/NVOqqtghOtQ5OV26tA3B0zMVWia9bcPdfm4FL7Q8stDi5xmT/Bef4Eu0PL7Q4tszq4VBO/ZvXdc7T3zPU9vjb81CavY2uiLm4PO7816MT64JMbA0+sB5pLwGYg0tozF2iJwb4FFvsWme9bBGRoAQUxlGHXrLNnnu6eeUAnAJHWHihXZ89cTJUA+vH8krsZPAgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Credit goes to Blackrockdigital, show him some love at http://github.com/blackrockdigital"
+        title="Credit goes to Blackrockdigital, show him some love at http://github.com/blackrockdigital"
+        src="/static/02b0342c9176f732ecf7e53960777038/c5bb3/1*oahwp404Drla6kzFxFfOAQ.png"
+        srcset="/static/02b0342c9176f732ecf7e53960777038/04472/1*oahwp404Drla6kzFxFfOAQ.png 170w,
+/static/02b0342c9176f732ecf7e53960777038/9f933/1*oahwp404Drla6kzFxFfOAQ.png 340w,
+/static/02b0342c9176f732ecf7e53960777038/c5bb3/1*oahwp404Drla6kzFxFfOAQ.png 680w,
+/static/02b0342c9176f732ecf7e53960777038/b12f7/1*oahwp404Drla6kzFxFfOAQ.png 1020w,
+/static/02b0342c9176f732ecf7e53960777038/b5a09/1*oahwp404Drla6kzFxFfOAQ.png 1360w,
+/static/02b0342c9176f732ecf7e53960777038/a2b91/1*oahwp404Drla6kzFxFfOAQ.png 3360w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Credit goes to Blackrockdigital, show him some love at http://github.com/blackrockdigital</figcaption>
+  </figure></p>
+<p>If you choose to download the blackrockdigital template, go to <a href="https://startbootstrap.com/template-overviews/freelancer/">https://startbootstrap.com/template-overviews/freelancer/</a> and click on “Download”.</p>
+<p>Now once we have downloaded the code for the site, you should have the following files. I’ve highlighted in bold the folders we care about</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">├── LICENSE
+├── README.md**
+├── css &lt;-- We&#39;ll be using this to change the colors or our site**
+│   ├── freelancer.css
+│   └── freelancer.min.css
+├── gulpfile.js**
+├── img** **&lt;-- We&#39;ll be using this folder to store our images**
+│   ├── portfolio
+│   └── profile.png**
+├── index.html &lt;-- This is what we care about the most!**
+├── js &lt;-- Don&#39;t worry about this, unless you&#39;re courageous
+│   ├── contact\_me.js
+│   ├── freelancer.js
+│   ├── freelancer.min.js
+│   └── jqBootstrapValidation.js
+├── less
+│   ├── freelancer.less
+│   ├── mixins.less
+│   └── variables.less
+├── mail
+│   └── contact\_me.php
+├── package.json
+└── vendor
+├── bootstrap
+├── font-awesome
+└── jquery</code></pre></div>
+<blockquote>
+<p>IMPORTANT!! Make sure it works by double clicking on the <strong>index.html</strong> file in your filesystem. If it doesn’t work then drag and drop the index.html file in your favorite browser.</p>
+</blockquote>
+<h2>Edit the Content</h2>
+<p>To be able to edit the HTML, we need an editor, I recommend <a href="https://www.sublimetext.com/3">Sublime Text 3</a> because it is a very light pleasant looking editor. Just download it and open “index.html” using it and you should see something similar to the following:</p>
+<div class="gatsby-highlight" data-language="html"><pre style="counter-reset: linenumber 0" class="language-html line-numbers"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+<span class="token comment">&lt;!-- Basic HTML structure --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- Start of tags that you don't need to know --></span>
+  ...
+  ... <span class="token comment">&lt;!-- Just ignore everything in the &lt;head> tag --></span>
+  ...
+  <span class="token comment">&lt;!-- End of tags that you don't need to know --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token comment">&lt;!-- The content we want to edit will be here, like the &lt;header> tag below --></span>
+    <span class="token comment">&lt;!-- Header --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span>
+        <span class="token comment">&lt;!-- NOTE! don't change the tags, just the content inside the tags! --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-lg-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-responsive<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img/profile.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>intro-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                        <span class="token comment">&lt;!-- Idea! Change the following from "Start Bootstrap"
+                              to your first and last name --></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Start Bootstrap<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>star-light<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                        <span class="token comment">&lt;!-- Similarly you would change this to whatever
+                              you want people to know you for --></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>skills<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Web Developer - Graphic Artist
+                                              - User Experience Designer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>In the body tag above will be where we will edit the content of the site. If you look at the main page that is in your browser right now, you’ll see that there is a big <em>“Start Bootstrap”</em> in the middle of the website. We would like to change that to our name.</p>
+<p>Simply, search through your HTML for <em>“Start Bootstrap”</em>, if you’re using Sublime Text 3 then you can just press cmd+f (ctrl+f for windows). Then just change the text inside the tag. It should look like the following:</p>
+<div class="gatsby-highlight" data-language="html"><pre style="counter-reset: linenumber 0" class="language-html line-numbers"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- Header --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span>
+      <span class="token comment">&lt;!-- NOTE! don't change the tags, just the content inside the tags! --></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-lg-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-responsive<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img/profile.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>intro-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                      <span class="token comment">&lt;!-- "Start Bootstrap" changed to my name --></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Yasser El-Sayed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>star-light<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                      <span class="token comment">&lt;!-- I put in my skills up there --></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>skills<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Web Developer - UI Designer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+                      <span class="token comment">&lt;!-- And Viola! --></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><strong>Make sure to save</strong> (cmd+s/ctrl+s) and then double click on the “index.html” file (or drag and drop) and you should see that the website’s text changed. Now you notice that there are a lot of text we need to change.</p>
+<p>I’ve only done this for the header, but you should replace the text for every piece of content on the website. It’s a meticulous but rewarding process. <em>Jus’ sayin.</em></p>
+<h2>Edit the Images</h2>
+<p>Editing the pictures is a very simple process. Every image in the website that we’ve downloaded is in the <em>img</em> folder and it’s linked to the <em>index.html file</em>.</p>
+<p>We’ll use the same code-snippet (editing-html-2.html) and we’ll modify it to incorporate our own image, whatever that may be. First store the image that you want in the <em>img</em> folder, then we’ll replace the url of the image in the <em>index.html</em> file with our own image.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- Change the following src to whatever --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-responsive<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img/profile.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token comment">&lt;!-- And Viola! --></span></code></pre></div>
+<p>Edit the src above</p>
+<p>The <em>src=…</em> is to indicate where the image lies in your computer. For instance, this specific case says that “img/profile.png” lies in a folder called img and is called profile.png. Simple right?! If not, no worries, just checkout this <a href="http://www.w3schools.com/html/html_images.asp">tutorial about image sources.</a></p>
+<h2>Edit the Colors</h2>
+<p>Now let’s say that we want to change the colors in our site, just to make sure that we remain unique and not have someone say:</p>
+<blockquote>
+<p>“OH I KNOW THIS TEMPLATE!” — Major A**hole</p>
+</blockquote>
+<p>We do this by going to the CSS file “freelance.css” as mentioned above. CSS code is composed to three things, <strong>selectors, attributes and values.</strong></p>
+<p>Generic piece of CSS code</p>
+<p>You use the <strong>selectors</strong> to select an HTML tag and <strong>attributes</strong> choose what it is about this tag you want to change. Consequently the <strong>value</strong> of the attribute tells us what the change is. You can select any type of HTML tag, some selectors start with the “.” and other selectors start with the “#”. This depends on the HTML code.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.class-selector</span> <span class="token punctuation">{</span>
+  <span class="token property">attribute1</span><span class="token punctuation">:</span> value1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#id-selector</span> <span class="token punctuation">{</span>
+  <span class="token property">attribute2</span><span class="token punctuation">:</span> value2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>yasser<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
+<p>In the above HTML code we can see that the tag has an “id” called “yasser”.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>developer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
+<p>In the above HTML code the tag has a “class” called “developer”.</p>
+<p>Let’s say we want to give all tags with id=yasser a black background and give all tags with class=developer a white background. We do the following:</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">#yasser</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.developer</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Simple, right? Now that we understand this, we are going to go through all the selectors in the “freelance.css” file and change all the colors we want to change. Again, <em>this is a tedious but rewarding process.</em></p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token comment">/* Search for the following two tags and change the colors */</span>
+<span class="token selector">header</span> <span class="token punctuation">{</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token comment">/* Change the following to #a94442 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #18BC9C<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.navbar-custom</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* Change the following to #4a2458 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #2C3E50<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"Montserrat"</span><span class="token punctuation">,</span> <span class="token string">"Helvetica Neue"</span><span class="token punctuation">,</span> Helvetica<span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+  <span class="token property">text-transform</span><span class="token punctuation">:</span> uppercase<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Some CSS code in “freelance.css” that needs to be changed.</p>
+<p>In the above code I put comments that will tell you what to do.</p>
+<p>EDIT: One thing I forgot to add is in the “index.html” file inside the <head> tag you’ll find a line that has “freelance.min.css”… change that to “freelance.css”. We were working on the wrong file, the problem is we can’t work on the “min” file cause so we change the linked css file that we’re working with.</p>
+<p>If you follow this (along with the previous steps), you should have something like this.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/890f274049a654a248e495bf0ac8b815/a2b91/1*AaK_J3vubvf7hm5aB3VCzA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.529411764705884%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVQoz2PwVAuHoGibjFi7rFj77AD9OHeVMJCgeiQIqYV7qIb56sQEGsb7AUmDeG+NCIgWhgl2nhA01dkXhFz8Jjl4QUT6zZ0nWThPtPUAsoGCkx19Jjl4T3b0nmgP1cKw2s0Zgla5OkEQhLvG1WlDcdGKsrLVnm6rwYKrXJ3hJAQxLHN1wUCuq5xdZvh4Z2alefj7dQYFrnZxWebmiqmSYbmrCxpa6uS41NZmsY9XW32Vv7PTRDfn5fb2SxwdMFWia17m7LQ+PGxLYuL2pISVyUnzIiM2R0VsS03ZHBtLlOaNUZG7crJ35ebsyM7ZlJK2IyN9Z3bW1uSk5W6uBDRDnL3EznaNn8/q0PBlgSHrggKWOtgvcbAnbDMIubmuACJPj1Ue7is93FZ6eqxwd8O0FogACgvSOesGLSsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Final portfolio… not the prettiest, but you do you"
+        title="Final portfolio… not the prettiest, but you do you"
+        src="/static/890f274049a654a248e495bf0ac8b815/c5bb3/1*AaK_J3vubvf7hm5aB3VCzA.png"
+        srcset="/static/890f274049a654a248e495bf0ac8b815/04472/1*AaK_J3vubvf7hm5aB3VCzA.png 170w,
+/static/890f274049a654a248e495bf0ac8b815/9f933/1*AaK_J3vubvf7hm5aB3VCzA.png 340w,
+/static/890f274049a654a248e495bf0ac8b815/c5bb3/1*AaK_J3vubvf7hm5aB3VCzA.png 680w,
+/static/890f274049a654a248e495bf0ac8b815/b12f7/1*AaK_J3vubvf7hm5aB3VCzA.png 1020w,
+/static/890f274049a654a248e495bf0ac8b815/b5a09/1*AaK_J3vubvf7hm5aB3VCzA.png 1360w,
+/static/890f274049a654a248e495bf0ac8b815/a2b91/1*AaK_J3vubvf7hm5aB3VCzA.png 3360w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Final portfolio… not the prettiest, but you do you</figcaption>
+  </figure></p>
+<h1>Step 3: Set Up your Github</h1>
+<p>Now that we’ve made a website let’s find a place to host it so that people can access it. Github is one of my favorite web services as a developer. It’s like a Google Drive for developers as it hosts and keeps track of all the code you upload.</p>
+<h2>Sign up for Github</h2>
+<p>Let’s start by going to <a href="http://github.com">github.com</a> and signing up. I won’t tell you how to do it cuz I’m sure you’re smart enough to do this on your own.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7df4bf1af7bb01e5e36c9a33eba1439e/016a8/1*kcIVjyn7LSut_D-9FRv7rA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 88.23529411764706%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB3UlEQVQ4y32TTZLaMBCFfeeskjtkkZoz5DShgAUwFBsWMWXLNpZsWcLyH/ksDRQ1A3mlUkntfv26W+3oeDzudrv9fr9YLJbL5eFw6PveOdfdcHmNCO/VasW+3W7X6/Vmszmfz0VR5B5CCGstIdwzRH3n+r5rPQjGrrVuPLQHTv0LRH8LezwVdaWGcRw8xnGEaYwhEB4h+RAI410WY2Tasay0lGXtgQcEaNaDXHAKXQBYwid2ZCKNqJJKKSosy5Jq8b5+Aa4Q4Afa5BGJLItPJzRQCYu8p+v1cQHUiEt0WhiiU10km4u2zg3XdpjCst3AMm4wfm8cQjM5TdPSg9I+lGWt81KWVV01prFt3VgO7KpuamOVbrS9oEPv4zjOsoyHpEBiYYyklEKkSkoSJJPpth7PiAzjQKvD+wXmrEwBoYHmhvBOxnxY+ErdrndhZkCSJLPxpixIJsxD6Oe9sWFC8Ot6R3G4UTNReMJZmQum0ecWknl8Ia58emqfyXcpgoXXfxz9MCGfmHdEVMacUCnjRTeoWHNo5iuTAz8oPydLaURWF6URSS6yc1KoNJe0jBZArqqK1F6SVVvlpshMnjdi/qe6yfXjqzw/k3+///r559vb8vvb6ocw8dfe/Af/AI0TDH/BKOD/AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sign up for Github"
+        title="Sign up for Github"
+        src="/static/7df4bf1af7bb01e5e36c9a33eba1439e/c5bb3/1*kcIVjyn7LSut_D-9FRv7rA.png"
+        srcset="/static/7df4bf1af7bb01e5e36c9a33eba1439e/04472/1*kcIVjyn7LSut_D-9FRv7rA.png 170w,
+/static/7df4bf1af7bb01e5e36c9a33eba1439e/9f933/1*kcIVjyn7LSut_D-9FRv7rA.png 340w,
+/static/7df4bf1af7bb01e5e36c9a33eba1439e/c5bb3/1*kcIVjyn7LSut_D-9FRv7rA.png 680w,
+/static/7df4bf1af7bb01e5e36c9a33eba1439e/b12f7/1*kcIVjyn7LSut_D-9FRv7rA.png 1020w,
+/static/7df4bf1af7bb01e5e36c9a33eba1439e/b5a09/1*kcIVjyn7LSut_D-9FRv7rA.png 1360w,
+/static/7df4bf1af7bb01e5e36c9a33eba1439e/016a8/1*kcIVjyn7LSut_D-9FRv7rA.png 1576w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sign up for Github</figcaption>
+  </figure></p>
+<h2>Create a Repository</h2>
+<p>We need to create a repository in order to host our website. A <strong>repository</strong> is just like an online folder that contains all your files.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 464px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cff42e89162517c15593c8aa1a12f67a/69096/1*D6PDxkpJrSJuahnIfBmzjw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.05882352941177%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChklEQVQoz3VTWWsTURidX+WLFB8KiuCboi8KIi6ICK1gBbcXoQX7oBalWH+A+FhSaVHbYI1JZksmkxnTSUzNNp1mn/3emTuLX5JaitXD4ePcy3fmO3PvDOX8B5ZlxXGcSCTW1tZAcDtaudFFHmGY9KXz5z5trOuGQdm2809alu37hGZYhmGJTxr7A62rI+T9rJbn55+xNAMDKOQ6BDuB7waeOxKee4ROFJIwIB6yI9+NCPKQ47puEITY8xzHpYq7ndVMfTU9YiILtTbRI2bqH7P1daa5zjY3uNYGt/etuBcEJI6jKIwA1Pz7/NTc1sxK7vor5sLC9xtLzLWX9K3XLPDqC/rs068n73+Zmts89WDzxOznK4up9sCycDh0iIMD6vkHYfpR8t673Mxb/vJienYlB7yzzN1+w95d5i8upKYfbp1+nDzzJAn+m0tpCIwQHuiW4RIqLalKyxCqfblhyHVd3B3IdRCGVNeFak9pmRXVKqsmUAHR7MPJy1KR43M4jKlfmu5jR8yzAk+XpEJHa4l5rljgd2SxkGN/FIXOvhqP3jKC6o0BwieB4fiU1h3CAg4QYc/3fWiCYKZpuS5GGMN9YOyBERqgQmDAyByEOpgHgz6sS6VSo9Ho9XqVSkXTtMNRfwHu6cBMxuZ2u0MIATPYqtWqIAiqqh43T5YQpFarwTcUhLFue2BuH2+Fx4VhGIwB4rABJiuKYppGGI3N3W7Xtu3t7W2WZWFyoVBIpVKgQdA0nc1mm83modkwjHK57GF8MLnTGcU2TXPyPwyHQ9ixjwCmwUEihKCt3+9DbDIKFum2T8mynMlkoHIcB5XneVEUQSt/AJuSJOXzeYZhhDHgtiaTfwPaWRY3oWRpngAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Hit the “New repository” button"
+        title="Hit the “New repository” button"
+        src="/static/cff42e89162517c15593c8aa1a12f67a/69096/1*D6PDxkpJrSJuahnIfBmzjw.png"
+        srcset="/static/cff42e89162517c15593c8aa1a12f67a/04472/1*D6PDxkpJrSJuahnIfBmzjw.png 170w,
+/static/cff42e89162517c15593c8aa1a12f67a/9f933/1*D6PDxkpJrSJuahnIfBmzjw.png 340w,
+/static/cff42e89162517c15593c8aa1a12f67a/69096/1*D6PDxkpJrSJuahnIfBmzjw.png 464w"
+        sizes="(max-width: 464px) 100vw, 464px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Hit the “New repository” button</figcaption>
+  </figure></p>
+<p>Find your profile picture in the top right corner of your website and hit the “+” dropdown button next to it. Click on the “New repository” button that dropped down.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a8df81860049392c74d0d595b1e70b0f/f2f8c/1*wk50qzFacMLspILPqrUatQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 82.94117647058825%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB20lEQVQ4y6VTyY7UMBDN1yNOfAEaiR+YI+LEeSQOCHoYmJFCSLo7i53EWxzvDpW4aQ3MAhJPJavK1itXuZ6zpmmKoqjr+nA4VFWV5zn44THEGJffkTHG2rbt+x4h1Pe467pxHKdpEkLACqdiAzjGmD/Jy38gg7Ihq/Meqmra6nDMj/V3MeFl0SHKGNWyxCfJNzfX17tdWZZQW4uuiuptUb6ru/fKfpD6SuqP1s7eB7fBOmud8cGfyNAhdAvrMAzQmpTQKueMMkoIGQhZTxija0QHTDuwaRYbN2YN6sv9sekwHshsnLJeGa9tAAPHhejj4uLik4UlQBgW46MPMSNc9lTgkTVo6HrSDbRFAxoo+McWi9koF2cbkqnz6oJ2MRulpZQyLiAlzBLyhfWGGDbH+XXAjxog49L0GGGM5g0wW621lDKFs5QPtXFvznFmFDVNa7QGGegN4GzE55grWVuntTpLKjkASGGtfYqWkmZ1L+5ub0HYMGoQ+X4DKBz4SinxCykv5zyF8BIr2VpDKFnvcfb8B7z3UDmowt9D2k843awmI6hkIx8x8c5DVpBF+idA/ou29yLP2Zcf/FvBv85WbP2cfl98Fiv58u7i9acXb3avLj6/bKby/Bj/gp/lMtRiCRMUKgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Make sure to have the “Initialize this repository with a README” option checked"
+        title="Make sure to have the “Initialize this repository with a README” option checked"
+        src="/static/a8df81860049392c74d0d595b1e70b0f/c5bb3/1*wk50qzFacMLspILPqrUatQ.png"
+        srcset="/static/a8df81860049392c74d0d595b1e70b0f/04472/1*wk50qzFacMLspILPqrUatQ.png 170w,
+/static/a8df81860049392c74d0d595b1e70b0f/9f933/1*wk50qzFacMLspILPqrUatQ.png 340w,
+/static/a8df81860049392c74d0d595b1e70b0f/c5bb3/1*wk50qzFacMLspILPqrUatQ.png 680w,
+/static/a8df81860049392c74d0d595b1e70b0f/b12f7/1*wk50qzFacMLspILPqrUatQ.png 1020w,
+/static/a8df81860049392c74d0d595b1e70b0f/b5a09/1*wk50qzFacMLspILPqrUatQ.png 1360w,
+/static/a8df81860049392c74d0d595b1e70b0f/f2f8c/1*wk50qzFacMLspILPqrUatQ.png 1490w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Make sure to have the “Initialize this repository with a README” option checked</figcaption>
+  </figure></p>
+<p>Give your repository a name like “personalsite” or “portfolio” and a proper description. <strong>Make sure to have the “Initialize this repository with a README” option checked!</strong></p>
+<h2>Upload the Files</h2>
+<p>Once you’ve created the repository, the following will be your control panel for the files!</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c50dcff528a5587f89400750b911958f/1a867/1*cSdTDK-qQ4y_c_v2FK5qsg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXElEQVQoz32Su1bEIBRF8/+/Y2NjYWVhYWGVFDMaM4l5TYDLO4F4CC4tXM5Z5ITH5QIbius0Dv0wMepn0V9pZsIYY61VSsG11tnHcRyGAZ1936O5LAu8UCS05FpJJclZIzgTRAjinOcszjn8vPe5CV+3NcSwbVuBUa2NlMocSsPWSikRjeF93+P+r4o9xhAC9rB6H2OKhButQ9jSxBiRhYSwpByXK5ZR1LGPSXXkWTHN86Xr5oW1OM04uWNPqcS4xR2FS/U5Tm11Pj2/tuVbPTWP7/cP57uX/ql4u3Tnbp7JcOPUGn4KuZVpC//u8UGSJeuvyjBpJ66EdsXCeNP2gORBBgAOQgmSAQgJPrmZ+n0KyZ/WYATaSgnBgAl4Vij7mqu/9b9KtEGraS51XVdVdTqdyrLEghnbflMISJPnQ3gDjDFUiAjw4cgdb6qIx2Xkc/lDxwHTq0Le2yt/Aa3vexhCuNHkAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Repository view. Click on “Upload files” to upload website files."
+        title="Repository view. Click on “Upload files” to upload website files."
+        src="/static/c50dcff528a5587f89400750b911958f/c5bb3/1*cSdTDK-qQ4y_c_v2FK5qsg.png"
+        srcset="/static/c50dcff528a5587f89400750b911958f/04472/1*cSdTDK-qQ4y_c_v2FK5qsg.png 170w,
+/static/c50dcff528a5587f89400750b911958f/9f933/1*cSdTDK-qQ4y_c_v2FK5qsg.png 340w,
+/static/c50dcff528a5587f89400750b911958f/c5bb3/1*cSdTDK-qQ4y_c_v2FK5qsg.png 680w,
+/static/c50dcff528a5587f89400750b911958f/b12f7/1*cSdTDK-qQ4y_c_v2FK5qsg.png 1020w,
+/static/c50dcff528a5587f89400750b911958f/b5a09/1*cSdTDK-qQ4y_c_v2FK5qsg.png 1360w,
+/static/c50dcff528a5587f89400750b911958f/1a867/1*cSdTDK-qQ4y_c_v2FK5qsg.png 1998w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Repository view. Click on “Upload files” to upload website files.</figcaption>
+  </figure></p>
+<p>Now we need to upload the files. Click on the “Upload files” button as shown above. You should see the following:</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/850d1fd080f518e20df42d798b2d0981/e8950/1*Wzl3fVZKxIuOjq7MMtkHpw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.35294117647058%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGUlEQVQoz5WQy26DMBBF/f8f0GWlZtdt/yH7LtNKJaHiZYwBYcBPoIONUkNS1ByNxq+58txBg9EujNE+ykPfwxiDpFTX8IE3J3ObW+AJ3V5BtZQyiqIkSeI4zrIMjsY2tieGIihN0xRjHIZhEATfljzP4Z4QshXLdbvM0rZtWdUJqTFlpGy6rmsYg7wVj+Po9+MP7Jr/miLKcSYEH4bBWPQuZg06vDyHl0tRFDAbsDo+AhJi9gx+wCfnXFrUP5h/nqYJlr7vucVtHhMrmAUks3XlxrCE0XfESk+skTWtCSkIpYSWlFK+IIQyXC6x9QziSpBzdTqXn5hErKqFlJz/aoUaZqVy4slnFr/j4+vp6e3rEJIP1Yl1wR4/vjIsoDddWDsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Uploading into the repository has never been easier"
+        title="Uploading into the repository has never been easier"
+        src="/static/850d1fd080f518e20df42d798b2d0981/c5bb3/1*Wzl3fVZKxIuOjq7MMtkHpw.png"
+        srcset="/static/850d1fd080f518e20df42d798b2d0981/04472/1*Wzl3fVZKxIuOjq7MMtkHpw.png 170w,
+/static/850d1fd080f518e20df42d798b2d0981/9f933/1*Wzl3fVZKxIuOjq7MMtkHpw.png 340w,
+/static/850d1fd080f518e20df42d798b2d0981/c5bb3/1*Wzl3fVZKxIuOjq7MMtkHpw.png 680w,
+/static/850d1fd080f518e20df42d798b2d0981/b12f7/1*Wzl3fVZKxIuOjq7MMtkHpw.png 1020w,
+/static/850d1fd080f518e20df42d798b2d0981/b5a09/1*Wzl3fVZKxIuOjq7MMtkHpw.png 1360w,
+/static/850d1fd080f518e20df42d798b2d0981/e8950/1*Wzl3fVZKxIuOjq7MMtkHpw.png 2000w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Uploading into the repository has never been easier</figcaption>
+  </figure></p>
+<p>Now drag and drop your files (folder by folder and file by file) into the repository and wait for them to upload. Then click on the “Commit changes” button. You should see the following:</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b065e514d2a1cd6140751a57808844b6/58a91/1*yM6qMDqS_3iuPvbFH7HwBw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.05882352941177%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVQoz52STW/UMBCG8///BUc4cuyJMydUiVZ0K+2Sqtlkk/h7xl+xw5tspbaAOPBoMrIznrH9jhsxy3GSk3LDbGFSuxhjCMF7fx1cmXaYeRxHeCklfOPUxFowE5ON0RutnLOYaq094kQoQ+RQBmP8cM7llJdlyTk3HDJxwhriyDCfvE/EIUSsKOs/acqi2XVku7rIuih2PaxkWRZhh9a2xyIu8dKZ9kjPP9UoxWTGTojekAmN0c9Df5Di1J9/XIZDDJecps3ynGSfhrM6PnZ3t+PhHv70cLq9//7528dPXz98ebhpHk9PbT8P0p0n3U16tgFmQqG8Ulm5bt6VleqqUxHkJ2ue5NDKfnSymQ3umOtaSn2xulaop42GQZXyhgVfXWNIWhkmvyVnCFNfgRIQdss1BqrW9yDqQ1BKElEjbAjpd1XRZLuDnf4UGf1HI7c+XyQpF2otW+92kIBmqp2U0vIeRJEmhNh3VqYdNPuQ4gtIQOF55/rO3oIoSuOd4VKNtjzqsJT6P8dG8qB8TK+abYIxm52/ChY2wRSO/QunVOviK8xZCQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Final look of your repository"
+        title="Final look of your repository"
+        src="/static/b065e514d2a1cd6140751a57808844b6/c5bb3/1*yM6qMDqS_3iuPvbFH7HwBw.png"
+        srcset="/static/b065e514d2a1cd6140751a57808844b6/04472/1*yM6qMDqS_3iuPvbFH7HwBw.png 170w,
+/static/b065e514d2a1cd6140751a57808844b6/9f933/1*yM6qMDqS_3iuPvbFH7HwBw.png 340w,
+/static/b065e514d2a1cd6140751a57808844b6/c5bb3/1*yM6qMDqS_3iuPvbFH7HwBw.png 680w,
+/static/b065e514d2a1cd6140751a57808844b6/b12f7/1*yM6qMDqS_3iuPvbFH7HwBw.png 1020w,
+/static/b065e514d2a1cd6140751a57808844b6/b5a09/1*yM6qMDqS_3iuPvbFH7HwBw.png 1360w,
+/static/b065e514d2a1cd6140751a57808844b6/58a91/1*yM6qMDqS_3iuPvbFH7HwBw.png 1990w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Final look of your repository</figcaption>
+  </figure></p>
+<blockquote>
+<p>Congratulations, now you have your website online! Now all we need is a way to view it.</p>
+</blockquote>
+<h2>Link the Domain Name with the Repository</h2>
+<p>Now that’s done let’s link the domain we bought earlier to this repository and some magic will ensue and your website will be available online.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ef6d99ddadb6048a427aa51ab258006a/58a91/1*ienPn0E_UtYK-58-48cPuA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.05882352941177%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpklEQVQoz52Sy3LUMBBF/f9/wZIsWbJizSpQRahkppjBYWYsW9a7W2+ZtidFHrDi1JVKqna3pNvuxCwnLrlybLYkqV2MMYTgvb8urvANw/jp4QdYK5VCxM4pjlogAoKN0RutnLO01Vp7igNQGQBHZdC6ed/zfY9c1tZyzh2GDJjoG8CIJJ+8T4AhxFxKXd5QSovpz66rRaM7gz23IltR6AZSzbIWYVlv+0MVYxzPpj/Ar5+KKylgOgkxGDChM/rEhp0Ux+FyP7JdDGNOfFWekxwSu6jD/nz3ddp9p/l4f/xy9+3D7fubz+8+PXzs9sfHfpiZdBeuz1zPNpBMqJAXqAu2dXZ1gbboVAV4bs2jZL0cJie72dAbc1tqbU9qSyP3tNEkcqW+oNBoSwxJK4Pg1+RMxrRnyAkyec01ppBDr6GoD0EpCQCdsCGkt65Sk+0GnbT8BfWfGrn2eZSgXGitUmeuUIJzTm2klMprKEppQojtZGV6ptGHFJ+gBCo8b1z/s5dQlEpP00SP6rTFSYdS2/9cm5KZ8jE9e7Yahmg2/mlYWA1TdO3fV9brCTmvhBgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Click on the “Settings” button above"
+        title="Click on the “Settings” button above"
+        src="/static/ef6d99ddadb6048a427aa51ab258006a/c5bb3/1*ienPn0E_UtYK-58-48cPuA.png"
+        srcset="/static/ef6d99ddadb6048a427aa51ab258006a/04472/1*ienPn0E_UtYK-58-48cPuA.png 170w,
+/static/ef6d99ddadb6048a427aa51ab258006a/9f933/1*ienPn0E_UtYK-58-48cPuA.png 340w,
+/static/ef6d99ddadb6048a427aa51ab258006a/c5bb3/1*ienPn0E_UtYK-58-48cPuA.png 680w,
+/static/ef6d99ddadb6048a427aa51ab258006a/b12f7/1*ienPn0E_UtYK-58-48cPuA.png 1020w,
+/static/ef6d99ddadb6048a427aa51ab258006a/b5a09/1*ienPn0E_UtYK-58-48cPuA.png 1360w,
+/static/ef6d99ddadb6048a427aa51ab258006a/58a91/1*ienPn0E_UtYK-58-48cPuA.png 1990w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Click on the “Settings” button above</figcaption>
+  </figure></p>
+<p>Click on the “Settings” button above and then scroll down. You should see the following:</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/347eb24f9f8614b1b8dc0c19614f5731/536c7/1*Kv_tVhs4T7lDRpE34MXmrg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 59.411764705882355%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjklEQVQoz31SS07cQBD1vXKESBwgy5whB0Aom+y4BQsSWLBkkyFKMhtEBCNFAoyYGVswxtNud7fd7j+vbewV8NQqvar+VNWrTp6KTbZePTzkUsqu6+QbmLYm0rZtQihfP1b5hlRVRQipe1BKYYcIYwwuOCz4QBBXSiW05tuKWR+MMXrExHHi1TjgvU+2ZZllmeBcCNFEoJwWxUUr5eDDDnUi1HS2VTaEEC/n2frfxXlZbOqKWKsRDMHF5d0Ib+3EXU/9gGSZP50v0sX1avlYpTkZ1k1WllT0z4e3EC9/Pbj6uDv7vD//9O03CNbO3uzDl9P9H5dGcsoEbfSWaRCoJUZwztF2Mv9fHPxMj36lh7Pb72fp4dntyXx1/Df7s8iUbI112nptnDEWatkR4Kg+AfNWed061VglbCeclSGYvvn3EMvG0DdFAa11fBdShaiQc8j0/v2YuWbi7n59v4zAzEooRSl6qnlDmOQ9WI/he8CpohAmZuatJlzxRkKF4QQ+ho8jQf6XcU2tjm7cBZ4BH4OlwYdTxaAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Click on the “None” dropdown under “Source” and then “master branch”"
+        title="Click on the “None” dropdown under “Source” and then “master branch”"
+        src="/static/347eb24f9f8614b1b8dc0c19614f5731/c5bb3/1*Kv_tVhs4T7lDRpE34MXmrg.png"
+        srcset="/static/347eb24f9f8614b1b8dc0c19614f5731/04472/1*Kv_tVhs4T7lDRpE34MXmrg.png 170w,
+/static/347eb24f9f8614b1b8dc0c19614f5731/9f933/1*Kv_tVhs4T7lDRpE34MXmrg.png 340w,
+/static/347eb24f9f8614b1b8dc0c19614f5731/c5bb3/1*Kv_tVhs4T7lDRpE34MXmrg.png 680w,
+/static/347eb24f9f8614b1b8dc0c19614f5731/b12f7/1*Kv_tVhs4T7lDRpE34MXmrg.png 1020w,
+/static/347eb24f9f8614b1b8dc0c19614f5731/b5a09/1*Kv_tVhs4T7lDRpE34MXmrg.png 1360w,
+/static/347eb24f9f8614b1b8dc0c19614f5731/536c7/1*Kv_tVhs4T7lDRpE34MXmrg.png 1480w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Click on the “None” dropdown under “Source” and then “master branch”</figcaption>
+  </figure></p>
+<p>Click on the “None” dropdown under “Source” and then “master branch”. This is telling Github that if anyone access this repo using a domain it will show the “index.html” file in the “master branch”. Don’t worry about this too much. Then click “Save”.</p>
+<p>Once you click on “Save” the page should refresh. Scroll back down and you should see the following.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a22cae00137e6029250033743fc7727c/536c7/1*b8cQ5Z2Xc8UsijqxsZZDHg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVQI133LwRLAEAwEUP//owYHo0iQioZOTaeHvtPuJKtCCNZaY4wEAMjLJ8QYc0oZ6QBiHjdmVnKTpXMOEWutpZTWmvdea81L32Yb2xyfj/4ilYj4l7xdBrKvKX13nJgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Type in the domain that you bought"
+        title="Type in the domain that you bought"
+        src="/static/a22cae00137e6029250033743fc7727c/c5bb3/1*b8cQ5Z2Xc8UsijqxsZZDHg.png"
+        srcset="/static/a22cae00137e6029250033743fc7727c/04472/1*b8cQ5Z2Xc8UsijqxsZZDHg.png 170w,
+/static/a22cae00137e6029250033743fc7727c/9f933/1*b8cQ5Z2Xc8UsijqxsZZDHg.png 340w,
+/static/a22cae00137e6029250033743fc7727c/c5bb3/1*b8cQ5Z2Xc8UsijqxsZZDHg.png 680w,
+/static/a22cae00137e6029250033743fc7727c/b12f7/1*b8cQ5Z2Xc8UsijqxsZZDHg.png 1020w,
+/static/a22cae00137e6029250033743fc7727c/b5a09/1*b8cQ5Z2Xc8UsijqxsZZDHg.png 1360w,
+/static/a22cae00137e6029250033743fc7727c/536c7/1*b8cQ5Z2Xc8UsijqxsZZDHg.png 1480w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Type in the domain that you bought</figcaption>
+  </figure></p>
+<p>Type in the domain that you bought in the “Custom domain” box and then hit “Save” once again. You will get the following warning message once the page refreshes and you scroll down.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/120bd1654457561e6af1420f913b7f88/1134b/1*q8kILlFvYAoxY6HZiLYicw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 9.411764705882353%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVQI10WJ2wqAIBAF+/8/TOyhVtsr9BQahbUGEQzDYc6AMApFykEwytrRPoLbeHLze202152vIq3+DIgLETgqyY0EzMkUhJMXZh9eQDWr0Vn0Pqx9POz5bcDbEhzDAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Scary warning…"
+        title="Scary warning…"
+        src="/static/120bd1654457561e6af1420f913b7f88/c5bb3/1*q8kILlFvYAoxY6HZiLYicw.png"
+        srcset="/static/120bd1654457561e6af1420f913b7f88/04472/1*q8kILlFvYAoxY6HZiLYicw.png 170w,
+/static/120bd1654457561e6af1420f913b7f88/9f933/1*q8kILlFvYAoxY6HZiLYicw.png 340w,
+/static/120bd1654457561e6af1420f913b7f88/c5bb3/1*q8kILlFvYAoxY6HZiLYicw.png 680w,
+/static/120bd1654457561e6af1420f913b7f88/b12f7/1*q8kILlFvYAoxY6HZiLYicw.png 1020w,
+/static/120bd1654457561e6af1420f913b7f88/b5a09/1*q8kILlFvYAoxY6HZiLYicw.png 1360w,
+/static/120bd1654457561e6af1420f913b7f88/1134b/1*q8kILlFvYAoxY6HZiLYicw.png 1470w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Scary warning…</figcaption>
+  </figure></p>
+<p>This is because Github can’t find a DNS record that points to its IP. Which means that in the internet, the domain that you bought is not pointing towards Github, and Github in turn is like</p>
+<blockquote>
+<p>“there is something wrong here, I need someone to point at me… like wtf dude”. — Github when you piss it off</p>
+</blockquote>
+<p>So that’s what we’re going to do in the next step.</p>
+<h1>Step 4: Connect your Domain to your Github</h1>
+<p>We’ve bought a domain, made a website, and hosted it somewhere… it’s been a long journey, but this is the final bit. <em>Our final task is to tell the internet to go to our Github repository when the domain is accessed.</em></p>
+<p>Let’s go back to your domain name list!</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cdb1dea532e0e6075c7160d9bc7b14be/d3bd3/1*3Uwh7u24MpNtOkwh63OXSg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABLElEQVQY001QW07DQAzcC/FQ1U/EFfigLX9wE9RCJeAO3KMH6BXgBP1oCGmbZNe73meYbErVUWTN2h6PYzGdPoxG4/nipes6rbV1jp1LKXUZPUlHHEmMSil0eu/F3f3kAuLlEq11XUulWil9CDGlkHFUDoNyhGzIi8/1+m21Wn1/odAoZb3H53LdhaCNCTGytZQJniiBBIQQxOzxaXxz+/r+0TuXRd1K51zst0NIpZSSGT5sHTKU/yuFeNgUzaYQk8ns8ur6eb6AuC23ijTmdv/4kbJlBoEbojGMnUDUoaG6FVW12xZF07RdjLIqsdhQHlARKWtBYhZz3qKfwljFiVMf7kP13rAN3p/Ou9eaIM7HQwaCQczGWOYzcQxq/6uIwpnzjoiy86A5iW3GH+xgvAfEeUcPAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Click on manage highlighted by the red circle above"
+        title="Click on manage highlighted by the red circle above"
+        src="/static/cdb1dea532e0e6075c7160d9bc7b14be/c5bb3/1*3Uwh7u24MpNtOkwh63OXSg.png"
+        srcset="/static/cdb1dea532e0e6075c7160d9bc7b14be/04472/1*3Uwh7u24MpNtOkwh63OXSg.png 170w,
+/static/cdb1dea532e0e6075c7160d9bc7b14be/9f933/1*3Uwh7u24MpNtOkwh63OXSg.png 340w,
+/static/cdb1dea532e0e6075c7160d9bc7b14be/c5bb3/1*3Uwh7u24MpNtOkwh63OXSg.png 680w,
+/static/cdb1dea532e0e6075c7160d9bc7b14be/b12f7/1*3Uwh7u24MpNtOkwh63OXSg.png 1020w,
+/static/cdb1dea532e0e6075c7160d9bc7b14be/b5a09/1*3Uwh7u24MpNtOkwh63OXSg.png 1360w,
+/static/cdb1dea532e0e6075c7160d9bc7b14be/d3bd3/1*3Uwh7u24MpNtOkwh63OXSg.png 2822w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Click on manage highlighted by the red circle above</figcaption>
+  </figure></p>
+<p>Click on manage highlighted by the red circle above then click on the <strong>Advanced DNS</strong> tab shown in the next page.</p>
+<p><em>A DNS is a Domain Name System/Server which is a database that contains the addresses of all websites on the internet.</em> When we bought our domain, we didn’t tell it exactly where to go to find our website, or a little more technically: we didn’t set the IP of the machine hosting our website files… This is what we’re doing now!</p>
+<h2>Set up your DNS Records</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d67d3e8a4ef71b72a8fda1b2e4224994/de0bd/1*6dQEkUwJwtTbu8w3izddOQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 23.52941176470588%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAhklEQVQY02VPSQ4DMQjL/587Zdih9SQtl1qW4ph9EbNn2uaL+Svu2yLs5w/ZTN2PjqqFgsjMqqgUcwgQJokcfwigUsyqO/aAhae73xsjnl3c5zuo3eVkMvPCJhhwYicAoJJV668YmR7xdOkmonWJkChG+T4Jp2IXUr1YxP34w72240CkXUQfUP4mZeUNQacAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Make sure to get this exactly right!"
+        title="Make sure to get this exactly right!"
+        src="/static/d67d3e8a4ef71b72a8fda1b2e4224994/c5bb3/1*6dQEkUwJwtTbu8w3izddOQ.png"
+        srcset="/static/d67d3e8a4ef71b72a8fda1b2e4224994/04472/1*6dQEkUwJwtTbu8w3izddOQ.png 170w,
+/static/d67d3e8a4ef71b72a8fda1b2e4224994/9f933/1*6dQEkUwJwtTbu8w3izddOQ.png 340w,
+/static/d67d3e8a4ef71b72a8fda1b2e4224994/c5bb3/1*6dQEkUwJwtTbu8w3izddOQ.png 680w,
+/static/d67d3e8a4ef71b72a8fda1b2e4224994/b12f7/1*6dQEkUwJwtTbu8w3izddOQ.png 1020w,
+/static/d67d3e8a4ef71b72a8fda1b2e4224994/b5a09/1*6dQEkUwJwtTbu8w3izddOQ.png 1360w,
+/static/d67d3e8a4ef71b72a8fda1b2e4224994/de0bd/1*6dQEkUwJwtTbu8w3izddOQ.png 2238w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Make sure to get this exactly right!</figcaption>
+  </figure></p>
+<p>Now you should see something similar to the picture above. What we’re doing now is <strong>we’re setting a DNS record to point to a specific IP (address) which will have our website files.</strong></p>
+<p>Now the IP we’re pointing is the Github IP. Once someone types in your address in the address bar, the DNS will point to the Github Server. Once that happens, the server will look for the repository that is associated with that domain, which we indicated when we set the domain name in the settings of the repo.</p>
+<p>Now once that’s done. <strong>Wait a few minutes.</strong> Then <strong>type your domain name into your browser</strong> and you should see your portfolio!</p>
+<p>Visit my own portfolio at <a href="http://yres.me">yres.me</a>.</p>
+<h1>Final Remarks</h1>
+<p>So. Now you have a website. Good shit! Updating and maintaining the website is also very easy. Just change the appropriate files and upload them to your Github repo.</p>
+<p>There are things that I avoided explaining fully to keep it simple and comprehensive at the same time. For example how to use Git with Github, and how to track the visitors on your site. I’ll be writing more in the future, so stay tuned.</p>
+<p>❤❤ Show me some love and <a href="https://github.com/yelsayed/">follow me on Github</a> and maybe even <a href="https://github.com/yelsayed/yelsayed.github.io">star my personal site repo</a>. Love ya ❤❤</p></section><hr/></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li class="more-articles"><a rel="prev" href="/buzzcast/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="backward" class="svg-inline--fa fa-backward fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M11.5 280.6l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2zm256 0l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2z"></path></svg> <!-- -->BuzzCast - How far can you take an idea</a></li><li class="more-articles"><a rel="next" href="/cache-decorator/">Simple Cache Decorator for Webapps that self-invalidates<!-- --> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="forward" class="svg-inline--fa fa-forward fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.5 231.4l-192-160C287.9 54.3 256 68.6 256 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2zm-256 0l-192-160C31.9 54.3 0 68.6 0 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2z"></path></svg></a></li></ul></nav></main></div><footer style="display:flex;justify-content:space-between"><span class="footer-copyright">© <!-- -->2021<!-- -->, Yasser Codes</span><span class="footer-social"><a href="mailto:ysr.sayed@gmail.com"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg></a><a href="https://twitter.com/ysr.sayed"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a href="https://theyasser.medium.com"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium" class="svg-inline--fa fa-medium fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"></path></svg></a><a href="https://instagram.com/yeyeyesser"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></span></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-84887634-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/launch-portfolio/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-fbac4ca513f017f32fb6.js"],"app":["/app-801afe0d10777c06f0c2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8cc43f656001670f765b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-2fad7b2d115e4ef683f8.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-413029d3b43934e34a2c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-d84d3c98a032bf8c6c37.js"]};/*]]>*/</script><script src="/polyfill-fbac4ca513f017f32fb6.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-d84d3c98a032bf8c6c37.js" async=""></script><script src="/commons-9f816676065765e4e536.js" async=""></script><script src="/a9a7754c-3e74a2f80416cf348e88.js" async=""></script><script src="/cb1608f2-58530106a92d01a3ac1b.js" async=""></script><script src="/app-801afe0d10777c06f0c2.js" async=""></script><script src="/styles-55e82d6ff5158c00b714.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/webpack-runtime-33d44321a0a81df8b949.js" async=""></script></body></html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.f4b697f82fab86251be3.css" id="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap);@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-5xl:75rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Lato,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:charter,Georgia,Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:32px;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:21px;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--blog-width:680px}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html[data-color=dark]{--color-background:#1b262c;--color-primary:#8fd7ff;--color-secondary:#bcb7ae;--color-text:#c6c1b9;--color-text-light:#aea79c;--color-heading:#d2cec8;--color-heading-black:#e8e6e3;--color-accent:#d1dce5;--color-mode:#d1dce5;--color-fading:#9e9689;--color-post-snippet-background:#162125;--color-selection:#3e7080}html[data-color=light]{--color-background:#fff;--color-primary:#3eb0ef;--color-secondary:#3c484e;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-mode:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5;--color-fading:#757575;--color-post-snippet-background:#f9f9ff;--color-selection:#ffd3d3}body{font-family:var(--font-body);font-size:var(--fontSize-3);color:var(--color-text);background:var(--color-background);transition:all .35s ease}::selection{background:var(--color-selection)}::-moz-selection{background:var(--color-selection)}footer{padding:var(--spacing-5) var(--spacing-5);display:flex;justify-content:space-between;max-width:var(--maxWidth-5xl);margin:auto}.footer-copyright{font-size:14px;font-family:var(--fontFamily-sans)}.footer-social>*{margin:0 10px;font-size:20px}.more-articles{margin:calc(var(--spacing-8)/2) 0}.more-articles>a{text-decoration:none!important;color:var(--color-primary);padding:10px 20px;border-radius:50px}.toggle-dark-light{appearance:none;-webkit-appearance:none;border:none;background:none;color:var(--color-mode);font-size:40px;cursor:pointer;padding:0}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2,h3,h4,h5,h6{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-6);color:var(--color-heading-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;padding:var(--spacing-5) var(--spacing-5);max-width:var(--maxWidth-5xl)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-wrapper{padding:20px;border:1px solid #e7e7e7;border-radius:5px;margin-bottom:0;background:var(--color-post-snippet-background)}.post-list-item p{margin-bottom:var(--spacing-0);font-size:var(--fontSize-2)}.post-list-item h2{font-size:var(--fontSize-4);color:var(--color-primary);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item small{font-size:var(--fontSize-1);color:#8a8a8a}.post-list-item header{margin-bottom:var(--spacing-4)}.no-posts-found{font-size:var(--fontSize-2);font-family:var(--fontFamily-sans);color:var(--color-fading);display:block;text-align:center;padding:130px 20px}.no-posts-found>span{font-size:80px;display:block}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none}.header-link-home{font-weight:var(--fontWeight-black);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-4);color:var(--color-heading-black)}.bio{text-align:center;margin-bottom:var(--spacing-10)}.bio h1{margin-top:20px}.bio p{font-family:var(--fontFamily-sans)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:200px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) auto var(--spacing-4) auto;max-width:var(--blog-width)}.blog-post section h1,.blog-post section h2,.blog-post ul,ol{margin-left:auto;margin-right:auto;max-width:var(--blog-width)}.blog-post .iframe-wrapper{width:var(--blog-width);margin:auto}.blog-post header p,.date-header{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.blog-post blockquote,.blog-post p{max-width:var(--blog-width);margin-right:auto;margin-left:auto}.blog-post a:hover{color:var(--color-primary);text-decoration:none}.blog-post a{color:var(--color-secondary);box-shadow:inset 0 -1px 0 var(--color-primary);text-decoration:none}.blog-post code[class*=language-],.gatsby-highlight{font-size:var(--fontSize-1)}.gatsby-highlight{max-width:var(--blog-width);margin-bottom:var(--spacing-8);margin-right:auto;margin-left:auto}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}.gatsby-resp-image-figcaption{font-size:14px;font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;color:var(--color-fading);margin-top:20px;text-align:center}.gatsby-resp-image-figure{margin:0}.header-image{max-width:inherit!important}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.32.11"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=58d69f589aada9820ecd68f822139fcf" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#3eb0ef"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=58d69f589aada9820ecd68f822139fcf"/><title data-react-helmet="true">Scaling Our AWS Infrastructure | Yasser Codes</title><meta data-react-helmet="true" name="description" content="Meddy was founded in 2016 and has since had a lot of success thanks to the scale it hit. In 2019 we celebrated our 100,000th bookings and 3 millionth user served, on top of a Series A funding ⚡🔌️…"/><meta data-react-helmet="true" property="og:title" content="Scaling Our AWS Infrastructure"/><meta data-react-helmet="true" property="og:description" content="Meddy was founded in 2016 and has since had a lot of success thanks to the scale it hit. In 2019 we celebrated our 100,000th bookings and 3 millionth user served, on top of a Series A funding ⚡🔌️…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="ysr.sayed"/><meta data-react-helmet="true" name="twitter:title" content="Scaling Our AWS Infrastructure"/><meta data-react-helmet="true" name="twitter:description" content="Meddy was founded in 2016 and has since had a lot of success thanks to the scale it hit. In 2019 we celebrated our 100,000th bookings and 3 millionth user served, on top of a Series A funding ⚡🔌️…"/><link as="script" rel="preload" href="/webpack-runtime-33d44321a0a81df8b949.js"/><link as="script" rel="preload" href="/framework-741ade27086b2708e961.js"/><link as="script" rel="preload" href="/styles-55e82d6ff5158c00b714.js"/><link as="script" rel="preload" href="/app-801afe0d10777c06f0c2.js"/><link as="script" rel="preload" href="/cb1608f2-58530106a92d01a3ac1b.js"/><link as="script" rel="preload" href="/a9a7754c-3e74a2f80416cf348e88.js"/><link as="script" rel="preload" href="/commons-9f816676065765e4e536.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-d84d3c98a032bf8c6c37.js"/><link as="fetch" rel="preload" href="/page-data/scaling/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><nav style="padding:20px 30px;display:flex;justify-content:space-between"><a class="header-link-home" href="/">Yasser Codes</a><button class="toggle-dark-light"> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg> </button></nav><div class="global-wrapper"><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Scaling Our AWS Infrastructure</h1><p>April 12, 2020</p></header><section itemProp="articleBody"><p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fae66aa27e143b8bc72ad970366bc344/d2c28/1*0WqP4pKmvOXtVw7fTlY36g.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.88235294117647%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQUlEQVQY0zVQyU7DMBD1P3PmCzghDlQIxH9wBCSoREE0pWm60EYoG+mSxPZ4t5lQGNmSx2/mzbxHvqqGgQpOf1fZYb/13ltrFIbWoJR1fSqBUqmNddY5i/c/SLzOm46GEOJ4+rlaGudbJrxHyB4PsgneciGNc6/LMlrlIXgsQ5AYo4zGapyBDL6oD5NVxrlsqZAC0k0RT9eMa62VtbbYNtV2L4HVu51wgeCX1mYyHgFw7MaJlMHgZngxeLq8fj47vz85vbu6fREClUhcCGtoR1tKeVmSo6QkmSF3ksw3aYpwNM+jJKuqLs27x7eP4WgJAKgZ+zGMMT1FuiG9BVajTyGo6cf7fLFAACQorVBF6JfhrElp/gBdxhXO/nUU7QROjr5Z++cNvpEYU6QzvSJdN9DvzMu6mO2LiHV1yyRyzuLxDz1wigzv3krMAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Scaling Our AWS Infrastructure"
+        title="Scaling Our AWS Infrastructure"
+        src="/static/fae66aa27e143b8bc72ad970366bc344/c5bb3/1*0WqP4pKmvOXtVw7fTlY36g.png"
+        srcset="/static/fae66aa27e143b8bc72ad970366bc344/04472/1*0WqP4pKmvOXtVw7fTlY36g.png 170w,
+/static/fae66aa27e143b8bc72ad970366bc344/9f933/1*0WqP4pKmvOXtVw7fTlY36g.png 340w,
+/static/fae66aa27e143b8bc72ad970366bc344/c5bb3/1*0WqP4pKmvOXtVw7fTlY36g.png 680w,
+/static/fae66aa27e143b8bc72ad970366bc344/b12f7/1*0WqP4pKmvOXtVw7fTlY36g.png 1020w,
+/static/fae66aa27e143b8bc72ad970366bc344/b5a09/1*0WqP4pKmvOXtVw7fTlY36g.png 1360w,
+/static/fae66aa27e143b8bc72ad970366bc344/d2c28/1*0WqP4pKmvOXtVw7fTlY36g.png 4000w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Scaling Our AWS Infrastructure</figcaption>
+  </figure></p>
+<blockquote>
+<p>This article is written by <a href="https://medium.com/@kareemayesh">Kareem Ayesh</a> and Yasser El-Sayed.</p>
+</blockquote>
+<p>Meddy was founded in 2016 and has since had a lot of success thanks to the scale it hit. In 2019 we celebrated our 100,000th bookings and 3 millionth user served, on top of a <a href="https://www.forbesmiddleeast.com/innovation/startups/meddy-raises-25m-in-series-a-round-eyeing-uae-expansions">Series A funding ⚡🔌️</a>.</p>
+<p>Meddy has gone through a lot of technical changes in the past four years. This article serves as a technical proposal to an infrastructure for a growing tech startup. We will be talking about the initial point of the infrastructure 4 years ago, all the problems we’ve faced over the years, and the incremental solutions that we’ve implemented in the order we’ve implemented them.</p>
+<p><strong>If you’re an aspiring CTO of a growing startup this article will benefit you greatly.</strong></p>
+<h1>Our Monolith</h1>
+<blockquote>
+<p>I remember the CEO telling me that his code is better than any piece of code that I’ve written, when I asked why he said “Because it’s been used by thousands”</p>
+<p>… and he’s right.</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7715a16e28fe797e0ab0fd0c8964c7cd/29114/1*nPL17R4y_XY-L5zDR4XeoQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8klEQVQoz4VSy1LDMAzM//8R/QmOHBhaDr1A0wmExNbTsHLz4JBMNMqMY2tXu5ab3/0wcxZBmtlmQbO56+4CGCOZ6wKBzQMwKlS1woRVRUssJiIR1f8UK7iUErCoYyJS85SGn/sViIf4hQIuULyCbdEZ7EE/5tzePl5fnu+3KxRM/SWOM1HKBHyDj1ho8sYgulzen06n774fx9T16bNt+2GotpVIUs4oXjujDz/wLGrWdV9v5zOO4xeu1aiqBQq57RkwCre4JszIYz1LrTozaA5uG0iUIut0Qk5KmWedx3MOwXM3+HMve6+o2X1e7nsPa4k/OZmHmpGgFUwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Monolithic Infrastructure"
+        title="Monolithic Infrastructure"
+        src="/static/7715a16e28fe797e0ab0fd0c8964c7cd/c5bb3/1*nPL17R4y_XY-L5zDR4XeoQ.png"
+        srcset="/static/7715a16e28fe797e0ab0fd0c8964c7cd/04472/1*nPL17R4y_XY-L5zDR4XeoQ.png 170w,
+/static/7715a16e28fe797e0ab0fd0c8964c7cd/9f933/1*nPL17R4y_XY-L5zDR4XeoQ.png 340w,
+/static/7715a16e28fe797e0ab0fd0c8964c7cd/c5bb3/1*nPL17R4y_XY-L5zDR4XeoQ.png 680w,
+/static/7715a16e28fe797e0ab0fd0c8964c7cd/b12f7/1*nPL17R4y_XY-L5zDR4XeoQ.png 1020w,
+/static/7715a16e28fe797e0ab0fd0c8964c7cd/b5a09/1*nPL17R4y_XY-L5zDR4XeoQ.png 1360w,
+/static/7715a16e28fe797e0ab0fd0c8964c7cd/29114/1*nPL17R4y_XY-L5zDR4XeoQ.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Monolithic Infrastructure</figcaption>
+  </figure></p>
+<h2>Technical Debt</h2>
+<p>Having a monolith alone is not a problem. It’s just natural for most monoliths evolve gracefully and turn into Frankensteins, and that’s exactly what we did.</p>
+<p>That being said this also meant that a lot of problems will manifest throughout the lifetime of the project, and surely a lot of problems did.</p>
+<blockquote>
+<p>However, it wasn’t technical problems that we were worried about, it was the prospect of not being able to solve them.</p>
+</blockquote>
+<p><strong>The existence of a monolith meant that problems were equal to dead-ends.</strong> It’s only natural that the more features were requested the more problems would manifest, solving these problems is just as natural as creating the features.</p>
+<p>An initial refactor and update to the infrastructure was paramount to set up the growth of the application and in turn have potential solutions for potential problems on all fronts. That way new feature requests never spawned a series of uh’s and um’s or worse “<em>I don’t think that’s possible right now</em>”.</p>
+<h1>Stepping Stone</h1>
+<p>Data persistence was a big sore problem in the current monolith. Image uploads, the database and the logs all had to be backed up on the root filesystem and used when new instances needed to be spun up. Since there was no staging instance at that point testing happened on production and <strong>the server failed all the time, endangering our data!</strong></p>
+<p>Another big worry that needed to be addressed was deployment. Deployment was done by SSH and <code class="language-text">git pull</code> from our Github origin with no type of script to automate starting new processes, run tests and report failures.</p>
+<h2>Solution</h2>
+<p>It was clear that we needed some change; we decided that along with application code changes that we would have a small infrastructure change that would move the database and the file uploads to separate services.</p>
+<p>These three problems were solved by using three AWS services:</p>
+<ul>
+<li>Using <a href="https://aws.amazon.com/rds/">RDS</a> to manage the Postgres database</li>
+<li>Using <a href="https://aws.amazon.com/s3/">S3</a> to store the Media uploads</li>
+<li>Using <a href="https://aws.amazon.com/elasticbeanstalk/">ElasticBeanstalk</a> to manage deployments</li>
+</ul>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/55c5301620d7a68ec3c92f9e1d12df92/29114/1*UT37an1z_M1A5LdyihHUdQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDklEQVQoz4WSTU7DMBBGc13Owj2Q4AgFhMQOKQKJrlJEQcACBEnTtI3/MjbPtlA3CRk5keyZ9818ToowHc4NRAg+vUeiGD0VEW1MkGH10dwu3y0RlWQGzpjS2rrY7ez68eT0XKuOrTEoOApGYO89OfJ0+fqu1+uXbbfre3U4dH5QgMZaeBYuKD7CjJROZdO2ZVk2m7ZaPf3UDVLV6+fN/bOXQUOm+ZmrVxq+4AFj1AzXdbNYXO72e+HcWmw8VG8XV3foG+Nw0ytF8bEzNiIfBeLVkEA+y3FAljlB8hr3TAUAEprH2uyQYEM3Fooztx17pqYJjHbAzN+c89/ZJ7fpVqI/ET/1FxVTiSFZDf/GL+AjgzQvh2xNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Separate Data Sources ✔"
+        title="Separate Data Sources ✔"
+        src="/static/55c5301620d7a68ec3c92f9e1d12df92/c5bb3/1*UT37an1z_M1A5LdyihHUdQ.png"
+        srcset="/static/55c5301620d7a68ec3c92f9e1d12df92/04472/1*UT37an1z_M1A5LdyihHUdQ.png 170w,
+/static/55c5301620d7a68ec3c92f9e1d12df92/9f933/1*UT37an1z_M1A5LdyihHUdQ.png 340w,
+/static/55c5301620d7a68ec3c92f9e1d12df92/c5bb3/1*UT37an1z_M1A5LdyihHUdQ.png 680w,
+/static/55c5301620d7a68ec3c92f9e1d12df92/b12f7/1*UT37an1z_M1A5LdyihHUdQ.png 1020w,
+/static/55c5301620d7a68ec3c92f9e1d12df92/b5a09/1*UT37an1z_M1A5LdyihHUdQ.png 1360w,
+/static/55c5301620d7a68ec3c92f9e1d12df92/29114/1*UT37an1z_M1A5LdyihHUdQ.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Separate Data Sources ✔</figcaption>
+  </figure></p>
+<p>Just to re-iterate, the overall changes that we did in this project didn’t result in much of an improvement in the infrastructure. This separation just meant future problems in the application didn’t damage anything sensitive. Additionally, since there is only an application on the main EC2 instance, then that meant that any additional resource can exist on separate servers or services without issue.</p>
+<p><strong>This wasn’t perfect:</strong></p>
+<ul>
+<li><a href="http://www.celeryproject.org/">Celery</a> and <a href="https://redis.io/">Redis</a> were on the same server as the application itself</li>
+<li>The frontend application was a hybrid render between <a href="https://angularjs.org/">AngularJS</a> and <a href="https://www.djangoproject.com/">Django</a> which choked the processors at times</li>
+<li>Logs were stored on the file server (nowhere else 😬).</li>
+</ul>
+<p>At that point, volumes were low and we didn’t have a lot of services or even features so these problems were tolerable.</p>
+<blockquote>
+<p>Nonetheless, this project laid out a very important stepping stone for what has turned out to be a very robust summit.</p>
+</blockquote>
+<h1>Search</h1>
+<blockquote>
+<p>Special mention to Yusuf Musleh for helping with this</p>
+</blockquote>
+<p><strong>Search was frustrating as it took a long time and was not very accurate.</strong> We were using an implementation of <a href="https://stackoverflow.com/questions/43156987/postgresql-trigrams-and-similarity">Trigram Similarity</a> from Postgres to implement search. On large amounts of records it wasn’t the fastest and search on multiple fields wasn’t accurate at all.</p>
+<p>Most importantly, you can’t really control the behavior of these searches. We wanted to keep track of all the issues we had with these search queries.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/faea365c9fef442a301bb08182ddfecd/f3c07/1*GHBJB-Z23SoUs9gOzbNskQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 29.411764705882355%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABH0lEQVQY002OS0vDQBSF8+sFFy5ctaJW2pU/wIULwYVQiGgDSrA1JYmTybNJZtI0mck8Ei+piofhcM/cO99cw36chc/z2Lq17s7W96f+w0m6PA+Wl/7TtFpdtG9XxJrtzEn1OiUvE/Z+XaxuiDXX64X8WBj0IA+8l0p/etHajbyI5rXCKfXDwkF5RlkjdJS3ODuEuyYueSv74VdGRYmSouNsu3WiMEiTuMgzcBwg9OWFGLG2kYKLjo3OOWu1koNWcIymaYAhhPB9f7/fH2uEkOu6RVFkWcY5H/6JMaaU6kcZMAS56zrbtjHGdV3DtOd5m80mTVOtNURCSFmWwAKHWkr58/iIAaeUAgIaehTcQISvkiQxTdNxHMDBRtD62+IboMFJghPOzRsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="A Google Sheet containing all the improvements to search we want to do"
+        title="A Google Sheet containing all the improvements to search we want to do"
+        src="/static/faea365c9fef442a301bb08182ddfecd/c5bb3/1*GHBJB-Z23SoUs9gOzbNskQ.png"
+        srcset="/static/faea365c9fef442a301bb08182ddfecd/04472/1*GHBJB-Z23SoUs9gOzbNskQ.png 170w,
+/static/faea365c9fef442a301bb08182ddfecd/9f933/1*GHBJB-Z23SoUs9gOzbNskQ.png 340w,
+/static/faea365c9fef442a301bb08182ddfecd/c5bb3/1*GHBJB-Z23SoUs9gOzbNskQ.png 680w,
+/static/faea365c9fef442a301bb08182ddfecd/b12f7/1*GHBJB-Z23SoUs9gOzbNskQ.png 1020w,
+/static/faea365c9fef442a301bb08182ddfecd/b5a09/1*GHBJB-Z23SoUs9gOzbNskQ.png 1360w,
+/static/faea365c9fef442a301bb08182ddfecd/f3c07/1*GHBJB-Z23SoUs9gOzbNskQ.png 2516w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">A Google Sheet containing all the improvements to search we want to do</figcaption>
+  </figure></p>
+<p>Whenever we would have an errant behavior we couldn’t resolve the behavior with the current implementation.</p>
+<h2>Solution</h2>
+<p>Search takes up a lot of resources from the instances that it’s within. Instead of just expanding the instance and running a search application within it we decided to launch a separate service that ran <a href="https://www.elastic.co/">ElasticSearch</a> on-premise on an EC2 instance. Whenever a new record would be created or updated, we would update an index in the EC2 instance. There would also be a cronjob that updates the entire index periodically.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2c7befff125b303bc599c92d44300832/29114/1*-gjKzRBvcO0Qxx97Pnvdyw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKElEQVQoz41SwUrEMBDtD/szHj37A4K3sgcPglDQLq4g6urBYrvu6qJtk5lJJvGlK6zg1vWRhDKZNzPvpVkcRWBxvRURB4QQfmdkO3kg4DyezA4OTx2z8+p8wh6yqiKJwRaezavJRcm2fV1Ub8sF4ghr0B1kDIbxMONn2/XG9r0xpo9BDfF1eXlze0c+CAOCKhsV32TvFVEsgFgeHp/K6RRVPrC7VKcleWmlI0zkLJGxBH6GDQ4xEzGqFEWR5znS39dr9I9ejk7Oz67ucYU0y2KsRfK2M3QmPsEYv1yt6rpRSIBydjBg/txUdYNR0c1aqz9s22rGNRE5kFKtASJYcAifmBx27HFbBkkb5qCfIQFn/Oc7JxdEBleSPtUw9htlYxd+ePD4J74A3h+Bab7fljIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Add ElasticSearch ✔"
+        title="Add ElasticSearch ✔"
+        src="/static/2c7befff125b303bc599c92d44300832/c5bb3/1*-gjKzRBvcO0Qxx97Pnvdyw.png"
+        srcset="/static/2c7befff125b303bc599c92d44300832/04472/1*-gjKzRBvcO0Qxx97Pnvdyw.png 170w,
+/static/2c7befff125b303bc599c92d44300832/9f933/1*-gjKzRBvcO0Qxx97Pnvdyw.png 340w,
+/static/2c7befff125b303bc599c92d44300832/c5bb3/1*-gjKzRBvcO0Qxx97Pnvdyw.png 680w,
+/static/2c7befff125b303bc599c92d44300832/b12f7/1*-gjKzRBvcO0Qxx97Pnvdyw.png 1020w,
+/static/2c7befff125b303bc599c92d44300832/b5a09/1*-gjKzRBvcO0Qxx97Pnvdyw.png 1360w,
+/static/2c7befff125b303bc599c92d44300832/29114/1*-gjKzRBvcO0Qxx97Pnvdyw.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Add ElasticSearch ✔</figcaption>
+  </figure></p>
+<p>This resulted in a much faster and better controlled search that we’ve iterated over and over without much change to the image running on our ElasticSearch service.</p>
+<h1>Load Balancing</h1>
+<p><strong>We experienced a 10 second downtime on every single deployment.</strong> Deployment was taken care of by ElasticBeanstalk. At a lower level, EB runs both the new (ondeck) and old (current) applications in parallel and does a symlink once all the execution scripts are successful. Since we were using one server, this symlink would cause 5–10 second downtime that needed to be resolved.</p>
+<h2>Solution</h2>
+<p>To fix this, we needed to have <a href="https://rollout.io/blog/rolling-deployment/">rolling deployment on multiple servers</a>. This was a relatively simple endeavor that required to just have an <a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html">Application Load Balancer</a> in front of an Autoscaling group that was managed by our ElasticBeanstalk.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/beb44eb9dbcc57b8558158790621f9b1/29114/1*ucfPhkNWlxpqOvkyVhan2A.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz4VSTUsDQQztP/aHePHmrQcPnkQRPIiXWu3WqigUlFVBFC3ttrIfs7PzkUlm1qxSira0gRlC5r0kL5lWvWwh1MGHEIi8J9o+uDnuxRz2PvwDtupVxihCB2ABTPvk+iy6rYOTIvWE68jk6+RrliaPQnuLoSylJ0CiLC+uLjvjZDpP/pfMfSI6A6HK397v23cXe9VkIBWIyiityUGWFdPSzpQjIgYvyKwOwDmHrFJZHE1F+nI47m0NBp3J6ElIuXsUcZbgqbJOW2uMZX6LjwVnLSCSEKWU5fPrx0McA0Ahys/hvop3NNBpNMzyFBEN8wAWlb33HGEn6vfPu11trNUF5LGzkkLNih0ioyulmUmeVgyMlfBrValGgiNWAVY1twPOxkwuu2FVPFiGcs8/E0D2uBzM+9y8Z8Yxs+ndNHmW/8aGT/I7fxZSr7VvydF7nU2ASgsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Add Load Balancing ✔"
+        title="Add Load Balancing ✔"
+        src="/static/beb44eb9dbcc57b8558158790621f9b1/c5bb3/1*ucfPhkNWlxpqOvkyVhan2A.png"
+        srcset="/static/beb44eb9dbcc57b8558158790621f9b1/04472/1*ucfPhkNWlxpqOvkyVhan2A.png 170w,
+/static/beb44eb9dbcc57b8558158790621f9b1/9f933/1*ucfPhkNWlxpqOvkyVhan2A.png 340w,
+/static/beb44eb9dbcc57b8558158790621f9b1/c5bb3/1*ucfPhkNWlxpqOvkyVhan2A.png 680w,
+/static/beb44eb9dbcc57b8558158790621f9b1/b12f7/1*ucfPhkNWlxpqOvkyVhan2A.png 1020w,
+/static/beb44eb9dbcc57b8558158790621f9b1/b5a09/1*ucfPhkNWlxpqOvkyVhan2A.png 1360w,
+/static/beb44eb9dbcc57b8558158790621f9b1/29114/1*ucfPhkNWlxpqOvkyVhan2A.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Add Load Balancing ✔</figcaption>
+  </figure></p>
+<p>Rolling deployment adds an overhead of testing and longer deployment times but removes downtime altogether.</p>
+<h1>Rendering and SEO</h1>
+<p>We were using a hybrid render where the Django application would serve a partly rendered HTML and that would run the AngularJS application on the client. This caused many problems:</p>
+<p><strong>Our rendering was slow and choked our dev team and our servers.</strong> Our servers required a lot of processing power to be able to render and was <a href="https://docs.djangoproject.com/en/3.0/topics/performance/#alternatives-to-django-s-template-language">an unavoidable bottleneck</a> with our response times. Even development became difficult because we needed to code a change multiple times. At some point even changing a single tracking event was a hardship.</p>
+<p><strong>Poor build system resulting in high load times.</strong> We were using our own build system since there was no AngularJS build manager for a hybrid render, and our own system had a lot of bundling inconsistencies and caching issues that resulted in unoptimized builds and high load times. This was also a hassle to change and improve.</p>
+<p><strong>Website would occasionally hang for 5–10 minutes.</strong> When we get a spike of requests from users or bots the server would open too many connections with the database, causing the database to hang. This happened <strong>every week at the end of 2019 after our Series A brought Meddy more business.</strong> The reason was because Django opens a database connection and keeps it open until the rendering of the HTML is over! Due to too many database connections the server would hang and eventually serve a 504.</p>
+<h2>Solution</h2>
+<p>Soon after our Series A we embarked on switching our code from a Hybrid Render to a purely Client Side Render. For this to work we had to work on making a lot of changes to the way the backend serves requests.</p>
+<p>We decided to use an S3 bucket as a static hosting for our frontend with <a href="https://aws.amazon.com/cloudfront/">CloudFront</a> distributing the responses. CloudFront also gave us the option to attach <a href="https://aws.amazon.com/lambda/">Lambda</a> functions to have very granular control over the requests we needed.</p>
+<p>One of the main reasons that we did a hybrid render was a worry that SEO would be tarnished with a dynamic render; <a href="https://community.cloudflare.com/t/anyone-else-in-the-recent-days-getting-small-attacks-from-facebook-bots/89019">and one of the main reasons that our website was hanging was due to request spikes caused by bots</a>. Both these problems would be solved by a pre-rendering our pages and serving the pre-rendered pages to bots which is perfect for SEO.</p>
+<p>To do so we used a service called <a href="https://prerender.io/">prerender.io</a> which pre-rendered requested pages, cached those pages and served those pages to bots. We added a bot detection mechanism based on User-agent of the HTTP request in a Lambda Edge function used by our CloudFront distribution. Whenever a bot is detected, they’re redirected to <a href="https://prerender.io/">prerender.io</a> to get their cached pages.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7247807f9abb1688dd45191ff589d752/29114/1*W966nOhlICn1Wxr7XsBgog.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVQoz4VSu07DQBD0t5MKKT8ADakwNNCAACEKKECioUI0RAgpRAm5+Jm729t7mDknERKJw8ouPLszO7vrpOkIHxrrnHdOKkpvXyTxZk2yCQU8IRS1HIpFVi1mYn589VTXZdPiu8jee2utMWyIyyr/novR6MtZevsYj0UVAvJ+CxmqkcZMJgZsa5mfnx5WtULy4Oz+7vkVZZqMc25pYUV23jNzbMiMUYHs9XoXlzf9/v7o853VtCqzsirYWpRpIqUJ/AQvOLEbYLZKaSEEBI4Gg8eHa6jUdU4kgRi2KFMavem3M8YAFXo+hMlkmqYnWV5EnAuSM8MOoibSSGu9fWZMEoWVVkqZ1hsZG2krnxqe/zmVtVFiPQUvfeLrz5G674wtrLthPu9D14+UdCWwf9eufUf8AFq4fWyuFpTLAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Add Pre-rendering and Bot Detection ✔"
+        title="Add Pre-rendering and Bot Detection ✔"
+        src="/static/7247807f9abb1688dd45191ff589d752/c5bb3/1*W966nOhlICn1Wxr7XsBgog.png"
+        srcset="/static/7247807f9abb1688dd45191ff589d752/04472/1*W966nOhlICn1Wxr7XsBgog.png 170w,
+/static/7247807f9abb1688dd45191ff589d752/9f933/1*W966nOhlICn1Wxr7XsBgog.png 340w,
+/static/7247807f9abb1688dd45191ff589d752/c5bb3/1*W966nOhlICn1Wxr7XsBgog.png 680w,
+/static/7247807f9abb1688dd45191ff589d752/b12f7/1*W966nOhlICn1Wxr7XsBgog.png 1020w,
+/static/7247807f9abb1688dd45191ff589d752/b5a09/1*W966nOhlICn1Wxr7XsBgog.png 1360w,
+/static/7247807f9abb1688dd45191ff589d752/29114/1*W966nOhlICn1Wxr7XsBgog.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Add Pre-rendering and Bot Detection ✔</figcaption>
+  </figure></p>
+<p>It’s important to note that once we hit 300,000 pages and prerender.io cost was very high, we decided to have our own on-premise prerender service. We implemented our own caching mechanism using S3 and <a href="https://aws.amazon.com/fargate/">ECS Fargate</a> to host the service.</p>
+<h1>Sharing Caching and Scheduled Tasks</h1>
+<p><strong>Caching resources were not shared between servers.</strong> Caching resources not being shared between servers meant that some requests would be cached and others won’t be. Additionally, we’ve had problems with Redis being on the servers; Redis has scheduled data dumps on the server which on two occasions caused downtime when disk space was eaten up by another service.</p>
+<p><strong>Scheduled tasks needed to run on one server.</strong> <a href="https://docs.celeryproject.org/en/latest/userguide/periodic-tasks.html">Celery Beat</a> had built-in functionality to run tasks on a certain date and time and feeds off an event stream that was stored as a table in the database. This is very useful for us because we use it to send reminder SMSs for appointments at specific intervals before and after the appointment. If it was kept on the servers there would be duplicate tasks executed which would cause conflict mainly within our notification module.</p>
+<h2>Solution</h2>
+<p>Since we are now using multiple servers over a load balancer, the backend has to share a similar caching server. For that purpose we used <a href="https://aws.amazon.com/elasticache/">ElastiCache</a>. This was extremely simple to set up. The more challenging aspect was our asynchronous task manager which was managed on each server with Celery Beat.</p>
+<p>To decouple this we would create events on a new service that would invoke those events by making a request to the backend. The event would just store the function that needs to be called, the arguments of that function and the time it needs to be invoked in. This would have its own database that the backend would populate events on request of the backend.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8b68de40f8d0482b03a6c98d410fc56e/29114/1*ofptVCr_-enDOvcEijdMtQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZUlEQVQoz32SvU7DMBDH+3AsvAgrb8HCAzAgGBg7stABiYIo0DIgiBSpFOgHJW3TOE4cxz6fP4qjCkFR279kWZbvd+f/nWuLbXLzjB83XmYpqw5u4ax1fvtRbS3E03E/TjmaQZTsHdbDbnc6i6K8dKth/2GfWACOhx8JmSdFyVjuDFJKOve3/c8ofg4Uy5eBK7DHtNao9YQUX2G99xoQylHbjBKaUeMcn04auzuDu2sfbI39hY21iKgABYAxWMRh0DqZtPajURBnruDlYzggNJ8Ph/M4KvJISvDFan6BQlBKYaXq2QKCt2nOWDa4eLo57T0cMTo6OLtMUurLlBKElMu2VZWttR7VxpA0bXfaszjp9noyewdAzhI1PteQeUc5o6IUxpj1DUsSctVsSoAqnSDAI20suoUELIX06Rfbu11hiJ5XaJU2ACAE957+jnfbqLyWvPDmQPl/sekP1TZd+P7/tbdW3+hZdwUr262iAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Move Redis and Celery to Separate Services ✔"
+        title="Move Redis and Celery to Separate Services ✔"
+        src="/static/8b68de40f8d0482b03a6c98d410fc56e/c5bb3/1*ofptVCr_-enDOvcEijdMtQ.png"
+        srcset="/static/8b68de40f8d0482b03a6c98d410fc56e/04472/1*ofptVCr_-enDOvcEijdMtQ.png 170w,
+/static/8b68de40f8d0482b03a6c98d410fc56e/9f933/1*ofptVCr_-enDOvcEijdMtQ.png 340w,
+/static/8b68de40f8d0482b03a6c98d410fc56e/c5bb3/1*ofptVCr_-enDOvcEijdMtQ.png 680w,
+/static/8b68de40f8d0482b03a6c98d410fc56e/b12f7/1*ofptVCr_-enDOvcEijdMtQ.png 1020w,
+/static/8b68de40f8d0482b03a6c98d410fc56e/b5a09/1*ofptVCr_-enDOvcEijdMtQ.png 1360w,
+/static/8b68de40f8d0482b03a6c98d410fc56e/29114/1*ofptVCr_-enDOvcEijdMtQ.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Move Redis and Celery to Separate Services ✔</figcaption>
+  </figure></p>
+<blockquote>
+<p>We called this new service <strong>Celery Beet</strong> since we thought that the Celery Beat library missed such a great opportunity.</p>
+</blockquote>
+<p>This has one major downside: you can’t pickle since invoking requests is done through HTTP. However, since <a href="https://docs.celeryproject.org/projects/kombu/en/stable/userguide/serialization.html#serializers">Celery recommended against using Pickle</a> we never used it in our code.</p>
+<h1>Redirections and Link Shortening</h1>
+<p><strong>Redirection for shortened links happened on the client side application.</strong> Moving to a purely client side application meant the server can’t serve a 301 on a link because all requests go to the S3 bucket. When a redirection has to happen from <code class="language-text">/x</code> to <code class="language-text">/y</code>, the client side application has to check with the server about <code class="language-text">/x</code> and inform the Prerenderer that this page was meant to be redirected by adding an extra parameter to the DOM. To ensure that the Prerenderer picked up on that we created a page that says “Redirecting you please hold on for a second” that added that extra parameter.</p>
+<p>This was fine for internal redirections since we don’t have that many. It wasn’t ideal for link shortening because we wanted the users to just land on those shortened links without having to wait, especially when we needed to redirect outside Meddy.</p>
+<h2>Solution</h2>
+<p>To solve this we created two Lambda functions that feed off a Dynamo table that has hashes and links. One Lambda function is tasked with shortening and another Lambda function is tasked with redirecting the shortened links.</p>
+<p>Additionally, we used an API gateway as an entry point for our redirection lambda function and attached it to a new (shorter 😁) domain for these URLs.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3b0dd0f1f05c8d11e744ae37975fbbcc/29114/1*7fwAioJ5xZQbt11UGaAWkw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABO0lEQVQoz5VRW0sCYRDdn9yjIfYS9KIv9iMqsB+R0ZNECUoqRNkFyV1zL99tvvn20tk1CnItGliY/eacmTlzvKIunHMpIsuYHVdpnufbMG/7aYMDQWtjiJQSROQcZ1n2o4NXO7l73O33+0jCKDo82BveXqd5IbVJnUOLGjL6Zql7WYZRHHc67ZPTMyGEUvJmcLkKgourwXA0AYzIfqn4JEOeZUbj6cNi/jgrCl8qGSdiU0XpbjJ9frpPKbJsDVltCHwPH1kmC4CDxFXgJ4lYvM6lCEfjcfuosVy+AYC1cESjQq01hn9PhgxwLTshZK93/r5ek3VS6maz0Wrty8RnBp6r+3G9ZigBpEThspVB+LMkWQdaCeyJ9z+sgsMwBiqwCpSU8rRE+g+fKxqVexqCC8WO8HYVcH8IKX6ND3EqeWCe+4R5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Add Link Redirection using Lambda ✔"
+        title="Add Link Redirection using Lambda ✔"
+        src="/static/3b0dd0f1f05c8d11e744ae37975fbbcc/c5bb3/1*7fwAioJ5xZQbt11UGaAWkw.png"
+        srcset="/static/3b0dd0f1f05c8d11e744ae37975fbbcc/04472/1*7fwAioJ5xZQbt11UGaAWkw.png 170w,
+/static/3b0dd0f1f05c8d11e744ae37975fbbcc/9f933/1*7fwAioJ5xZQbt11UGaAWkw.png 340w,
+/static/3b0dd0f1f05c8d11e744ae37975fbbcc/c5bb3/1*7fwAioJ5xZQbt11UGaAWkw.png 680w,
+/static/3b0dd0f1f05c8d11e744ae37975fbbcc/b12f7/1*7fwAioJ5xZQbt11UGaAWkw.png 1020w,
+/static/3b0dd0f1f05c8d11e744ae37975fbbcc/b5a09/1*7fwAioJ5xZQbt11UGaAWkw.png 1360w,
+/static/3b0dd0f1f05c8d11e744ae37975fbbcc/29114/1*7fwAioJ5xZQbt11UGaAWkw.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Add Link Redirection using Lambda ✔</figcaption>
+  </figure></p>
+<p>This works very well because Lambda provides virtually no maintenance, usage graphs and our database doesn’t have to contain a large table of these redirections.</p>
+<h1>Logging and Monitoring</h1>
+<p><strong>The need for better logging was dire.</strong> An increase in the number of server requests meant that we can no longer rely on rotating logs on our filesystem because the files would rotate so quickly. On top of that, the number of services we were using was increasing, and pulling files from the different filesystems was a nightmare. Having a centralized logging system for all your services is a challenge.</p>
+<h2>Solution</h2>
+<p>We decided to build a service for logging and monitoring using <a href="https://grafana.com/oss/loki/">Grafana Loki</a>. Loki is an open source horizontally-scalable, multi-tenant log aggregation system inspired by Prometheus. While Grafana is an open source analytics and interactive visualization software. Essentially, we used Loki as a logs aggregation tool and Grafana to visualize these logs.</p>
+<p>The idea was to have our different services push logs to an HTTP endpoint opened in the Loki service. Loki would then index them and store the logs in binary format in S3 and the indices in a DynamoDB table. This gave us a way to look for certain tags in our logs like a specific status code or a specific log level. It also gave us the ability to query our logs and even apply aggregation functions on them like count the amount of logs that have specific tags over last 5 minutes.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2bae44588c0aa13b3251d35e9619cf01/29114/1*QL_LU77KlAMG9PnFUyALMw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKElEQVQoz41Sy07DMBDM/1/5C/6BIiHUFAlxQ0IiUqtKaRLa1Hk49u7GdpkECockiJVjOWvP7Mza0WU5nAu99Ajn3OyBaJryQwQiYlu3HWGICDFPKWbAIQQW6YwNUq/jx4f4+YvR9YMOH8IMGNUw50Vxt1phgcIuXNLDIUkSYX563eVlg+LEgjmMFNHVnmcGryvPah1vPo5HGnSPgomsNTe392/bFLIAtkTGEvARPvzDEsADHjTew2uebvfvL7uTri0jA2XGaGAwEL+VsQcYCon0rdZtq7Gum0apqqyarNJnpTrA0EFLI9HEMzSDQmudZVmlKhiDCmSKojiVZWcMXP3VbWiBauhCfRyFEkuMtvfXDv3rqvAwxq5AJvs52CL4u/+42IWH9ROfLqGCslTpctgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Add Logging &amp; Monitoring using Grafana Loki ✔"
+        title="Add Logging &amp; Monitoring using Grafana Loki ✔"
+        src="/static/2bae44588c0aa13b3251d35e9619cf01/c5bb3/1*QL_LU77KlAMG9PnFUyALMw.png"
+        srcset="/static/2bae44588c0aa13b3251d35e9619cf01/04472/1*QL_LU77KlAMG9PnFUyALMw.png 170w,
+/static/2bae44588c0aa13b3251d35e9619cf01/9f933/1*QL_LU77KlAMG9PnFUyALMw.png 340w,
+/static/2bae44588c0aa13b3251d35e9619cf01/c5bb3/1*QL_LU77KlAMG9PnFUyALMw.png 680w,
+/static/2bae44588c0aa13b3251d35e9619cf01/b12f7/1*QL_LU77KlAMG9PnFUyALMw.png 1020w,
+/static/2bae44588c0aa13b3251d35e9619cf01/b5a09/1*QL_LU77KlAMG9PnFUyALMw.png 1360w,
+/static/2bae44588c0aa13b3251d35e9619cf01/29114/1*QL_LU77KlAMG9PnFUyALMw.png 1920w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Add Logging &amp; Monitoring using Grafana Loki ✔</figcaption>
+  </figure></p>
+<p>For event monitoring we use Grafana but this time with AWS <a href="https://aws.amazon.com/cloudwatch/">CloudWatch</a>. Grafana acts as a client for CloudWatch and polls data on demand to visualize it.</p>
+<p>To be able to push logs to Loki as mentioned above, we had to use different techniques from different services like building handlers on our application servers and Lambda functions attached to data dumps. The Lambda functions were used to parse the Load Balancer and CloudFront logs from S3 and then pushing them to Loki.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/11f8ff4826741e32f5f6f8833749093e/e40ed/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.82352941176471%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8klEQVQoz0WP646bMBCF+dM/lZpsSJpwtcEB24RbUmWXgAFzDdlUfY++/xN0IFUrHR19nvGZsRXKAsO0t/vDSlUNhBEh29337W7/T5aFEHYxJrbtIECe++XvY/okLlE4Dw0Lq5q+M7XNQVO1w0bdbjb/tX7brNeLAN7U9erb6usX/bDXDaR4NLAwMSwEI0wLgxu2Y9qOvjjIQLMs5JgL6MjV4b7taKalJD5LPRb7LPLZyWORx1J/1nXx2KeJR88+DT0KrYzSm89APyhn7lG5sNOV8dSnZ8qhfaE88Xh4ZB/zUArHKwveGb+wIAGmvOCBYMGZBb5DFOQQC7vIPVrIxS7RbPeD4+LkYT/wGDdsfDBtkL5IW3g/M9INWwmCMI6SOE6iKAXxU5IngYjDU5hC3fMoIR4h/uIzHBcGx9hVbu+ZbPqylFXVZLdCFFUumqyoS1EVRQVFIepCVHleAlSVLIpyqcsoShRxK4bx0bZ9143Q7vp73w0gGFfXbdP00FpGy7YdZNNJ2YI3bR/HZ0VkeT9M0IDzaxUEwOewbCEPE19h4L/HSsId+KNSZHk33GXdwgYhINq/tknZvTaD4DZkoAI767qBQcDzZimqz+evaXpO0yeUHo/n4/FzGCbI9P0dAL4D7wIfxwdUgMdxuk+fSXL5A9RDgHsBFlC6AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="One of our many screens on Grafana"
+        title="One of our many screens on Grafana"
+        src="/static/11f8ff4826741e32f5f6f8833749093e/c5bb3/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png"
+        srcset="/static/11f8ff4826741e32f5f6f8833749093e/04472/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png 170w,
+/static/11f8ff4826741e32f5f6f8833749093e/9f933/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png 340w,
+/static/11f8ff4826741e32f5f6f8833749093e/c5bb3/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png 680w,
+/static/11f8ff4826741e32f5f6f8833749093e/b12f7/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png 1020w,
+/static/11f8ff4826741e32f5f6f8833749093e/b5a09/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png 1360w,
+/static/11f8ff4826741e32f5f6f8833749093e/e40ed/1*aJ8Zzpgjq-W0Dd3BUp_YmQ.png 1378w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">One of our many screens on Grafana</figcaption>
+  </figure></p>
+<p>Using this mix of data handlers and CloudWatch we were able to have a centralized logging and monitoring system for everything in your infrastructure, you have one place to monitor everything.</p>
+<h1>All Together</h1>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/199f125adb708af3d4ec19d2a38df7ea/9b29b/1*sMIMXEo6IxGjFrV-YmUK8A.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwUlEQVQoz2VSa2vbMBT1//8d+5SuMBgMtkGaDkZHt3RZ4/rRxHbsxHXktxNbunrY2o1DoBAhhHR1z7lH98jgQpwncC6kbA4HPwj6QVPa2baVlXW4L5SScEl7Pw0xDrxTvep7xYBvoqiqiqYpQao3kj++BFr3HMc1mDKgAMid5HVeH/MszouMsy6Jw33dqWEQ0BaHlgnJUJlSnJ95RvDcCc1VqPXwZAdbkvkr58f9nbvNmpZyoEWRIsvhWP+yd7ezBYe24xIVwkhgUOCkrFOS9ErEu+DVtbTWc8tL8kpI/uXzre2uhdJZUSYk9TbBZmmWgS+1RrjRUCjHIlIKb+1Y5tPNx8lbvP357HtbwlgbOt92/m/KBGNCaB3PZsH0a68HLG5gdYThAqed0lqayzkhKT6KMnbsuijyycuH1eJTFLpNxx8epvarw2CU/b57GMEoyt4T4rguACvrY5omAC2U7j/zzy5vq3y/9vzFsyklN64MQEpeN01VVchFT1qB0YbLAWXdTb+by7+D1mgkh+M1WIwPkSdXxj1DAcAZQx52M5lYy8d+kNjyUTY/ZWD+aN5lFeIcH09SnBME9ljjZ7s4Lf4DngRqIYr01zkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="All done!"
+        title="All done!"
+        src="/static/199f125adb708af3d4ec19d2a38df7ea/c5bb3/1*sMIMXEo6IxGjFrV-YmUK8A.png"
+        srcset="/static/199f125adb708af3d4ec19d2a38df7ea/04472/1*sMIMXEo6IxGjFrV-YmUK8A.png 170w,
+/static/199f125adb708af3d4ec19d2a38df7ea/9f933/1*sMIMXEo6IxGjFrV-YmUK8A.png 340w,
+/static/199f125adb708af3d4ec19d2a38df7ea/c5bb3/1*sMIMXEo6IxGjFrV-YmUK8A.png 680w,
+/static/199f125adb708af3d4ec19d2a38df7ea/b12f7/1*sMIMXEo6IxGjFrV-YmUK8A.png 1020w,
+/static/199f125adb708af3d4ec19d2a38df7ea/b5a09/1*sMIMXEo6IxGjFrV-YmUK8A.png 1360w,
+/static/199f125adb708af3d4ec19d2a38df7ea/9b29b/1*sMIMXEo6IxGjFrV-YmUK8A.png 3840w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">All done!</figcaption>
+  </figure></p>
+<p>This is probably our most favorite article to date! This shows a lot of growth due to a lot of challenges that we went through. The most exciting thing is that this is still the beginning for Meddy.</p>
+<p>Thank you for reading! Stay tuned for more!</p></section><hr/></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li class="more-articles"><a rel="prev" href="/ghost/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="backward" class="svg-inline--fa fa-backward fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M11.5 280.6l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2zm256 0l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2z"></path></svg> <!-- -->Set up your Arabic Ghost Blog</a></li><li class="more-articles"><a rel="next" href="/i-hate-software/">What I Hate About Software Engineers<!-- --> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="forward" class="svg-inline--fa fa-forward fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M500.5 231.4l-192-160C287.9 54.3 256 68.6 256 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2zm-256 0l-192-160C31.9 54.3 0 68.6 0 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2z"></path></svg></a></li></ul></nav></main></div><footer style="display:flex;justify-content:space-between"><span class="footer-copyright">© <!-- -->2021<!-- -->, Yasser Codes</span><span class="footer-social"><a href="mailto:ysr.sayed@gmail.com"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg></a><a href="https://twitter.com/ysr.sayed"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a href="https://theyasser.medium.com"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium" class="svg-inline--fa fa-medium fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"></path></svg></a><a href="https://instagram.com/yeyeyesser"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></span></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-84887634-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/scaling/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-fbac4ca513f017f32fb6.js"],"app":["/app-801afe0d10777c06f0c2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8cc43f656001670f765b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-2fad7b2d115e4ef683f8.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-413029d3b43934e34a2c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-d84d3c98a032bf8c6c37.js"]};/*]]>*/</script><script src="/polyfill-fbac4ca513f017f32fb6.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-d84d3c98a032bf8c6c37.js" async=""></script><script src="/commons-9f816676065765e4e536.js" async=""></script><script src="/a9a7754c-3e74a2f80416cf348e88.js" async=""></script><script src="/cb1608f2-58530106a92d01a3ac1b.js" async=""></script><script src="/app-801afe0d10777c06f0c2.js" async=""></script><script src="/styles-55e82d6ff5158c00b714.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/webpack-runtime-33d44321a0a81df8b949.js" async=""></script></body></html>
