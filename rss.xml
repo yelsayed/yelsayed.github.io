@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yasser Codes]]></title><description><![CDATA[Personal page of Yasser El-Sayed.]]></description><link>https://yasser.codes</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 May 2021 19:52:20 GMT</lastBuildDate><item><title><![CDATA[Bandar: a Humble Digital Assistant]]></title><description><![CDATA[On November 4th, 2019 we created a digital assistant for Meddy to just send notifications when certain events triggered. We called him…]]></description><link>https://yasser.codes/bandar/</link><guid isPermaLink="false">https://yasser.codes/bandar/</guid><pubDate>Sat, 07 Nov 2020 13:40:59 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yasser Codes]]></title><description><![CDATA[Personal page of Yasser El-Sayed.]]></description><link>https://yasser.codes</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 May 2021 17:23:42 GMT</lastBuildDate><item><title><![CDATA[Move from Medium to Markdown]]></title><description><![CDATA[If you’re looking to start your own Gatsby personal blog site this is the tool for you. md-from-medium Install using: The usage is very…]]></description><link>https://yasser.codes/medium-to-markdown/</link><guid isPermaLink="false">https://yasser.codes/medium-to-markdown/</guid><pubDate>Tue, 25 May 2021 17:11:50 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/007924517d79246559a05ef47ff21cc8/1307b/1*ZQpg_8kHV-0M5UkPOulOyw.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.64705882352942%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiklEQVQoz52Sv0/CQBTHb9R/wH9A4/9knBhYiImrk5Mm6OhKZDEOuphgQYTSMoAOJrQFaSKRVtCWkDZFCm2lvR8ereFHZDB+c3fv8u4+d+/dPUAWhKkIJr80da8SiBaaQ111TDqZYJj1mgPkTpkFGCE0G+ewjyA1x3IOXMVv9UbJb4H3+Fb/6AWZEQ8h9Dxv9c0RfNpiwcXuRnF/s3sIPvaAdZAnb9RvO+NU6pznyzVBFEWpUqkahjFL5AdOPudAemc7e7BeTwA9AYKTIulS/9hzFUUVBEmS6oIoqapq2/YchghRk1MEkI4l5fueb8VGN2vkjMFt6odh4jTyu3zBMEw/CJYfLDS+89X87ElDPXwfIhOzS+xoBwUsa8Bx5RU5kzCA8XgUhKciglF4WxSYpmkMk+10OoqqZjIMy5YEQVz6qpYJedl4UJ2hh0KM0hjh6bzdVkocX60+FoosTZs2XdfnMESYe51cP/Uva05nACP4jwK0dy2/oblyz3N9vFgbixWCovoItQT/W985AZQBq57y2gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Medium ▶️ Markdown&quot;
+        title=&quot;Medium ▶️ Markdown&quot;
+        src=&quot;/static/007924517d79246559a05ef47ff21cc8/c5bb3/1*ZQpg_8kHV-0M5UkPOulOyw.png&quot;
+        srcset=&quot;/static/007924517d79246559a05ef47ff21cc8/04472/1*ZQpg_8kHV-0M5UkPOulOyw.png 170w,
+/static/007924517d79246559a05ef47ff21cc8/9f933/1*ZQpg_8kHV-0M5UkPOulOyw.png 340w,
+/static/007924517d79246559a05ef47ff21cc8/c5bb3/1*ZQpg_8kHV-0M5UkPOulOyw.png 680w,
+/static/007924517d79246559a05ef47ff21cc8/b12f7/1*ZQpg_8kHV-0M5UkPOulOyw.png 1020w,
+/static/007924517d79246559a05ef47ff21cc8/b5a09/1*ZQpg_8kHV-0M5UkPOulOyw.png 1360w,
+/static/007924517d79246559a05ef47ff21cc8/1307b/1*ZQpg_8kHV-0M5UkPOulOyw.png 3000w&quot;
+        sizes=&quot;(max-width: 680px) 100vw, 680px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Medium ▶️ Markdown&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;If you’re looking to start your own Gatsby personal blog site this is the tool for you.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/md-from-medium&quot;&gt;md-from-medium&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Install using:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install -g md-from-medium&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The usage is very simple:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;md-from-medium &amp;lt;mediumPostUrl&amp;gt; &amp;lt;markdownDir&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For the next section I talk about how it works, you can also view the code over &lt;a href=&quot;https://github.com/yelsayed/md-from-medium&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;How it Works&lt;/h1&gt;
+&lt;p&gt;Brace yourselves… this is the easiest tool to build on the planet.&lt;/p&gt;
+&lt;p&gt;The script (which is around ~200 lines) has three main functions: getting the HTML of the Medium post, turning it into a proper DOM, and traversing the DOM, changing elements of it into Markdown. So straight forward 😄.&lt;/p&gt;
+&lt;p&gt;The service that does the retrieval is none other than &lt;a href=&quot;https://www.npmjs.com/package/request&quot;&gt;request&lt;/a&gt;. This library fetches the URL and gets the raw HTML for us to parse.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: Even though it’s deprecated it still has around 21 million weekly downloads&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The service that converts that HTML into a proper DOM is called &lt;a href=&quot;https://www.npmjs.com/package/cheerio&quot;&gt;cheerio&lt;/a&gt;. The DOM that comes off this has a simple jQuery-like wrapper around it for easy manipulations.&lt;/p&gt;
+&lt;p&gt;Lastly the we use another service called &lt;a href=&quot;https://www.npmjs.com/package/turndown&quot;&gt;turndown&lt;/a&gt;. Turndown requires a lot of customization to work with the specific DOM you want it to, which is what the rest of the script is doing.&lt;/p&gt;
+&lt;p&gt;The final code of combining these three services is as simple as you think it is.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mdFromMedium&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+    &lt;span class=&quot;token comment&quot;&gt;// Fetching HTML from medium...  &lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;resolve&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+        &lt;span class=&quot;token function&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+            uri&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; url&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;  
+            method&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GET&apos;&lt;/span&gt;  
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;err&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; httpResponse&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+            &lt;span class=&quot;token comment&quot;&gt;// Converting HTML to DOM...  &lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; $ &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; cheerio&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Converting into Markdown...  &lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;article&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; markdown &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; turndownService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;turndown&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;html&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+              
+            &lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;markdown&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Thanks :D&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Bandar: a Humble Digital Assistant]]></title><description><![CDATA[On November 4th, 2019 we created a digital assistant for Meddy to just send notifications when certain events triggered. We called him…]]></description><link>https://yasser.codes/bandar/</link><guid isPermaLink="false">https://yasser.codes/bandar/</guid><pubDate>Sat, 07 Nov 2020 13:40:59 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &quot;
