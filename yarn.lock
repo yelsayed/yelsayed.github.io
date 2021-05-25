@@ -1253,13 +1253,6 @@
   "resolved" "https://registry.npmjs.org/@iarna/toml/-/toml-2.2.5.tgz"
   "version" "2.2.5"
 
-"@iconify/iconify@^2.0.1":
-  "integrity" "sha512-heGCmdiRc58+TQjKPiem8cmNZj7YXDG3TphRVw0UGjsz8/OKgN2ncBPy1kfFIiv5aKhUsij6WVTfOMUS7YgTbA=="
-  "resolved" "https://registry.npmjs.org/@iconify/iconify/-/iconify-2.0.1.tgz"
-  "version" "2.0.1"
-  dependencies:
-    "cross-fetch" "^3.0.6"
-
 "@jest/types@^25.5.0":
   "integrity" "sha512-OXD0RgQ86Tu3MazKo8bnrkDRaDXXMGUqd+kTtLtK1Zb7CRzQcaSRPPPV37SvYTdevXEBVxe0HXylEjs8ibkmCw=="
   "resolved" "https://registry.npmjs.org/@jest/types/-/types-25.5.0.tgz"
@@ -4156,7 +4149,7 @@
   "resolved" "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
   "version" "1.1.1"
 
-"cross-fetch@^3.0.6", "cross-fetch@3.0.6":
+"cross-fetch@3.0.6":
   "integrity" "sha512-KBPUbqgFjzWlVcURG+Svp9TlhA5uliYtiNx/0r8nv0pdypeQCRJ9IaSIc3q/x3q8t3F75cHuwxVql1HFGHCNJQ=="
   "resolved" "https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.0.6.tgz"
   "version" "3.0.6"
@@ -9440,6 +9433,18 @@
   "version" "2.0.0"
   dependencies:
     "repeat-string" "^1.0.0"
+
+"md-from-medium@^0.0.7":
+  "integrity" "sha512-ZYiHA+NXVF1Xt9gJzt5+iDe2Xs0J+oZkMlsPipkJLri+DW6qnAjimnyuxOi+uGGPhr6+k2cZdoKHdarL1iyDXQ=="
+  "resolved" "https://registry.npmjs.org/md-from-medium/-/md-from-medium-0.0.7.tgz"
+  "version" "0.0.7"
+  dependencies:
+    "cheerio" "^1.0.0-rc.5"
+    "image-downloader" "^4.0.2"
+    "image-type" "^4.1.0"
+    "request" "^2.88.2"
+    "turndown" "^7.0.0"
+    "turndown-plugin-gfm" "^1.0.2"
 
 "md5-file@^5.0.0":
   "integrity" "sha512-xbEFXCYVWrSx/gEKS1VPlg84h/4L20znVIulKw6kMfmBUAZNAnF00eczz9ICMl+/hjQGo5KSXRxbL/47X3rmMw=="

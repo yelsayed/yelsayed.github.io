@@ -2,7 +2,7 @@ import React, {useEffect} from "react"
 import { Link, graphql } from "gatsby"
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faForward, faBackward} from "@fortawesome/free-solid-svg-icons";
+import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -52,14 +52,14 @@ const BlogPostTemplate = ({ data, location }) => {
           <li className="more-articles">
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                <FontAwesomeIcon icon={faBackward}/> {previous.frontmatter.title}
+                <FontAwesomeIcon icon={faChevronLeft}/> {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li className="more-articles">
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} <FontAwesomeIcon icon={faForward}/>
+                {next.frontmatter.title} <FontAwesomeIcon icon={faChevronRight}/>
               </Link>
             )}
           </li>
