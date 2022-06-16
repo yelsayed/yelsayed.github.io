@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.f4b697f82fab86251be3.css" id="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap);@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-5xl:75rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Lato,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:charter,Georgia,Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:32px;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:21px;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--blog-width:680px}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html[data-color=dark]{--color-background:#1b262c;--color-primary:#8fd7ff;--color-secondary:#bcb7ae;--color-text:#c6c1b9;--color-text-light:#aea79c;--color-heading:#d2cec8;--color-heading-black:#e8e6e3;--color-accent:#d1dce5;--color-mode:#d1dce5;--color-fading:#9e9689;--color-post-snippet-background:#162125;--color-selection:#3e7080}html[data-color=light]{--color-background:#fff;--color-primary:#3eb0ef;--color-secondary:#3c484e;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-mode:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5;--color-fading:#757575;--color-post-snippet-background:#f9f9ff;--color-selection:#ffd3d3}body{font-family:var(--font-body);font-size:var(--fontSize-3);color:var(--color-text);background:var(--color-background);transition:all .35s ease}::selection{background:var(--color-selection)}::-moz-selection{background:var(--color-selection)}footer{padding:var(--spacing-5) var(--spacing-5);display:flex;justify-content:space-between;max-width:var(--maxWidth-5xl);margin:auto}.footer-copyright{font-size:14px;font-family:var(--fontFamily-sans)}.footer-social>*{margin:0 10px;font-size:20px}.more-articles{margin:calc(var(--spacing-8)/2) 0}.more-articles>a{text-decoration:none!important;color:var(--color-primary);padding:10px 20px;border-radius:50px}.toggle-dark-light{appearance:none;-webkit-appearance:none;border:none;background:none;color:var(--color-mode);font-size:40px;cursor:pointer;padding:0}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2,h3,h4,h5,h6{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-6);color:var(--color-heading-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;padding:var(--spacing-5) var(--spacing-5);max-width:var(--maxWidth-5xl)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-wrapper{padding:20px;border:1px solid #e7e7e7;border-radius:5px;margin-bottom:0;background:var(--color-post-snippet-background)}.post-list-item p{margin-bottom:var(--spacing-0);font-size:var(--fontSize-2)}.post-list-item h2{font-size:var(--fontSize-4);color:var(--color-primary);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item small{font-size:var(--fontSize-1);color:#8a8a8a}.post-list-item header{margin-bottom:var(--spacing-4)}.no-posts-found{font-size:var(--fontSize-2);font-family:var(--fontFamily-sans);color:var(--color-fading);display:block;text-align:center;padding:130px 20px}.no-posts-found>span{font-size:80px;display:block}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none}.header-link-home{font-weight:var(--fontWeight-black);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-4);color:var(--color-heading-black)}.bio{text-align:center;margin-bottom:var(--spacing-10)}.bio h1{margin-top:20px}.bio p{font-family:var(--fontFamily-sans)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:200px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) auto var(--spacing-4) auto;max-width:var(--blog-width)}.blog-post section h1,.blog-post section h2,.blog-post ul,ol{margin-left:auto;margin-right:auto;max-width:var(--blog-width)}.blog-post .iframe-wrapper{width:var(--blog-width);margin:auto}.blog-post header p,.date-header{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.blog-post blockquote,.blog-post p{max-width:var(--blog-width);margin-right:auto;margin-left:auto}.blog-post a:hover{color:var(--color-primary);text-decoration:none}.blog-post a{color:var(--color-secondary);box-shadow:inset 0 -1px 0 var(--color-primary);text-decoration:none}.blog-post code[class*=language-],.gatsby-highlight{font-size:var(--fontSize-1)}.gatsby-highlight{max-width:var(--blog-width);margin-bottom:var(--spacing-8);margin-right:auto;margin-left:auto}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}.gatsby-resp-image-figcaption{font-size:14px;font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;color:var(--color-fading);margin-top:20px;text-align:center}.gatsby-resp-image-figure{margin:0}.header-image{max-width:inherit!important}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.32.11"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=58d69f589aada9820ecd68f822139fcf" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#3eb0ef"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=58d69f589aada9820ecd68f822139fcf"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=58d69f589aada9820ecd68f822139fcf"/><title data-react-helmet="true">Building a Facial Recognition Attendance System in 30 days | Yasser Codes</title><meta data-react-helmet="true" name="description" content="This month, our attendance management system hit 900,000 attendance events only 1 year after its inception. While we bask in our accomplishment it’s easy to forget the rough start the founder…"/><meta data-react-helmet="true" property="og:title" content="Building a Facial Recognition Attendance System in 30 days"/><meta data-react-helmet="true" property="og:description" content="This month, our attendance management system hit 900,000 attendance events only 1 year after its inception. While we bask in our accomplishment it’s easy to forget the rough start the founder…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="ysr.sayed"/><meta data-react-helmet="true" name="twitter:title" content="Building a Facial Recognition Attendance System in 30 days"/><meta data-react-helmet="true" name="twitter:description" content="This month, our attendance management system hit 900,000 attendance events only 1 year after its inception. While we bask in our accomplishment it’s easy to forget the rough start the founder…"/><link as="script" rel="preload" href="/webpack-runtime-33521c119419a0c05499.js"/><link as="script" rel="preload" href="/framework-741ade27086b2708e961.js"/><link as="script" rel="preload" href="/styles-55e82d6ff5158c00b714.js"/><link as="script" rel="preload" href="/app-801afe0d10777c06f0c2.js"/><link as="script" rel="preload" href="/cb1608f2-9b67d109c0c9514fd6ea.js"/><link as="script" rel="preload" href="/a9a7754c-3e74a2f80416cf348e88.js"/><link as="script" rel="preload" href="/commons-fa7b9ab15f523582aed4.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-fd3a7a4d372d421fca09.js"/><link as="fetch" rel="preload" href="/page-data/attendance/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><nav style="padding:20px 30px;display:flex;justify-content:space-between"><a class="header-link-home" href="/">Yasser Codes</a><button class="toggle-dark-light"> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg> </button></nav><div class="global-wrapper"><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Building a Facial Recognition Attendance System in 30 days</h1><p>June 16, 2022</p></header><section itemProp="articleBody"><p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0018833d04aa9657f597b1b41025bb99/2cefc/1*jVObNVN4QQr4ki9JSgPteg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.64705882352942%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB1ElEQVQoz42Sz0sbQRTHl/4D/U+8FYTixaun0oNgQVToVQ89iJciRSmFgJooUUwraK3EX6TZLDGIIslBVyWQ1A0xum32RzbZppvNumo2s7MznWQxStW27/Rm3ny+78ubR+F/hYOQm6B7JSqfz/M8r2lauVwuFAqSJMmyLAhCLpdTFAU1SU3XtWqVJIJ1VUG3IhTDMDRNR6PRZDIZDodDoRDLshzHZTIZURQhhF9opr2n9+v2Do/h00Rsgc8SDCKnAcfj8VgsFolEyGvSivQ0TdMVtm371Zvhgbfv3q8E/RHmHDsv9hMnvGAavyAEDZgYVlW1WCy2GGLVcYgw4rLZUe+0hXH/64GAz0NKacEOHpoVXb0GDfPU3QGgZpCkXrdMU09nuKUQbdSuUr4RLBynUkfMLvv5GLd5ICviP+FW1GrXANS+i+LH1fWG2P5i6WBvaPlwNsF3TqCOSXRhoUfhpm38Q5KXN9YKGA/5vw160s89p8MbolRBFryZ9oOwa15QSlMBf5dXfNLHpkv1Md9MILhO7oEN3f/6G1w1jGcvu0dmVzS9TI4f5gKf1jZb1UdhNwCw5ZLq5md5Zdw7v7S5ValetnjqP9ezDkDxp6Ybl45zu2G/AeyBhRD2BNVmAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="This article was written by Yasser Elsayed and Mohammed Fituri (and reviewed by Yusuf Musleh)."
+        title="This article was written by Yasser Elsayed and Mohammed Fituri (and reviewed by Yusuf Musleh)."
+        src="/static/0018833d04aa9657f597b1b41025bb99/c5bb3/1*jVObNVN4QQr4ki9JSgPteg.png"
+        srcset="/static/0018833d04aa9657f597b1b41025bb99/04472/1*jVObNVN4QQr4ki9JSgPteg.png 170w,
+/static/0018833d04aa9657f597b1b41025bb99/9f933/1*jVObNVN4QQr4ki9JSgPteg.png 340w,
+/static/0018833d04aa9657f597b1b41025bb99/c5bb3/1*jVObNVN4QQr4ki9JSgPteg.png 680w,
+/static/0018833d04aa9657f597b1b41025bb99/b12f7/1*jVObNVN4QQr4ki9JSgPteg.png 1020w,
+/static/0018833d04aa9657f597b1b41025bb99/b5a09/1*jVObNVN4QQr4ki9JSgPteg.png 1360w,
+/static/0018833d04aa9657f597b1b41025bb99/2cefc/1*jVObNVN4QQr4ki9JSgPteg.png 1400w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">This article was written by Yasser Elsayed and Mohammed Fituri (and reviewed by Yusuf Musleh).</figcaption>
+  </figure></p>
+<p>This month, our attendance management system hit 900,000 attendance events only 1 year after its inception. While we bask in our accomplishment it’s easy to forget the rough start the founder (Mohammed Fituri) and I have had starting this project.</p>
+<p>With only two engineers (and a dream ✨) we were able to build a working prototype of our attendance management system in under 1 month, and scale to over 1,000 employees in under 3 months.</p>
+<p>This article is a story of the initial bootstrapping period of this product and it delves into the technical challenges we’ve faced building our product.</p>
+<p><strong><em>This story is a love letter to hack-y solutions and how innovative they can be in the face of time and resource constraints.</em></strong></p>
+<h1>Background</h1>
+<p>It’s difficult to tell this story without explaining the business side of things, as it directly correlates with the number of users that we have on the system.</p>
+<blockquote>
+<p>After all, you can’t properly scale tech without demand.</p>
+</blockquote>
+<p><strong>SierraOne</strong> is a company founded by Mohammed Fituri in 2019 that leverages AI and Computer Vision to solve business operation problems. In early 2021 the company was approached by Regency Group Holding (RGH), the largest real-estate company in Qatar, in an effort to replace RGH’s on-premise, finger-print system with a cloud, Facial Recognition system.</p>
+<h2>Requirements</h2>
+<p>The deal was contingent on delivering a working prototype in the main office within 30 days. The deliverables were simple, it had to have:</p>
+<ul>
+<li>A highly available device that can register employees on the system and check people in/out on a daily basis</li>
+<li>A cloud system to run the facial recognition and processing events</li>
+<li>A dashboard to display all the events live as they come</li>
+</ul>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ec357a05d56f1540f5b8a3d7805613e0/2cefc/1*nXqT0ESdbg40eaL5qf8Xlg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 59.411764705882355%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhklEQVQoz4VSu07DQBD0V9FR0NEhISEh0VDR8BFUqaDjd0gkiBOoSAMkQXkQKXbs2HH8vPc5jG2IAiFiC3tv9+ZmZu+M1c/I87xKPM/zfR+J/q5sh7GNjOPYtmdBEKRpppTmQiitd4LzMpBwzgeDgWm2bNuWUqVpyhlqnDGOE6WUv8FrnVrr0WjU6/c5F5XUYBm+9d7RcBy3Xm98TCZQgW1rSMEMb+PxeD73GGOEUIDRvjefjs8u9g6Oate3pYslhuC6LvCQoEsjxnA4bLcfHddVSqEBqWEY4ZS7xsPp+eX+4clV7cbzFzrXcZxAPFpwhC/sGFjjByHVYMCZETpzHJwytayX1x6lBEtCCAgJpcswTJIUUJAb5ZwEpQxJt9t97nSiOJlaNhRmWUbR4By7oyiCXixQWU/ua9pSFdFsNs1Wuxq7v1hY1gy6ojhOswwV0MJuvnHtxuYlyyIU9oEEqkDCBQcAeOT/PJLywpQQAuMQRchCNmP5jkdm/FktaBnLCIGX1e74BMeNrAD7Ml1DAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Simple in theory."
+        title="Simple in theory."
+        src="/static/ec357a05d56f1540f5b8a3d7805613e0/c5bb3/1*nXqT0ESdbg40eaL5qf8Xlg.png"
+        srcset="/static/ec357a05d56f1540f5b8a3d7805613e0/04472/1*nXqT0ESdbg40eaL5qf8Xlg.png 170w,
+/static/ec357a05d56f1540f5b8a3d7805613e0/9f933/1*nXqT0ESdbg40eaL5qf8Xlg.png 340w,
+/static/ec357a05d56f1540f5b8a3d7805613e0/c5bb3/1*nXqT0ESdbg40eaL5qf8Xlg.png 680w,
+/static/ec357a05d56f1540f5b8a3d7805613e0/b12f7/1*nXqT0ESdbg40eaL5qf8Xlg.png 1020w,
+/static/ec357a05d56f1540f5b8a3d7805613e0/b5a09/1*nXqT0ESdbg40eaL5qf8Xlg.png 1360w,
+/static/ec357a05d56f1540f5b8a3d7805613e0/2cefc/1*nXqT0ESdbg40eaL5qf8Xlg.png 1400w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Simple in theory.</figcaption>
+  </figure></p>
+<p>Our team was consistent of two software engineers (at the time it was just Mohammed Fituri and I), so, as you can imagine, this posed a great challenge for us. In fact, at first it seemed impossible but we couldn’t turn down our first official, and potentially lucrative, deal.</p>
+<p><em>A small note from the author:</em> Looking back now, taking on this challenge was inadvisable as it goes against one’s very instincts as an engineer. Engineering as a field tends to lean more towards predictability, repeatability and reliability and there was no guarantee of that. We had limited time, limited expertise and limited resources; but I suppose therein lies innovation.</p>
+<p>Needless to say, we rolled up our sleeves and braved the highly improbable odds of success.</p>
+<h1>Backend, AI &#x26; Dashboard</h1>
+<h2>Backend</h2>
+<p>Since we were tight on time, we didn’t want to build anything from scratch unless we <em>really</em> had to. Luckily, we already had an on-premise server running in one of the towers in Doha from our previous work. This server was responsible for running some AI services that we developed for building surveillance (vehicle classification, object detection, etc). Our plan was to build an “attendance” module on top of the already running system in the frontend and backend.</p>
+<p>The new module shared the networking configuration, deployment cycle, database schema, dashboard UI and most importantly the <strong>AI Jobs Manager</strong> from the already running system. This saved us a lot of time.</p>
+<blockquote>
+<p><strong>Note:</strong> This also acted nicely as a boilerplate setup and saved us time in technology selection.</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d991ff2e5c5a531c85cfea48b4bf4d63/2cefc/1*jHPyw5JznMhfsSxKXJ2dow.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.47058823529412%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAACp0lEQVQoz11TTW/TQBTMH+LACU4cuXHlUiEocOGG4AASEjeEEAgJiSJVBaRKlTgUCSrahH6oQShpCgRI0qRxSEO+7Dh1HDtx7PXuem0zjtuCWK2st/bOm3nznhOMMcqY53mMc8p5IERDV9NSud5sEWviEtd2HIZvnOP5305w7gnfN80RcVyHkGZH2SntL2czl5Lzc3vbNqOC8YnjENdFBsYjjggZxTyBxF1Zabc7av/wV/1gN1/8li9IkrRW+nIt9XI2tVBTOoHvI6/jOC6lMeyIeTy2lF5PVtRyTSo2GoraN0xDUZSB0u/Kcq5TG5KJNyVEdUiBhSDGJ7jnuS7tHWoHe+Xc7ZvVbIbgKmM2gVI35D4sQRQVjaueAH5iO0dgFi0uwrArSatXZn5/zyMGjEQ6iaKqlWoV5YzH44kNFN4RiOex7BMD4AkPAodSy7ZBa7sklmqaZqstd1q16n5B7vWDEA3x2F/wdOMe2EIREJsgUeiHUDkcGivJjf6hViwUa1LNsixzNJb7A86PwRGMUuEJIHOD5vX04tXsUkath56v68O371Z6Kla/09OQtN3pfsrsGoYhhEhEBXMPPI3R4F5p7VZu+Ubmzen1x6eSjx4UUnB5aBiaNoAxd+feV+ptqEZZSDbQ9QTaMHCshfrO/R8fzq4/nd18NZN+fWb72Z3Sak6uT6xJZDoc4l6z2wctjvAcRwQJSM3r7fPpFxfS8+fSz09vPLm8s/SxVS79LO5+zoJW13WHRA32fR95bIfEHmMlUHDgCZA/3N+6uLO42PhqUxowgTo7iry5tVWpVAw4bo5ifn4yobFhLmNwKxCBTV0IwUe88cNgbFmapklSLZlKoc9QS9nxYP/bKpdRN/q7OGGUTseGUhoNlBCgBSeieJxYPJvT/QeSsy4zKVZJ+QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The green sections are the things we added to our infrastructure to support attendance."
+        title="The green sections are the things we added to our infrastructure to support attendance."
+        src="/static/d991ff2e5c5a531c85cfea48b4bf4d63/c5bb3/1*jHPyw5JznMhfsSxKXJ2dow.png"
+        srcset="/static/d991ff2e5c5a531c85cfea48b4bf4d63/04472/1*jHPyw5JznMhfsSxKXJ2dow.png 170w,
+/static/d991ff2e5c5a531c85cfea48b4bf4d63/9f933/1*jHPyw5JznMhfsSxKXJ2dow.png 340w,
+/static/d991ff2e5c5a531c85cfea48b4bf4d63/c5bb3/1*jHPyw5JznMhfsSxKXJ2dow.png 680w,
+/static/d991ff2e5c5a531c85cfea48b4bf4d63/b12f7/1*jHPyw5JznMhfsSxKXJ2dow.png 1020w,
+/static/d991ff2e5c5a531c85cfea48b4bf4d63/b5a09/1*jHPyw5JznMhfsSxKXJ2dow.png 1360w,
+/static/d991ff2e5c5a531c85cfea48b4bf4d63/2cefc/1*jHPyw5JznMhfsSxKXJ2dow.png 1400w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">The green sections are the things we added to our infrastructure to support attendance.</figcaption>
+  </figure></p>
+<p>The attendance module just added 3 things to the backend system:</p>
+<ul>
+<li>A way to receive attendance events.</li>
+<li>A Facial recognition AI model.</li>
+<li>A way to show those events.</li>
+</ul>
+<p>The whole system was set up and code-wise we just needed to add an attendance module in the <a href="https://www.djangoproject.com/"><strong>Django</strong></a> backend and the <a href="https://reactjs.org/"><strong>ReactJS</strong></a> dashboard. The backend was responsible for receiving the attendance events, storing it in our DB and prompting the <strong>Jobs Producer</strong> to have it prepped for the AI. The dashboard would simply have to show the results of this interaction live as the events come; for that we had to used the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">WebSocket API</a> managed by <a href="https://channels.readthedocs.io/en/stable/"><strong>Django Channels</strong></a><strong>.</strong></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2b583e037225e488d3f79bf3b336a732/2cefc/1*bi91Yk7ilo1qOJUVjHqUbg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.82352941176471%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB10lEQVQoz12Sy24UMRBF+/9/BRJFQQNCbIJGKLNgEaEJmqxgMx1lHv3y2223ObZhgNSiZFf5Vt26rma/3yulrLXnrhvHMcYlxhhC/GP5uiz4JYQwz7O/2Dw3AAiRMNpwcM7hKWeM4Yynbq0uhDDZyxLL1gih6eSde7j7QEcK0qrUzQa4tM2RcRysdYtXS3BQo1/Tj0pqw9vN+7e80ppasXbGD8PANaUE+Hg8GsDmlGY1h0jp5mfbPZ8mofS3+7uldKBVHYRz7QyYyDRNjqyXKbhY6DTD0JPu+/5h84UDkxBlWsB4mqdiFDqfz5m2HVKwznlrTdN1HdyEVJ9XN6EIBpgSvOYspayd/wH3aTahiN9Ueszz9dMtVKDH66o5RpXa+TXtCqb2drt9/P64Xl0Bq4LhK2c+snbmejwc+KQimPZzHqqh5Ol0klKtrt/Esga8DmVLXgkmxMSoyU8pWgQl21RWLNL6NoOrYGDI1cX4TzBjJGrwyWXVGgBwY57Nx5slS/VXMIyhLmCkJc48PvMKeebD4bB72rXt8/rd9YU2Pq+dZz11pU0mC+Zc8mOK7veStG2LMFKZH087rS3rovCSiB4n2Q0jV2P9KNTLy3Fir9WklRRCTUL+ArqWJhce/zd0AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot of our old dashboard. You can see that it’s shoved in with all the other modules."
+        title="Screenshot of our old dashboard. You can see that it’s shoved in with all the other modules."
+        src="/static/2b583e037225e488d3f79bf3b336a732/c5bb3/1*bi91Yk7ilo1qOJUVjHqUbg.png"
+        srcset="/static/2b583e037225e488d3f79bf3b336a732/04472/1*bi91Yk7ilo1qOJUVjHqUbg.png 170w,
+/static/2b583e037225e488d3f79bf3b336a732/9f933/1*bi91Yk7ilo1qOJUVjHqUbg.png 340w,
+/static/2b583e037225e488d3f79bf3b336a732/c5bb3/1*bi91Yk7ilo1qOJUVjHqUbg.png 680w,
+/static/2b583e037225e488d3f79bf3b336a732/b12f7/1*bi91Yk7ilo1qOJUVjHqUbg.png 1020w,
+/static/2b583e037225e488d3f79bf3b336a732/b5a09/1*bi91Yk7ilo1qOJUVjHqUbg.png 1360w,
+/static/2b583e037225e488d3f79bf3b336a732/2cefc/1*bi91Yk7ilo1qOJUVjHqUbg.png 1400w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Screenshot of our old dashboard. You can see that it’s shoved in with all the other modules.</figcaption>
+  </figure></p>
+<p>The Jobs Producer would create a job, save it in a queue managed by <a href="https://redis.io/"><strong>Redis</strong></a><strong>,</strong> and sent on its way to be ran on our (brand new ✨) Facial Recognition service.</p>
+<p>Now all we needed to build was the Facial Recognition service and run it in our AI Jobs Manager.</p>
+<h2>Artificial Intelligence Service</h2>
+<p>We needed an AI model to recognize a person from an image of their face. For that we used a custom implementation of <a href="https://www.geeksforgeeks.org/facenet-using-facial-recognition-system/#:~:text=FaceNet%20is%20the%20name%20of,for%20Face%20Recognition%20and%20Clustering."><strong>FaceNet</strong></a> that we’ve worked on in the past (more re-using let’s go!).</p>
+<p>The model had one job, it took an image of a face and returned an embedding of that face. An embedding is basically a mathematical (vector) representation of a single face created by our model.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/31df7c86d85ad893681263bb75edfe39/60fa0/1*G1Dqu4XiOClBTVhMAUg-Ow.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 30.58823529411765%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDklEQVQY011QTUvDQBDNr/Ls2ZN/waP4LwRBL2LxEqGIBKlebeypKIi2eNngRzHEkGKaKkvbbUyarEn2Y9xE0NjHzDDzhjfMjAYAeZ7hyfTND2iaqlJKqWIUkqE/vnp5f/LG4WzCOP9p1aFJKRTbaXfODYOXKqi0kDA4vJPbOt1ts+ECiq80qUbXoSkfeIneaDb3D/oPszyjjuNm8bwbwPFGX1/Z0tdaRg+CkYcQwhi7rmtZlm3bKinFz6/k0rwxL7r3j1iVWV6AyG8/QN9ErdW9o3XzrMcUzxmnlEZRRAhRMY7jUszSz9AfjBxULKa/NxcCTpDYOc0a1xynf+csr102KluCkJIUkIt/ZP1h38TtRrPw9HIHAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Creating embeddings from face images."
+        title="Creating embeddings from face images."
+        src="/static/31df7c86d85ad893681263bb75edfe39/c5bb3/1*G1Dqu4XiOClBTVhMAUg-Ow.png"
+        srcset="/static/31df7c86d85ad893681263bb75edfe39/04472/1*G1Dqu4XiOClBTVhMAUg-Ow.png 170w,
+/static/31df7c86d85ad893681263bb75edfe39/9f933/1*G1Dqu4XiOClBTVhMAUg-Ow.png 340w,
+/static/31df7c86d85ad893681263bb75edfe39/c5bb3/1*G1Dqu4XiOClBTVhMAUg-Ow.png 680w,
+/static/31df7c86d85ad893681263bb75edfe39/b12f7/1*G1Dqu4XiOClBTVhMAUg-Ow.png 1020w,
+/static/31df7c86d85ad893681263bb75edfe39/60fa0/1*G1Dqu4XiOClBTVhMAUg-Ow.png 1315w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Creating embeddings from face images.</figcaption>
+  </figure></p>
+<p>For every attendance event we would create a <strong>new embedding</strong> and compare it with a database of embeddings created by the same AI. We compared the embeddings using two functions: <a href="https://en.wikipedia.org/wiki/Cosine_similarity"><strong>cosine similarity</strong></a> and <a href="https://en.wikipedia.org/wiki/Euclidean_distance"><strong>euclidean distance</strong></a>.</p>
+<p>Each of those functions returned a score from comparing the new embedding with the old embeddings. The database embedding scoring the highest from both functions, above a certain threshold, is the closest match to the new embedding and is thus recognized as the same person from the database embedding.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0bae37774664292a9329176dfbcee8dd/2cefc/1*ctLK530Ff_yHZf-KM8Zodg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 27.647058823529413%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVQY022Q62qEMBCFff8X8spuVap4WVjxglY30SpVKaV4iY3Jajv1R6GwhzAMzPlyMhG+/2vfd6h1Xbuu6/t+EARd130cglFZlgghSmlRFHmeCw/hvu91XbcsC6ye52maBj0hJHnL2+2z4e/X1wRsj+GmaSRJUlU1SRLbtmVZhgowLssvRilfEUbgFO6H/mDGGNS2bdVDURRBsiiKhmEAXFS3gc8jJyl6+U2O4zjLsnEch2GAMWBhGGKMT4cgGTaHW85P54Usz/hyWfMrv50KG14ozPNMDk3TBD18xrZtVVUpigJMmqaO48DOpmkuy7Jyxvc7HMooJP8AXpdDGsodXp8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The comparison system. The green represents the embeddings past our threshold."
+        title="The comparison system. The green represents the embeddings past our threshold."
+        src="/static/0bae37774664292a9329176dfbcee8dd/c5bb3/1*ctLK530Ff_yHZf-KM8Zodg.png"
+        srcset="/static/0bae37774664292a9329176dfbcee8dd/04472/1*ctLK530Ff_yHZf-KM8Zodg.png 170w,
+/static/0bae37774664292a9329176dfbcee8dd/9f933/1*ctLK530Ff_yHZf-KM8Zodg.png 340w,
+/static/0bae37774664292a9329176dfbcee8dd/c5bb3/1*ctLK530Ff_yHZf-KM8Zodg.png 680w,
+/static/0bae37774664292a9329176dfbcee8dd/b12f7/1*ctLK530Ff_yHZf-KM8Zodg.png 1020w,
+/static/0bae37774664292a9329176dfbcee8dd/b5a09/1*ctLK530Ff_yHZf-KM8Zodg.png 1360w,
+/static/0bae37774664292a9329176dfbcee8dd/2cefc/1*ctLK530Ff_yHZf-KM8Zodg.png 1400w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">The comparison system. The green represents the embeddings past our threshold.</figcaption>
+  </figure></p>
+<p>This method worked very well and we were confident that given any face we are able to find the closest matching person, and then retrieve the rest of this person’s information from the database.</p>
+<p>Now that we have our results back, let’s display it on the dashboard.</p>
+<h1>Mobile Application</h1>
+<p>Everything was ready, now we needed a way to send registration and attendance images back to the backend and have them reflect on an employee’s attendance.</p>
+<p>The main thing we were replacing with the thumb print devices is <em>inconvenience</em>, and so it would be a complete waste of time to build an application that was either slow or cumbersome to use.</p>
+<blockquote>
+<p>The device, and any interactions with the device had to be smooth and seamless.</p>
+</blockquote>
+<p>The application had to do two things very well: <strong>capture events</strong> accurately, and <strong>register employees</strong> quickly and easily; our MVP would be a success if we nail these two specifications. We chose <strong>ReactNative</strong> because we didn’t know the nature of our hardware at this point yet.</p>
+<h2>Capturing Events</h2>
+<p>Checking in/out happens two (or sometimes more) times a day; it won’t take the user long to get resentful towards our solution if it was a slow or clunky experience. We designed the app so that it needed minimal input from the user to function.</p>
+<p>Based on the time of the day and the shift of the user (which was inputted in the dashboard), our system would automatically guess if it’s a check in or a check out and give the user confirmation that they’ve successfully checked in or checked out. Thankfully the AI we developed is lightning fast and you can see in the following gif how fast a single recognition is.</p>
+<p><img src="/a88ba6a63960e42a0fb5bc2cc06c9bd0/1*-J4FUz9tWPtepPo6PKCbRQ.gif" alt="The process for checking in is super quick, and shows all the information the user needs to know."></p>
+<h2>Registration</h2>
+<p>When checking in/out everyday there is going to be variances in a person’s face images. Thus the registration images for a person had to be a good representation of that person’s face and have as much in common with all his/her daily variances. To achieve that, we had to set some restrictions that we could apply on <em>all</em> the registration images that will be on the system. We came up with 3 rules:</p>
+<ol>
+<li>The face shouldn’t be too far or too close to the camera.</li>
+<li>The face should be straight and not tilted in any direction.</li>
+<li>The face should be well lit and not taken in a dark place.</li>
+</ol>
+<p><strong>Achieving #1 &#x26; #2</strong> we used <a href="https://developers.google.com/ml-kit/vision/face-detection"><strong>Google’s Face Detection</strong></a> to get the face on the device itself. The Face Detection API gave us information on the <a href="https://www.researchgate.net/figure/The-head-pose-rotation-angles-Yaw-is-the-rotation-around-the-Y-axis-Pitch-around-the_fig1_281587953"><em>roll, pitch, and yaw</em></a> of each face, which told us whether the face was tilted, if it wasn’t looking straight, or if it was too close/far from the camera. We used this information to give appropriate messages to the user who is currently registering on the system.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/049eb07fac62829e28e94c525383dab0/2cefc/1*GneU_6HP8OjM0YnzQHvX9g.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.11764705882353%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAABtklEQVQY0wGrAVT+ANnY19nY1+/t69rb28nKzdvc3uDg4c/OzuLi4uDg4NbU0c/OzOLh3tvb2uXl5PDx7+Tk4+Pj4fn5+PPz8wB8enFfWlJwa2BVWVZnWVRnV1JER0dMRz1OST5KRDtaV0tuaVqEfW14eHBfX11VVFGJi4aopJp7d3KnqqUAcGheiWhXbGNXVFROtZWJspGFT09LTUU4cltJPT45RT01c1tLcF1QUlVUiXRudGBafIOCuq+udlBMi4yMAHh0abOHcI1+cWlvasKdj7+YjGxucFtaXc7IyDs/Rl9HP7udjrzAxldgZqqMfqWJfYaRltTJxqF0aJCWlwCTmqCklI6gmZpqeH+ZgHeJbWgjKjM5Mzejo61ERUsZGSIkISp1ZF9zdXuelJWgl5tlbXsrKDUjGCIwNDwA3uPp3eLp4OXvzdXdtaift62onqauYlxea2hxaWRnfYSObnF8qZGBxLu2293i5OfsubvEUU5TVlZbZ2VpAPn4+PHx8fX19P7+/vf3+Pf39/////z8/Pf39/39/v39/Pf3+Pz9+9Xg/qC29qS69sHQ/bTI/qa9+7zP/sGe+Pxp6M69AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Our application gives messages to the user to adjust the face on screen."
+        title="Our application gives messages to the user to adjust the face on screen."
+        src="/static/049eb07fac62829e28e94c525383dab0/c5bb3/1*GneU_6HP8OjM0YnzQHvX9g.png"
+        srcset="/static/049eb07fac62829e28e94c525383dab0/04472/1*GneU_6HP8OjM0YnzQHvX9g.png 170w,
+/static/049eb07fac62829e28e94c525383dab0/9f933/1*GneU_6HP8OjM0YnzQHvX9g.png 340w,
+/static/049eb07fac62829e28e94c525383dab0/c5bb3/1*GneU_6HP8OjM0YnzQHvX9g.png 680w,
+/static/049eb07fac62829e28e94c525383dab0/b12f7/1*GneU_6HP8OjM0YnzQHvX9g.png 1020w,
+/static/049eb07fac62829e28e94c525383dab0/b5a09/1*GneU_6HP8OjM0YnzQHvX9g.png 1360w,
+/static/049eb07fac62829e28e94c525383dab0/2cefc/1*GneU_6HP8OjM0YnzQHvX9g.png 1400w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Our application gives messages to the user to adjust the face on screen.</figcaption>
+  </figure></p>
+<p>The feedback was super fast since it all ran on the device itself, and it made for quick and easy experience for the users.</p>
+<p><strong>Achieving #3</strong> we had to build a new AI model that will light up the different facial features… I’m just kidding. That would be the appropriate solution but we just didn’t have the time.</p>
+<p>This was a little less an engineering matter and more finding a proper well lit location to place the devices. There is a little lesson here in embracing non-engineering solutions as part of the problem solving process.</p>
+<p>These three rules gave us great quality registration images, and weren’t too restrictive that it made the registration experience miserable.</p>
+<p>With these two functions nailed, it was time to develop our hardware.</p>
+<h1>Hardware &#x26; Installation</h1>
+<p>Both the founder and I were software engineers and had little to no knowledge in hardware development, nor did we have money to hire or contract a company to develop and build the devices.</p>
+<p>Additionally (and I hate to remind the reader) <em>we were short on time!</em> The key was to start ASAP so the time that we spent on choosing a device was exactly: <em>0 seconds.</em> Both developers had an iPad at the time and so the decision was made.</p>
+<p>After a week of development, we had a basic facial recognition implementation working on the iPad.</p>
+<p><img src="/2f59fcdda3b073722148667f0072b46d/1*xGNvN8mLi9AN2x-L_Ga1FQ.gif" alt="Mohammed Fituri testing a working implementation on his iPad."></p>
+<p>At this point we knew that we couldn’t sell an iPad to each of our clients if we grew. We had to move to a cheaper device, so we chose a cheaper device: an <em>Android tablet</em>. Thanks to ReactNative this wasn’t a very expensive move.</p>
+<p><img src="/fbde62317223d57289d5df62754c2921/1*Y4W_Jc4dYiXHLz7GW5lwCA.gif" alt="Mohammed Fituri testing a working implementation on an Android tablet."></p>
+<p>The Android tablet didn’t cut it. The price of the device was still way too high, and we couldn’t find a mount that is not very bulky and cheap enough. That’s when it hit us:</p>
+<blockquote>
+<p><em>Let’s just 3D print the tablet case 🤯</em></p>
+</blockquote>
+<p>Unfortunately 3D printing a large case was too complicated; we would need to print multiple pieces and put them together, and if we did figure it out it would too long to print one case. Then another idea struck our minds:</p>
+<blockquote>
+<p>Let’s just use an Android phone instead 🤯</p>
+</blockquote>
+<p>3D printing for a phone was a lot simpler than for a tablet and not to mention we would be saving so much on one device. This was the way to go!</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d58fe7f8776ce0ac4b47993c701a12b3/2cefc/1*w7ud09p6HjBwwDMBnbfsYA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.470588235294116%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVQozwGfAmD9AODe3sTCw8rJy+Tj6Obl6efl693c5tzc5tra49fX4dvb4+HX0c/DutLEt+7f0fPl2PLk1ujh2tzq/N7r/QB+eYGKhJGMh5iHgZaqorCyq7yOi6yLiKmKiKiBgaOCeYq1bSi4czDLnnbSs5fBqZPItKGelpaOrt+hvOwA1sez3NG/5drN39jO49vV2tDM493c7ejp6OPn39vh0cbCaFJZMUKQmp+xkIp7YGBcTE9Ol5uotLTKu7fGANPFsN3TwNvWy8iqktPAr97d3dDIydTQ0+Df5OLe4MbQ4Qdb7BNb4ImXrWlZQlVMPEBBP3lxbHRZTG1bVADTxa7b1MHHsZnDgWLGkHnNt6Ph5OTV0NHTz9Lk4uLQ2OSRvPJ2f4yJgXl0f4l0e31WYmx6b2N7UjKMZUoAz8Kry8ezupZ01cKu4+HczJqMyKeS3uHf2tjb4eLh2trch3+ENiggdWRXepy9o8frcYGMcWlehGVShHZ3AL+1oMO6p8vItMO7otfTxOTq6daxrMWdh9fZ1dDPzsnFwl1OQ21LN6l4Zk5OT1lxipept352a49cNV00FwC7sqC8tKXEvbDJx7q+uqTQzr/b2dLGq5DHycTT1dXY0sufgWikblW8fWxiXFgAAAM1ODp4cGKIYEOTg30AuK+fyMKwyMO0zcm71NbLxsW1wbaYw8XAz9LT1trbyMO4sohl0Y95vHdqgG9oNi4iZllKs6SQkGVFp7LIADZCZFBZcW90gIKFipeZmq6ztLi/wM/U1Nfc3MvU17i4s6pyStOSfMN6baR2Yb6JcM2dfrN+U6NqP6+SgQAFCxkHESoeLlMVIUQQGDQdJTotNURCTFleaHSSn6yToLuVXz+xb06mYkWlYUC1d1ufYi+wbzu0eU++hFYKdZicUg1HhAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The Initial 3D design and product."
+        title="The Initial 3D design and product."
+        src="/static/d58fe7f8776ce0ac4b47993c701a12b3/c5bb3/1*w7ud09p6HjBwwDMBnbfsYA.png"
+        srcset="/static/d58fe7f8776ce0ac4b47993c701a12b3/04472/1*w7ud09p6HjBwwDMBnbfsYA.png 170w,
+/static/d58fe7f8776ce0ac4b47993c701a12b3/9f933/1*w7ud09p6HjBwwDMBnbfsYA.png 340w,
+/static/d58fe7f8776ce0ac4b47993c701a12b3/c5bb3/1*w7ud09p6HjBwwDMBnbfsYA.png 680w,
+/static/d58fe7f8776ce0ac4b47993c701a12b3/b12f7/1*w7ud09p6HjBwwDMBnbfsYA.png 1020w,
+/static/d58fe7f8776ce0ac4b47993c701a12b3/b5a09/1*w7ud09p6HjBwwDMBnbfsYA.png 1360w,
+/static/d58fe7f8776ce0ac4b47993c701a12b3/2cefc/1*w7ud09p6HjBwwDMBnbfsYA.png 1400w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">The Initial 3D design and product.</figcaption>
+  </figure></p>
+<p>Of course there were downsides to using a phone, but it didn’t matter. This was all for a prototype that we were delivering end of the month. We knew that eventually we’d move to something more robust (and we did).</p>
+<p>This is the point where I fell in love with this project. It kind of hit me, that we were developing this whole attendance system with various people able to check in and out from different devices using hacky skills we learnt over time.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0959c3149128df0734fc822cd00de2eb/82e91/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.52941176470588%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAFbqExsFYORlea1zILn/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDBAARIRITIiMz/9oACAEBAAEFAu7qaVvV1jHOsHlgjfSxqFrhJAOBB9KvFmxK6y//xAAYEQACAwAAAAAAAAAAAAAAAAAAARARIf/aAAgBAwEBPwGGtLP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREQ/9oACAECAQE/AcTqIf/EAB4QAAEEAwADAAAAAAAAAAAAAAEAAhEhEDFBEkKB/9oACAEBAAY/AnR1WcMIiR1AGgTtAi0/2heUfFWHgatQHQF//8QAHRABAAIDAQADAAAAAAAAAAAAAQARITFBYVFxgf/aAAgBAQABPyFFK6+ZgqAtrF+wYw2S8Sho7I1ILBUYQBLwzB1sz6nxvwvkAAADk1ejOHcP2N1Aan//2gAMAwEAAgADAAAAEKsOMf/EABgRAAMBAQAAAAAAAAAAAAAAAAABIRAR/9oACAEDAQE/EOFFKMf/xAAXEQEBAQEAAAAAAAAAAAAAAAAAASER/9oACAECAQE/EGLaO6//xAAdEAEAAgIDAQEAAAAAAAAAAAABABEhMUFRkWGB/9oACAEBAAE/EBdQVTVCU77qDYoEBdLl0HgSMBgBYAxkdMGmkiy9+ShmYkHjL5yjVa9CYYC1SxOn9IYYqNKiU1wB+wcQRTWMII+FCup//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="We also made it in black!"
+        title="We also made it in black!"
+        src="/static/0959c3149128df0734fc822cd00de2eb/7bf67/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg"
+        srcset="/static/0959c3149128df0734fc822cd00de2eb/651be/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg 170w,
+/static/0959c3149128df0734fc822cd00de2eb/d30a3/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg 340w,
+/static/0959c3149128df0734fc822cd00de2eb/7bf67/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg 680w,
+/static/0959c3149128df0734fc822cd00de2eb/990cb/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg 1020w,
+/static/0959c3149128df0734fc822cd00de2eb/c44b8/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg 1360w,
+/static/0959c3149128df0734fc822cd00de2eb/82e91/1*NZx-MRxB6P7Z8Cet3XUeKw.jpg 1399w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">We also made it in black!</figcaption>
+  </figure></p>
+<p>This method worked perfectly and we were able to install our first device in the head office as agreed.</p>
+<p><img src="/67547478e5dff36d0a1a157b24c33012/1*BFnvC23mh4L86gUtGScj1A.gif" alt="Our first installation (sorry for the bad quality)"></p>
+<p>Things were going grape! Our prototype was installed, and the system was able to register 40 employees quite seamlessly. They were also able to check in and out very smoothly and our on-premise server wasn’t breaking a sweat.</p>
+<h1>Conclusion</h1>
+<p>Although much of what I outlined in this article was replaced with more robust and better solutions in the coming months, this duct-taped system was able to withstand the brunt of 1000 employees across 15 locations in Qatar checking in and out daily.</p>
+<p>Hacky solutions go a long way in developing technology. A scrappy attitude is sometimes needed when facing very difficult challenges.</p>
+<p>I hope you enjoyed this story.</p></section><hr/></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li class="more-articles"><a rel="prev" href="/medium-to-markdown/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg> <!-- -->Move from Medium to Markdown</a></li><li class="more-articles"></li></ul></nav></main></div><footer style="display:flex;justify-content:space-between"><span class="footer-copyright">© <!-- -->2022<!-- -->, Yasser Codes</span><span class="footer-social"><a href="mailto:ysr.sayed@gmail.com"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg></a><a href="https://twitter.com/ysr.sayed"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a href="https://theyasser.medium.com"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium" class="svg-inline--fa fa-medium fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"></path></svg></a><a href="https://instagram.com/yeyeyesser"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></span></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-84887634-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/attendance/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-fbac4ca513f017f32fb6.js"],"app":["/app-801afe0d10777c06f0c2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8cc43f656001670f765b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-2fad7b2d115e4ef683f8.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-413029d3b43934e34a2c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-fd3a7a4d372d421fca09.js"]};/*]]>*/</script><script src="/polyfill-fbac4ca513f017f32fb6.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-fd3a7a4d372d421fca09.js" async=""></script><script src="/commons-fa7b9ab15f523582aed4.js" async=""></script><script src="/a9a7754c-3e74a2f80416cf348e88.js" async=""></script><script src="/cb1608f2-9b67d109c0c9514fd6ea.js" async=""></script><script src="/app-801afe0d10777c06f0c2.js" async=""></script><script src="/styles-55e82d6ff5158c00b714.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/webpack-runtime-33521c119419a0c05499.js" async=""></script></body></html>
