@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yasser Codes]]></title><description><![CDATA[Personal page of Yasser El-Sayed.]]></description><link>https://yasser.codes</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 16 Jun 2022 22:35:17 GMT</lastBuildDate><item><title><![CDATA[Building a Facial Recognition Attendance System in 30 days]]></title><description><![CDATA[This month, our attendance management system hit 900,000 attendance events only 1 year after its inception. While we bask in our…]]></description><link>https://yasser.codes/attendance/</link><guid isPermaLink="false">https://yasser.codes/attendance/</guid><pubDate>Thu, 16 Jun 2022 10:43:08 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yasser Codes]]></title><description><![CDATA[Personal page of Yasser El-Sayed.]]></description><link>https://yasser.codes</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Feb 2024 16:18:08 GMT</lastBuildDate><item><title><![CDATA[Hullo Programming Language - Dev Log 1]]></title><description><![CDATA[Background I came across this book called Writing an Interpreter in Go, which essentially is a long tutorial 
+for writing an interpreted…]]></description><link>https://yasser.codes/hullo-dev-log1/</link><guid isPermaLink="false">https://yasser.codes/hullo-dev-log1/</guid><pubDate>Wed, 21 Feb 2024 08:07:10 GMT</pubDate><content:encoded>&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;I came across this book called &lt;a href=&quot;https://interpreterbook.com/&quot;&gt;Writing an Interpreter in Go&lt;/a&gt;, which essentially is a long tutorial
+for writing an interpreted programming language in Golang.&lt;/p&gt;
+&lt;p&gt;I’ve always wanted to write a programming language, and I’ve always wanted to learn Go. I thought this would be a fun
+thing to do in the morning before my work day starts. I also thought this would be a good time for me to get
+back into writing. I’ve been having terrible writer’s block since my article last year, as I feel everything
+that I write is not of much worth and I’m riddled with low self esteem.&lt;/p&gt;
+&lt;p&gt;So here we are. Don’t think too much just write about what you did (yes I’m talking to myself).&lt;/p&gt;
+&lt;h2&gt;Interpreter&lt;/h2&gt;
+&lt;p&gt;Let’s get to building the &lt;code class=&quot;language-text&quot;&gt;hullo&lt;/code&gt; programming language.&lt;/p&gt;
+&lt;h3&gt;Language Features&lt;/h3&gt;
+&lt;p&gt;The objective for me is to write a simple interpreted language in my own syntax that has all the basics of a C-type
+programming language. This language will have the following features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;{ }&lt;/code&gt;  to start and end a code block&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;else&lt;/code&gt; conditionals&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fn&lt;/code&gt; function definitions and ability to call those definitions&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;=&lt;/code&gt; to assign&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;;&lt;/code&gt; to end statements&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;!&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;==&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;!=&lt;/code&gt; operators for arithmatic and comparison&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; in order to exit functions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Limitations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;All variables and keywords be in ASCII&lt;/li&gt;
+&lt;li&gt;No floats (at least for now)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Basic Structure of an Interpreter&lt;/h2&gt;
+&lt;p&gt;According to Wikipedia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An interpreter is a computer program that directly executes instructions written in a programming or scripting
+language, without requiring them previously to have been compiled into a machine language program.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is an apt description. The objective for an interpreter is to build a program that will take source code, make
+sense of it and then execute it. We would basically have to tokenize the code, and then create an abstract syntax tree
+that we can execute.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Source Code -&amp;gt; Tokens -&amp;gt; Abstract Syntax Tree (AST) &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;An AST is a graph data-structure that would represent our code. We will get to the AST in later dev logs. In this dev
+log we’re going to focus primarily on how we’re going to build the elements of that syntax tree.&lt;/p&gt;
+&lt;p&gt;To transform the source code into tokens, we’ll have to build a Lexer, which will lexically analyze a code and
+transform them into meaningful, easily categorizable data structures called tokens.&lt;/p&gt;
+&lt;h3&gt;Lexer&lt;/h3&gt;
+&lt;p&gt;My progress so far has been about building the Lexer, which is easier than you might think. I use one pointer and go
+through the code character by character until I find distinct keywords that would form a token.&lt;/p&gt;
+&lt;p&gt;Let’s go through one example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; twelve &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is a simple example to demonstrate how the lexer works, but in the future we’ll use more complicated examples.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; twelve &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//     ^&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When a pointer hits a space it knows to do a lookup for the word let in the defined keywords. If it finds it, it
+will create a token of type &lt;code class=&quot;language-text&quot;&gt;token.LET&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; twelve &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//            ^&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Similarly here, although “twelve” is not a defined keyword, meaning that it’s likely a variable name, so we can create
+a token of type &lt;code class=&quot;language-text&quot;&gt;token.IDENT&lt;/code&gt; and literal value of &lt;code class=&quot;language-text&quot;&gt;twelve&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; twelve &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//             ^&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This character it encountered is a special character, we check to see if it’s followed by another ”=”, if so then we
+create &lt;code class=&quot;language-text&quot;&gt;token.EQUALS&lt;/code&gt; for ”==”, otherwise we create &lt;code class=&quot;language-text&quot;&gt;token.ASSIGN&lt;/code&gt; for ”=“.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; twelve &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//               ^&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;At this point we encountered a number, so we keep pushing the pointer until it doesn’t see numbers anymore in order to
+build the full number (12), then we create the token &lt;code class=&quot;language-text&quot;&gt;token.INT&lt;/code&gt; for the literal “12”.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; twelve &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Semicolon is a special character so we immediately create a token &lt;code class=&quot;language-text&quot;&gt;token.SEMICOLON&lt;/code&gt; with the literal &lt;code class=&quot;language-text&quot;&gt;;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, we create a &lt;code class=&quot;language-text&quot;&gt;token.EOF&lt;/code&gt; to indicate that the code is done.&lt;/p&gt;
+&lt;h3&gt;TDD&lt;/h3&gt;
+&lt;p&gt;A nice thing about writing a program that parses strings and creates tokens is that it’s relatively easy to employ TDD.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; lexer
+
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;token string&quot;&gt;&quot;testing&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; NextTokenTest &lt;span class=&quot;token keyword&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	expectedType    token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;TokenType
+	expectedLiteral &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;runNextTokenTests&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;t &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;testing&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;T&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; input &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tests &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;NextTokenTest&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;TestSymbols&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;t &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;testing&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;T&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	input &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;`!-/*5&amp;lt;&gt;`&lt;/span&gt;
+	tests &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;NextTokenTest&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;BANG&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;MINUS&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;DIVIDE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;MULTIPLY&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;INT&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;5&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;LT&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;GT&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;EOF&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;token function&quot;&gt;runNextTokenTests&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;t&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; input&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tests&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Through out this process building the tests really helped with getting a good documentation on my progress.&lt;/p&gt;
+&lt;h3&gt;Cherry on Top, a REPL!&lt;/h3&gt;
+&lt;p&gt;A &lt;code class=&quot;language-text&quot;&gt;REPL&lt;/code&gt; stands for Read, Eval, Print, Loop and most languages have one. It’s very straightforward to write one, you
+just take the input line by line and pass it to the lexer. But this allows you to test quickly your program to see
+if it’s spitting out the correct tokens.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; go run main.go                                                      &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;:12:30
+Hello yelsayed&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; This is the Hullo programming language&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+Executing the REPL&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt;let twelve &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Type:LET Literal:let&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Type:IDENT Literal:twelve&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Type:&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Literal:&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Type:INT Literal:12&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Type:&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; Literal:&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So sexy! Next log will be about writing the parser, and how the parser will make sense of these tokens.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Building a Facial Recognition Attendance System in 30 days]]></title><description><![CDATA[This month, our attendance management system hit 900,000 attendance events only 1 year after its inception. While we bask in our…]]></description><link>https://yasser.codes/attendance/</link><guid isPermaLink="false">https://yasser.codes/attendance/</guid><pubDate>Thu, 16 Jun 2022 10:43:08 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &quot;
